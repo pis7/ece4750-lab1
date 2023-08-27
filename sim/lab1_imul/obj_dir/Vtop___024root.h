@@ -31,10 +31,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
     // Anonymous structures to workaround compiler member-count bugs
     struct {
         VL_IN8(clk,0,0);
-        CData/*0:0*/ top__DOT__reset;
         CData/*0:0*/ top__DOT__ostream_val;
         CData/*0:0*/ top__DOT__imul__DOT__result_en;
         VL_IN8(linetrace,0,0);
+        CData/*0:0*/ top__DOT__reset;
         CData/*0:0*/ top__DOT__istream_val;
         CData/*0:0*/ top__DOT__istream_rdy;
         CData/*0:0*/ top__DOT__ostream_rdy;
@@ -67,8 +67,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__state;
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__nextState;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__counter_en;
-        CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_done;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear;
+        CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_done;
         CData/*4:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero;
         CData/*4:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next;
@@ -79,7 +79,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT__level;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT____Vtogcov__level;
         CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
-        CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__reset__0;
         CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__imul__DOT__result_en__0;
         CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__ostream_val__0;
         CData/*0:0*/ __VactDidInit;
@@ -94,9 +93,9 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         IData/*31:0*/ top__DOT__imul__DOT__idx1;
         IData/*31:0*/ top__DOT__imul__DOT__idx0;
         IData/*31:0*/ top__DOT__imul__DOT____Vtogcov__b_lsb;
+        IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__adder_out;
     };
     struct {
-        IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__adder_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT____Vtogcov__b_mux_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out;
@@ -117,15 +116,15 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         IData/*31:0*/ __VactIterCount;
         QData/*63:0*/ top__DOT__istream_msg;
         QData/*63:0*/ top__DOT____Vtogcov__istream_msg;
-        VlUnpacked<CData/*0:0*/, 7> __Vm_traceActivity;
+        VlUnpacked<CData/*0:0*/, 6> __Vm_traceActivity;
     };
     VlTriggerScheduler __VtrigSched_h3cadd47d__0;
     VlDelayScheduler __VdlySched;
     VlTriggerScheduler __VtrigSched_hb9476d33__0;
     VlTriggerVec<1> __VstlTriggered;
     VlTriggerVec<1> __VicoTriggered;
-    VlTriggerVec<6> __VactTriggered;
-    VlTriggerVec<6> __VnbaTriggered;
+    VlTriggerVec<5> __VactTriggered;
+    VlTriggerVec<5> __VnbaTriggered;
 
     // INTERNAL VARIABLES
     Vtop__Syms* const vlSymsp;

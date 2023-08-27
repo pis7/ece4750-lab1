@@ -16,7 +16,6 @@ VL_ATTR_COLD void Vtop___024root___eval_static(Vtop___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_static\n"); );
     // Body
     Vtop___024root___eval_static__TOP(vlSelf);
-    vlSelf->__Vm_traceActivity[6U] = 1U;
     vlSelf->__Vm_traceActivity[5U] = 1U;
     vlSelf->__Vm_traceActivity[4U] = 1U;
     vlSelf->__Vm_traceActivity[3U] = 1U;
@@ -104,22 +103,19 @@ VL_ATTR_COLD void Vtop___024root___dump_triggers__act(Vtop___024root* vlSelf) {
         VL_DBG_MSGF("         No triggers active\n");
     }
     if ((1ULL & vlSelf->__VactTriggered.word(0U))) {
-        VL_DBG_MSGF("         'act' region trigger index 0 is active: @(posedge clk or posedge top.reset)\n");
+        VL_DBG_MSGF("         'act' region trigger index 0 is active: @(posedge clk)\n");
     }
     if ((2ULL & vlSelf->__VactTriggered.word(0U))) {
-        VL_DBG_MSGF("         'act' region trigger index 1 is active: @(posedge clk)\n");
+        VL_DBG_MSGF("         'act' region trigger index 1 is active: @(posedge top.imul.result_en)\n");
     }
     if ((4ULL & vlSelf->__VactTriggered.word(0U))) {
-        VL_DBG_MSGF("         'act' region trigger index 2 is active: @(posedge top.imul.result_en)\n");
+        VL_DBG_MSGF("         'act' region trigger index 2 is active: @(negedge clk)\n");
     }
     if ((8ULL & vlSelf->__VactTriggered.word(0U))) {
-        VL_DBG_MSGF("         'act' region trigger index 3 is active: @(negedge clk)\n");
+        VL_DBG_MSGF("         'act' region trigger index 3 is active: @([true] __VdlySched.awaitingCurrentTime())\n");
     }
     if ((0x10ULL & vlSelf->__VactTriggered.word(0U))) {
-        VL_DBG_MSGF("         'act' region trigger index 4 is active: @([true] __VdlySched.awaitingCurrentTime())\n");
-    }
-    if ((0x20ULL & vlSelf->__VactTriggered.word(0U))) {
-        VL_DBG_MSGF("         'act' region trigger index 5 is active: @([changed] top.ostream_val)\n");
+        VL_DBG_MSGF("         'act' region trigger index 4 is active: @([changed] top.ostream_val)\n");
     }
 }
 #endif  // VL_DEBUG
@@ -134,22 +130,19 @@ VL_ATTR_COLD void Vtop___024root___dump_triggers__nba(Vtop___024root* vlSelf) {
         VL_DBG_MSGF("         No triggers active\n");
     }
     if ((1ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        VL_DBG_MSGF("         'nba' region trigger index 0 is active: @(posedge clk or posedge top.reset)\n");
+        VL_DBG_MSGF("         'nba' region trigger index 0 is active: @(posedge clk)\n");
     }
     if ((2ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        VL_DBG_MSGF("         'nba' region trigger index 1 is active: @(posedge clk)\n");
+        VL_DBG_MSGF("         'nba' region trigger index 1 is active: @(posedge top.imul.result_en)\n");
     }
     if ((4ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        VL_DBG_MSGF("         'nba' region trigger index 2 is active: @(posedge top.imul.result_en)\n");
+        VL_DBG_MSGF("         'nba' region trigger index 2 is active: @(negedge clk)\n");
     }
     if ((8ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        VL_DBG_MSGF("         'nba' region trigger index 3 is active: @(negedge clk)\n");
+        VL_DBG_MSGF("         'nba' region trigger index 3 is active: @([true] __VdlySched.awaitingCurrentTime())\n");
     }
     if ((0x10ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        VL_DBG_MSGF("         'nba' region trigger index 4 is active: @([true] __VdlySched.awaitingCurrentTime())\n");
-    }
-    if ((0x20ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        VL_DBG_MSGF("         'nba' region trigger index 5 is active: @([changed] top.ostream_val)\n");
+        VL_DBG_MSGF("         'nba' region trigger index 4 is active: @([changed] top.ostream_val)\n");
     }
 }
 #endif  // VL_DEBUG
@@ -217,8 +210,8 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state = VL_RAND_RESET_I(2);
     vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState = VL_RAND_RESET_I(2);
     vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__counter_en = VL_RAND_RESET_I(1);
-    vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear = VL_RAND_RESET_I(1);
+    vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count = VL_RAND_RESET_I(5);
     vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next = VL_RAND_RESET_I(5);
@@ -236,11 +229,10 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__level = VL_RAND_RESET_I(4);
     vlSelf->top__DOT__imul__DOT__vc_trace__DOT____Vtogcov__level = VL_RAND_RESET_I(4);
     vlSelf->__Vtrigprevexpr___TOP__clk__0 = VL_RAND_RESET_I(1);
-    vlSelf->__Vtrigprevexpr___TOP__top__DOT__reset__0 = VL_RAND_RESET_I(1);
     vlSelf->__Vtrigprevexpr___TOP__top__DOT__imul__DOT__result_en__0 = VL_RAND_RESET_I(1);
     vlSelf->__Vtrigprevexpr___TOP__top__DOT__ostream_val__0 = VL_RAND_RESET_I(1);
     vlSelf->__VactDidInit = 0;
-    for (int __Vi0 = 0; __Vi0 < 7; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 6; ++__Vi0) {
         vlSelf->__Vm_traceActivity[__Vi0] = 0;
     }
 }

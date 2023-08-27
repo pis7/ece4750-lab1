@@ -105,10 +105,10 @@ VL_INLINE_OPT void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datap
                     ? 0U : vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out);
 }
 
-VL_INLINE_OPT void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0(Vtop_vc_Mux2__P20* vlSelf) {
+VL_INLINE_OPT void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0(Vtop_vc_Mux2__P20* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0\n"); );
     // Body
     if (vlSymsp->TOP.top__DOT__imul__DOT__add_mux_sel) {
         if (vlSymsp->TOP.top__DOT__imul__DOT__add_mux_sel) {
@@ -123,10 +123,10 @@ VL_INLINE_OPT void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datap
     }
 }
 
-VL_INLINE_OPT void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__1(Vtop_vc_Mux2__P20* vlSelf) {
+VL_INLINE_OPT void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0(Vtop_vc_Mux2__P20* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__1\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0\n"); );
     // Body
     vlSelf->out = ((IData)(vlSymsp->TOP.top__DOT__imul__DOT__add_mux_sel)
                     ? ((IData)(vlSymsp->TOP.top__DOT__imul__DOT__add_mux_sel)

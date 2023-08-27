@@ -107,46 +107,46 @@ assign b = req_msg[31:0];
 
 // B logic ---------------------------------
 // B mux
-wire [31:0] b_mux_out;
+logic [31:0] b_mux_out;
 vc_Mux2 #(.p_nbits(32)) b_mux(.in0(r_shift_out), .in1(b), .sel(b_mux_sel), .out(b_mux_out));
 
 // B register
-wire [31:0] b_reg_out;
+logic [31:0] b_reg_out;
 vc_Reg #(.p_nbits(32)) b_reg(.clk(clk), .q(b_reg_out), .d(b_mux_out));
 assign b_lsb = b_reg_out;
 
 // B right shifter
-wire [31:0] r_shift_out;
+logic [31:0] r_shift_out;
 vc_RightLogicalShifter #(.p_nbits(32), .p_shamt_nbits(1))  b_r_shifter(.in(b_reg_out), .shamt(1), .out(r_shift_out));
 
 // A logic ---------------------------------
 // A mux
-wire [31:0] a_mux_out;
+logic [31:0] a_mux_out;
 vc_Mux2 #(.p_nbits(32)) a_mux(.in0(l_shift_out), .in1(a), .sel(a_mux_sel), .out(a_mux_out));
 
 // A register
-wire [31:0] a_reg_out;
+logic [31:0] a_reg_out;
 vc_Reg #(.p_nbits(32)) a_reg(.clk(clk), .q(a_reg_out), .d(a_mux_out));
 
 // A left shifter
-wire [31:0] l_shift_out;
+logic [31:0] l_shift_out;
 vc_LeftLogicalShifter #(.p_nbits(32), .p_shamt_nbits(1))  a_l_shifter(.in(a_reg_out), .shamt(1), .out(l_shift_out));
 
 // Result logic ----------------------------
 // Result mux
-wire [31:0] result_mux_out;
+logic [31:0] result_mux_out;
 vc_Mux2 #(.p_nbits(32)) result_mux(.in0(add_mux_out), .in1(0), .sel(result_mux_sel), .out(result_mux_out));
 
 // Result register
-wire [31:0] result_reg_out;
+logic [31:0] result_reg_out;
 vc_Reg #(.p_nbits(32)) result_reg(.clk(result_en), .q(result_reg_out), .d(result_mux_out));
 
 // Adder
-wire [31:0] adder_out;
+logic [31:0] adder_out;
 vc_SimpleAdder #(.p_nbits(32)) result_adder(.in0(a_reg_out), .in1(result_reg_out), .out(adder_out));
 
 // Adder mux
-wire [31:0] add_mux_out;
+logic [31:0] add_mux_out;
 vc_Mux2 #(.p_nbits(32)) adder_mux(.in0(adder_out), .in1(result_reg_out), .sel(add_mux_sel), .out(add_mux_out));
 
 assign resp_msg = result_reg_out;
@@ -158,7 +158,7 @@ module mul_base_control (
   input reset,
 
   // Datapath I/O
-  input logic [31:0] b_lsb,
+  input [31:0] b_lsb,
   output logic b_mux_sel,
   output logic a_mux_sel,
   output logic result_en,
@@ -172,76 +172,125 @@ module mul_base_control (
   output logic resp_val
 );
 
-localparam[1:0]  IDLE = 2'b00, CALC  =  2'b01, DONE = 2'b10;
-reg [1:0] state;
-reg [1:0] nextState;
+localparam[1:0]  IDLE = 2'b00, CALC = 2'b01, DONE = 2'b10;
+logic [1:0] state;
+logic [1:0] nextState;
 
-reg counter_en;
-reg count_clear;
-wire count_done;
-wire [4:0] count;
-wire count_is_zero;
+logic counter_en;
+logic count_clear;
+logic count_done;
+logic [4:0] count;
+logic count_is_zero;
 vc_BasicCounter #(.p_count_nbits(5), .p_count_clear_value(0), .p_count_max_value(31)) cycle_counter(.clk(clk), .reset(reset), .clear(count_clear), .increment(counter_en), .decrement(0), .count(count), .count_is_zero(count_is_zero), .count_is_max(count_done));
 
 // State register
-always_ff @(posedge clk, posedge reset) begin
+always_ff @(posedge clk) begin
+  // reset state to idle if reset signal high
   if (reset) state <= IDLE;
+
+  // clock in nextState to state on posedge clock
   else state <= nextState;
 end
 
-always @(*) begin
+// Next state logic
+always_comb begin
   case (state)
     IDLE: begin
-      if (req_val) nextState <= CALC;
+      // If input value ready then go to CALC state
+      if (req_val) nextState = CALC;
+      else nextState = IDLE;
     end
     CALC: begin
-      if (count_done) nextState <= DONE;
+      // If counter is done then go to DONE state
+      if (count_done) nextState = DONE;
+      else nextState = CALC;
     end
     DONE: begin
-      if (resp_rdy) nextState <= IDLE;
+      // If output device ready to receive value then go back to IDLE state
+      if (resp_rdy) nextState = IDLE;
+      else nextState = DONE;
     end
-    default: nextState <= IDLE;
+    default: nextState = IDLE;
   endcase
 end
 
-always @(*) begin
+// Output logic
+always_comb begin
   case(state)
     IDLE: begin
-      b_mux_sel <= 1;
-      a_mux_sel <= 1;
-      result_mux_sel <= 1;
-      result_en <= 0;
-      add_mux_sel <= 1;
-      count_clear <= 1;
-      counter_en <= 0;
+      // Do not shift a and b
+      b_mux_sel = 1;
+      a_mux_sel = 1;
+
+      // Set result to 0 and disable reg
+      result_mux_sel = 1;
+      result_en = 0;
+
+      // Do not add result of adder to result
+      add_mux_sel = 1;
+
+      // Clear counter to 0 and disable it
+      count_clear = 1;
+      counter_en = 0;
+
+      // Ready to receive input and not ready to output value
+      req_rdy = 1;
+      resp_val = 0;
     end
     CALC: begin
-      b_mux_sel <= 0;
-      a_mux_sel <= 0;
-      count_clear <= 0;
-      counter_en <= 1;
-      result_en <= clk;
-      result_mux_sel <= 0;
-      if (b_lsb[0] == 1) add_mux_sel <= 0;
-      else add_mux_sel <= 1;
+      // Shift a and b
+      b_mux_sel = 0;
+      a_mux_sel = 0;
+
+      // Do not clear counter and enable it
+      count_clear = 0;
+      counter_en = 1;
+
+      // Enable result register on clock and do not pass in 0 from mux
+      result_en = clk;
+      result_mux_sel = 0;
+
+      // Not ready to receive new input and output value not ready
+      req_rdy = 0;
+      resp_val = 0;
+
+      // If b_lsb is 1 - add result of adder to result
+      if (b_lsb[0] == 1) add_mux_sel = 0;
+
+      // If b_lsb == 0 - do not add anything to result
+      else add_mux_sel = 1;
     end
     DONE: begin
-      b_mux_sel <= 1;
-      a_mux_sel <= 1;
-      result_mux_sel <= 0;
-      result_en <= clk;
-      add_mux_sel <= 1;
-      count_clear <= 1;
-      counter_en <= 0;
+      // Do not shift a and b
+      b_mux_sel = 1;
+      a_mux_sel = 1;
+
+      // Keep result register output previous value before calculation done (not 0)
+      result_mux_sel = 0;
+      result_en = 0;
+
+      // keep result register updated with current result value
+      add_mux_sel = 1;
+
+      // Clear counter and disable it
+      count_clear = 1;
+      counter_en = 0;
+
+      // Not ready to receive new input and output value is ready
+      req_rdy = 0;
+      resp_val = 1;
     end
     default: begin
-      b_mux_sel <= 1;
-      a_mux_sel <= 1;
-      result_mux_sel <= 1;
-      result_en <= 0;
-      add_mux_sel <= 1;
-      count_clear <= 1;
-      counter_en <= 0;
+      // Same as IDLE state
+      b_mux_sel = 1;
+      a_mux_sel = 1;
+      result_mux_sel = 1;
+      result_en = 0;
+      add_mux_sel = 1;
+      count_clear = 1;
+      counter_en = 0;
+      req_rdy = 1;
+      resp_val = 0;
     end
   endcase
 end

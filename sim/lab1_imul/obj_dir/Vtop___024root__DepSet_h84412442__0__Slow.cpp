@@ -73,17 +73,16 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
         if (vlSelf->top__DOT__istream_val) {
             vlSymsp->__Vcoverage[493].fetch_add(1, std::memory_order_relaxed);
             vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 1U;
-        }
-    } else if ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))) {
-            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 2U;
-        }
-    } else if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if (vlSelf->top__DOT__ostream_rdy) {
+        } else {
             vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
         }
     } else {
-        vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
+        vlSelf->top__DOT__imul__DOT__control__DOT__nextState 
+            = ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
+                ? ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))
+                    ? 2U : 1U) : ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
+                                   ? ((IData)(vlSelf->top__DOT__ostream_rdy)
+                                       ? 0U : 2U) : 0U));
     }
     if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
         if ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
@@ -95,11 +94,11 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
             if ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))) {
                 vlSymsp->__Vcoverage[496].fetch_add(1, std::memory_order_relaxed);
             }
-            if ((1U & (~ vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q))) {
-                vlSymsp->__Vcoverage[506].fetch_add(1, std::memory_order_relaxed);
-            }
             if ((1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q)) {
                 vlSymsp->__Vcoverage[505].fetch_add(1, std::memory_order_relaxed);
+            }
+            if ((1U & (~ vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q))) {
+                vlSymsp->__Vcoverage[506].fetch_add(1, std::memory_order_relaxed);
             }
         }
         if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
@@ -135,17 +134,9 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
         vlSymsp->__Vcoverage[3].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__istream_val = vlSelf->top__DOT__istream_val;
     }
-    if (((IData)(vlSelf->top__DOT__istream_rdy) ^ (IData)(vlSelf->top__DOT____Vtogcov__istream_rdy))) {
-        vlSymsp->__Vcoverage[4].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__istream_rdy = vlSelf->top__DOT__istream_rdy;
-    }
     if (((IData)(vlSelf->top__DOT__ostream_rdy) ^ (IData)(vlSelf->top__DOT____Vtogcov__ostream_rdy))) {
         vlSymsp->__Vcoverage[69].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__ostream_rdy = vlSelf->top__DOT__ostream_rdy;
-    }
-    if (((IData)(vlSelf->top__DOT__ostream_val) ^ (IData)(vlSelf->top__DOT____Vtogcov__ostream_val))) {
-        vlSymsp->__Vcoverage[70].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_val = vlSelf->top__DOT__ostream_val;
     }
     if (((IData)(vlSelf->top__DOT__istream_val_f) ^ (IData)(vlSelf->top__DOT____Vtogcov__istream_val_f))) {
         vlSymsp->__Vcoverage[103].fetch_add(1, std::memory_order_relaxed);
@@ -159,7 +150,7 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     if (((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done))) {
-        vlSymsp->__Vcoverage[482].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[483].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done 
             = (0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count));
     }
@@ -183,6 +174,12 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
             = ((1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
     }
+    vlSelf->top__DOT__ostream_val = ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                     & ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                        & (2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))));
+    vlSelf->top__DOT__istream_rdy = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                     | ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                        & (2U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))));
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__vc_trace__DOT__level) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__vc_trace__DOT____Vtogcov__level)))) {
         vlSymsp->__Vcoverage[521].fetch_add(1, std::memory_order_relaxed);
@@ -1945,10 +1942,10 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
                                                        != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
                                                       & (2U 
                                                          != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))));
-    vlSelf->top__DOT__imul__DOT__a_mux_sel = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+    vlSelf->top__DOT__imul__DOT__b_mux_sel = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
                                               | (1U 
                                                  != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
-    vlSelf->top__DOT__imul__DOT__b_mux_sel = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+    vlSelf->top__DOT__imul__DOT__a_mux_sel = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
                                               | (1U 
                                                  != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
     vlSelf->top__DOT__imul__DOT__add_mux_sel = (1U 
@@ -1962,6 +1959,14 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
            + vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
     vlSelf->top__DOT__istream_msg = (((QData)((IData)(vlSelf->top__DOT__istream_msg_a)) 
                                       << 0x20U) | (QData)((IData)(vlSelf->top__DOT__istream_msg_b)));
+    if (((IData)(vlSelf->top__DOT__ostream_val) ^ (IData)(vlSelf->top__DOT____Vtogcov__ostream_val))) {
+        vlSymsp->__Vcoverage[70].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_val = vlSelf->top__DOT__ostream_val;
+    }
+    if (((IData)(vlSelf->top__DOT__istream_rdy) ^ (IData)(vlSelf->top__DOT____Vtogcov__istream_rdy))) {
+        vlSymsp->__Vcoverage[4].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__istream_rdy = vlSelf->top__DOT__istream_rdy;
+    }
     if (((IData)(vlSelf->top__DOT__imul__DOT__result_en) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__result_en))) {
         vlSymsp->__Vcoverage[186].fetch_add(1, std::memory_order_relaxed);
@@ -1984,7 +1989,7 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     if (((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear))) {
-        vlSymsp->__Vcoverage[483].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[482].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear 
             = vlSelf->top__DOT__imul__DOT__control__DOT__count_clear;
     }
@@ -2003,17 +2008,17 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
         vlSelf->top__DOT__imul__DOT____Vtogcov__result_mux_sel 
             = vlSelf->top__DOT__imul__DOT__result_mux_sel;
     }
-    if (((IData)(vlSelf->top__DOT__imul__DOT__a_mux_sel) 
-         ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__a_mux_sel))) {
-        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__a_mux_sel 
-            = vlSelf->top__DOT__imul__DOT__a_mux_sel;
-    }
     if (((IData)(vlSelf->top__DOT__imul__DOT__b_mux_sel) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__b_mux_sel))) {
         vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__b_mux_sel 
             = vlSelf->top__DOT__imul__DOT__b_mux_sel;
+    }
+    if (((IData)(vlSelf->top__DOT__imul__DOT__a_mux_sel) 
+         ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__a_mux_sel))) {
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__a_mux_sel 
+            = vlSelf->top__DOT__imul__DOT__a_mux_sel;
     }
     if (((IData)(vlSelf->top__DOT__imul__DOT__add_mux_sel) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__add_mux_sel))) {
@@ -2934,231 +2939,6 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__1(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___stl_sequent__TOP__1\n"); );
     // Body
-    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[284].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[285].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[286].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[287].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[288].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[289].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[290].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[291].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[292].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[293].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[294].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[295].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[296].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[297].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[298].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[299].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[300].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[301].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[302].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[303].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[304].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[305].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[306].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[307].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[308].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[309].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[310].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[311].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[312].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[313].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
-        vlSymsp->__Vcoverage[314].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
-    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
-          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-         >> 0x1fU)) {
-        vlSymsp->__Vcoverage[315].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
-            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
-               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
-    }
     if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux.out 
                ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__b_mux_out))) {
         vlSymsp->__Vcoverage[220].fetch_add(1, std::memory_order_relaxed);
@@ -3383,6 +3163,231 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__1(Vtop___024root* vlSelf) {
         vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__b_mux_out 
             = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__b_mux_out) 
                | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux.out));
+    }
+    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[284].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[285].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[286].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[287].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[288].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[289].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[290].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[291].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[292].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[293].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[294].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[295].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[296].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[297].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[298].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[299].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[300].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[301].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[302].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[303].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[304].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[305].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[306].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[307].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[308].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[309].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[310].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[311].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[312].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[313].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out))) {
+        vlSymsp->__Vcoverage[314].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
+    }
+    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out 
+          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+         >> 0x1fU)) {
+        vlSymsp->__Vcoverage[315].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out 
+            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out) 
+               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out));
     }
     if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
                ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
@@ -3612,11 +3617,11 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__1(Vtop___024root* vlSelf) {
 }
 
 void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0(Vtop_vc_Mux2__P20* vlSelf);
-VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0(Vtop_vc_Mux2__P20* vlSelf);
 VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0(Vtop_vc_Mux2__P20* vlSelf);
+VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0(Vtop_vc_Mux2__P20* vlSelf);
 VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0(Vtop_vc_Mux2__P20* vlSelf);
 void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0(Vtop_vc_Mux2__P20* vlSelf);
-void Vtop___024root___nba_comb__TOP__7(Vtop___024root* vlSelf);
+void Vtop___024root___nba_comb__TOP__5(Vtop___024root* vlSelf);
 
 VL_ATTR_COLD void Vtop___024root___eval_stl(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
@@ -3625,7 +3630,6 @@ VL_ATTR_COLD void Vtop___024root___eval_stl(Vtop___024root* vlSelf) {
     // Body
     if ((1ULL & vlSelf->__VstlTriggered.word(0U))) {
         Vtop___024root___stl_sequent__TOP__0(vlSelf);
-        vlSelf->__Vm_traceActivity[6U] = 1U;
         vlSelf->__Vm_traceActivity[5U] = 1U;
         vlSelf->__Vm_traceActivity[4U] = 1U;
         vlSelf->__Vm_traceActivity[3U] = 1U;
@@ -3633,12 +3637,12 @@ VL_ATTR_COLD void Vtop___024root___eval_stl(Vtop___024root* vlSelf) {
         vlSelf->__Vm_traceActivity[1U] = 1U;
         vlSelf->__Vm_traceActivity[0U] = 1U;
         Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux));
-        Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux));
         Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux));
+        Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux));
         Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux));
         Vtop___024root___stl_sequent__TOP__1(vlSelf);
         Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux));
-        Vtop___024root___nba_comb__TOP__7(vlSelf);
+        Vtop___024root___nba_comb__TOP__5(vlSelf);
     }
 }
 
@@ -4168,326 +4172,326 @@ VL_ATTR_COLD void Vtop___024root___configure_coverage(Vtop___024root* vlSelf, bo
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[34]), first, "IntMulBase.v", 103, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b[29]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[35]), first, "IntMulBase.v", 103, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b[30]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[36]), first, "IntMulBase.v", 103, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[220]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[221]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[222]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[223]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[224]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[225]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[226]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[227]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[228]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[229]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[230]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[231]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[232]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[233]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[234]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[235]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[236]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[237]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[238]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[239]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[240]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[241]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[242]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[243]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[244]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[245]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[246]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[247]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[248]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[249]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[250]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[251]), first, "IntMulBase.v", 110, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[188]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[189]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[190]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[191]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[192]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[193]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[194]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[195]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[196]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[197]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[198]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[199]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[200]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[201]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[202]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[203]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[204]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[205]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[206]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[207]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[208]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[209]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[210]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[211]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[212]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[213]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[214]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[215]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[216]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[217]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[218]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[219]), first, "IntMulBase.v", 114, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[252]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[253]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[254]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[255]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[256]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[257]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[258]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[259]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[260]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[261]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[262]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[263]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[264]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[265]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[266]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[267]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[268]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[269]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[270]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[271]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[272]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[273]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[274]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[275]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[276]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[277]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[278]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[279]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[280]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[281]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[282]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[283]), first, "IntMulBase.v", 119, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[284]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[285]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[286]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[287]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[288]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[289]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[290]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[291]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[292]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[293]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[294]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[295]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[296]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[297]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[298]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[299]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[300]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[301]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[302]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[303]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[304]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[305]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[306]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[307]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[308]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[309]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[310]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[311]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[312]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[313]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[314]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[315]), first, "IntMulBase.v", 124, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[316]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[317]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[318]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[319]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[320]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[321]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[322]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[323]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[324]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[325]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[326]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[327]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[328]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[329]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[330]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[331]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[332]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[333]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[334]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[335]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[336]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[337]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[338]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[339]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[340]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[341]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[342]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[343]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[344]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[345]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[346]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[347]), first, "IntMulBase.v", 128, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[348]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[349]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[350]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[351]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[352]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[353]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[354]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[355]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[356]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[357]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[358]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[359]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[360]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[361]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[362]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[363]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[364]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[365]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[366]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[367]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[368]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[369]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[370]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[371]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[372]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[373]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[374]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[375]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[376]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[377]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[378]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[379]), first, "IntMulBase.v", 132, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[380]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[381]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[382]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[383]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[384]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[385]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[386]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[387]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[388]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[389]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[390]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[391]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[392]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[393]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[394]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[395]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[396]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[397]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[398]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[399]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[400]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[401]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[402]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[403]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[404]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[405]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[406]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[407]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[408]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[409]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[410]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[411]), first, "IntMulBase.v", 137, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[71]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[72]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[73]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[74]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[75]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[76]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[77]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[78]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[79]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[80]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[81]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[82]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[83]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[84]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[85]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[86]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[87]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[88]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[89]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[90]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[91]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[92]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[93]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[94]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[95]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[96]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[97]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[98]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[99]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[100]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[101]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[102]), first, "IntMulBase.v", 141, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[412]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[413]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[414]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[415]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[416]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[417]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[418]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[419]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[420]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[421]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[422]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[423]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[424]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[425]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[426]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[427]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[428]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[429]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[430]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[431]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[432]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[433]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[434]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[435]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[436]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[437]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[438]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[439]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[440]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[441]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[442]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[443]), first, "IntMulBase.v", 145, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[444]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[445]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[446]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[447]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[448]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[449]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[450]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[451]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[452]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[453]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[454]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[455]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[456]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[457]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[458]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[459]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[460]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[461]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[462]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[463]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[464]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[465]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[466]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[467]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[468]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[469]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[470]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[471]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[472]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[473]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[474]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[475]), first, "IntMulBase.v", 149, 13, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[220]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[221]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[222]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[223]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[224]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[225]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[226]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[227]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[228]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[229]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[230]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[231]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[232]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[233]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[234]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[235]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[236]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[237]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[238]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[239]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[240]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[241]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[242]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[243]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[244]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[245]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[246]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[247]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[248]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[249]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[250]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[251]), first, "IntMulBase.v", 110, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_mux_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[188]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[189]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[190]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[191]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[192]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[193]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[194]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[195]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[196]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[197]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[198]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[199]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[200]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[201]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[202]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[203]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[204]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[205]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[206]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[207]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[208]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[209]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[210]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[211]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[212]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[213]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[214]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[215]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[216]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[217]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[218]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[219]), first, "IntMulBase.v", 114, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "b_reg_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[252]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[253]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[254]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[255]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[256]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[257]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[258]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[259]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[260]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[261]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[262]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[263]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[264]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[265]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[266]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[267]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[268]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[269]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[270]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[271]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[272]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[273]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[274]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[275]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[276]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[277]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[278]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[279]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[280]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[281]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[282]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[283]), first, "IntMulBase.v", 119, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "r_shift_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[284]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[285]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[286]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[287]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[288]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[289]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[290]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[291]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[292]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[293]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[294]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[295]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[296]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[297]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[298]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[299]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[300]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[301]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[302]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[303]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[304]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[305]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[306]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[307]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[308]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[309]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[310]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[311]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[312]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[313]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[314]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[315]), first, "IntMulBase.v", 124, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_mux_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[316]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[317]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[318]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[319]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[320]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[321]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[322]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[323]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[324]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[325]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[326]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[327]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[328]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[329]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[330]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[331]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[332]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[333]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[334]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[335]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[336]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[337]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[338]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[339]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[340]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[341]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[342]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[343]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[344]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[345]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[346]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[347]), first, "IntMulBase.v", 128, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "a_reg_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[348]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[349]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[350]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[351]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[352]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[353]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[354]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[355]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[356]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[357]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[358]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[359]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[360]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[361]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[362]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[363]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[364]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[365]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[366]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[367]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[368]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[369]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[370]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[371]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[372]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[373]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[374]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[375]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[376]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[377]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[378]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[379]), first, "IntMulBase.v", 132, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "l_shift_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[380]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[381]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[382]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[383]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[384]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[385]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[386]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[387]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[388]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[389]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[390]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[391]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[392]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[393]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[394]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[395]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[396]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[397]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[398]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[399]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[400]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[401]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[402]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[403]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[404]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[405]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[406]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[407]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[408]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[409]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[410]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[411]), first, "IntMulBase.v", 137, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_mux_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[71]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[72]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[73]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[74]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[75]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[76]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[77]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[78]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[79]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[80]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[81]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[82]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[83]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[84]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[85]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[86]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[87]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[88]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[89]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[90]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[91]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[92]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[93]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[94]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[95]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[96]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[97]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[98]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[99]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[100]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[101]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[102]), first, "IntMulBase.v", 141, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "result_reg_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[412]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[413]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[414]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[415]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[416]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[417]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[418]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[419]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[420]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[421]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[422]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[423]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[424]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[425]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[426]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[427]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[428]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[429]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[430]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[431]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[432]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[433]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[434]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[435]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[436]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[437]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[438]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[439]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[440]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[441]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[442]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[443]), first, "IntMulBase.v", 145, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "adder_out[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[444]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[445]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[446]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[447]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[448]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[449]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[450]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[451]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[452]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[453]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[454]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[455]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[456]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[457]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[458]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[459]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[460]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[461]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[462]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[463]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[464]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[465]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[466]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[467]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[468]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[469]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[470]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[471]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[472]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[473]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[474]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[475]), first, "IntMulBase.v", 149, 14, ".top.imul.datapath", "v_toggle/mul_base_datapath", "add_mux_out[31]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[188]), first, "../vc/arithmetic.v", 206, 36, ".top.imul.datapath.b_r_shifter", "v_toggle/vc_RightLogicalShifter__P20", "in[0]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[189]), first, "../vc/arithmetic.v", 206, 36, ".top.imul.datapath.b_r_shifter", "v_toggle/vc_RightLogicalShifter__P20", "in[1]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[190]), first, "../vc/arithmetic.v", 206, 36, ".top.imul.datapath.b_r_shifter", "v_toggle/vc_RightLogicalShifter__P20", "in[2]", "");
@@ -4716,38 +4720,38 @@ VL_ATTR_COLD void Vtop___024root___configure_coverage(Vtop___024root* vlSelf, bo
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[443]), first, "../vc/arithmetic.v", 36, 30, ".top.imul.datapath.result_adder", "v_toggle/vc_SimpleAdder__P20", "out[31]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[0]), first, "IntMulBase.v", 157, 9, ".top.imul.control", "v_toggle/mul_base_control", "clk", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2]), first, "IntMulBase.v", 158, 9, ".top.imul.control", "v_toggle/mul_base_control", "reset", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[188]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[189]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[190]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[191]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[192]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[193]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[194]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[195]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[196]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[197]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[198]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[199]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[200]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[201]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[202]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[203]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[204]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[205]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[206]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[207]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[208]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[209]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[210]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[211]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[212]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[213]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[214]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[215]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[216]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[217]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[218]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[219]), first, "IntMulBase.v", 161, 22, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[188]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[189]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[190]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[191]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[192]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[193]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[194]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[195]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[196]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[197]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[198]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[199]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[200]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[201]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[202]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[203]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[204]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[205]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[206]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[207]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[208]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[209]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[210]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[211]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[212]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[213]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[214]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[215]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[216]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[217]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[218]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[219]), first, "IntMulBase.v", 161, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_lsb[31]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[183]), first, "IntMulBase.v", 162, 16, ".top.imul.control", "v_toggle/mul_base_control", "b_mux_sel", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[184]), first, "IntMulBase.v", 163, 16, ".top.imul.control", "v_toggle/mul_base_control", "a_mux_sel", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[186]), first, "IntMulBase.v", 164, 16, ".top.imul.control", "v_toggle/mul_base_control", "result_en", "");
@@ -4757,43 +4761,43 @@ VL_ATTR_COLD void Vtop___024root___configure_coverage(Vtop___024root* vlSelf, bo
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[4]), first, "IntMulBase.v", 170, 16, ".top.imul.control", "v_toggle/mul_base_control", "req_rdy", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[69]), first, "IntMulBase.v", 171, 15, ".top.imul.control", "v_toggle/mul_base_control", "resp_rdy", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[70]), first, "IntMulBase.v", 172, 16, ".top.imul.control", "v_toggle/mul_base_control", "resp_val", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[477]), first, "IntMulBase.v", 176, 11, ".top.imul.control", "v_toggle/mul_base_control", "state[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[478]), first, "IntMulBase.v", 176, 11, ".top.imul.control", "v_toggle/mul_base_control", "state[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[479]), first, "IntMulBase.v", 177, 11, ".top.imul.control", "v_toggle/mul_base_control", "nextState[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[480]), first, "IntMulBase.v", 177, 11, ".top.imul.control", "v_toggle/mul_base_control", "nextState[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[481]), first, "IntMulBase.v", 179, 5, ".top.imul.control", "v_toggle/mul_base_control", "counter_en", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[482]), first, "IntMulBase.v", 180, 5, ".top.imul.control", "v_toggle/mul_base_control", "count_done", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[483]), first, "IntMulBase.v", 181, 5, ".top.imul.control", "v_toggle/mul_base_control", "count_clear", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[484]), first, "IntMulBase.v", 182, 11, ".top.imul.control", "v_toggle/mul_base_control", "count[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[485]), first, "IntMulBase.v", 182, 11, ".top.imul.control", "v_toggle/mul_base_control", "count[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[486]), first, "IntMulBase.v", 182, 11, ".top.imul.control", "v_toggle/mul_base_control", "count[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[487]), first, "IntMulBase.v", 182, 11, ".top.imul.control", "v_toggle/mul_base_control", "count[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[488]), first, "IntMulBase.v", 182, 11, ".top.imul.control", "v_toggle/mul_base_control", "count[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[489]), first, "IntMulBase.v", 183, 5, ".top.imul.control", "v_toggle/mul_base_control", "count_is_zero", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[490]), first, "IntMulBase.v", 188, 3, ".top.imul.control", "v_branch/mul_base_control", "if", "188");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[491]), first, "IntMulBase.v", 188, 4, ".top.imul.control", "v_branch/mul_base_control", "else", "189");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[477]), first, "IntMulBase.v", 176, 13, ".top.imul.control", "v_toggle/mul_base_control", "state[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[478]), first, "IntMulBase.v", 176, 13, ".top.imul.control", "v_toggle/mul_base_control", "state[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[479]), first, "IntMulBase.v", 177, 13, ".top.imul.control", "v_toggle/mul_base_control", "nextState[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[480]), first, "IntMulBase.v", 177, 13, ".top.imul.control", "v_toggle/mul_base_control", "nextState[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[481]), first, "IntMulBase.v", 179, 7, ".top.imul.control", "v_toggle/mul_base_control", "counter_en", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[482]), first, "IntMulBase.v", 180, 7, ".top.imul.control", "v_toggle/mul_base_control", "count_clear", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[483]), first, "IntMulBase.v", 181, 7, ".top.imul.control", "v_toggle/mul_base_control", "count_done", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[484]), first, "IntMulBase.v", 182, 13, ".top.imul.control", "v_toggle/mul_base_control", "count[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[485]), first, "IntMulBase.v", 182, 13, ".top.imul.control", "v_toggle/mul_base_control", "count[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[486]), first, "IntMulBase.v", 182, 13, ".top.imul.control", "v_toggle/mul_base_control", "count[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[487]), first, "IntMulBase.v", 182, 13, ".top.imul.control", "v_toggle/mul_base_control", "count[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[488]), first, "IntMulBase.v", 182, 13, ".top.imul.control", "v_toggle/mul_base_control", "count[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[489]), first, "IntMulBase.v", 183, 7, ".top.imul.control", "v_toggle/mul_base_control", "count_is_zero", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[490]), first, "IntMulBase.v", 189, 3, ".top.imul.control", "v_branch/mul_base_control", "if", "189");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[491]), first, "IntMulBase.v", 189, 4, ".top.imul.control", "v_branch/mul_base_control", "else", "192");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[492]), first, "IntMulBase.v", 187, 1, ".top.imul.control", "v_line/mul_base_control", "block", "187");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[493]), first, "IntMulBase.v", 195, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "195");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[494]), first, "IntMulBase.v", 195, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[495]), first, "IntMulBase.v", 194, 9, ".top.imul.control", "v_line/mul_base_control", "case", "194");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[496]), first, "IntMulBase.v", 198, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "198");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[497]), first, "IntMulBase.v", 198, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[498]), first, "IntMulBase.v", 197, 9, ".top.imul.control", "v_line/mul_base_control", "case", "197");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[499]), first, "IntMulBase.v", 201, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "201");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[500]), first, "IntMulBase.v", 201, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[501]), first, "IntMulBase.v", 200, 9, ".top.imul.control", "v_line/mul_base_control", "case", "200");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[502]), first, "IntMulBase.v", 203, 5, ".top.imul.control", "v_line/mul_base_control", "case", "203");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[503]), first, "IntMulBase.v", 192, 1, ".top.imul.control", "v_line/mul_base_control", "block", "192-193");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[504]), first, "IntMulBase.v", 211, 9, ".top.imul.control", "v_line/mul_base_control", "case", "211-218");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[505]), first, "IntMulBase.v", 227, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "227");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[506]), first, "IntMulBase.v", 227, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "228");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[507]), first, "IntMulBase.v", 220, 9, ".top.imul.control", "v_line/mul_base_control", "case", "220-226");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[508]), first, "IntMulBase.v", 230, 9, ".top.imul.control", "v_line/mul_base_control", "case", "230-237");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[509]), first, "IntMulBase.v", 239, 5, ".top.imul.control", "v_line/mul_base_control", "case", "239-246");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[510]), first, "IntMulBase.v", 209, 1, ".top.imul.control", "v_line/mul_base_control", "block", "209-210");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[493]), first, "IntMulBase.v", 200, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "200");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[494]), first, "IntMulBase.v", 200, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "201");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[495]), first, "IntMulBase.v", 198, 9, ".top.imul.control", "v_line/mul_base_control", "case", "198");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[496]), first, "IntMulBase.v", 205, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "205");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[497]), first, "IntMulBase.v", 205, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "206");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[498]), first, "IntMulBase.v", 203, 9, ".top.imul.control", "v_line/mul_base_control", "case", "203");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[499]), first, "IntMulBase.v", 210, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "210");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[500]), first, "IntMulBase.v", 210, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "211");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[501]), first, "IntMulBase.v", 208, 9, ".top.imul.control", "v_line/mul_base_control", "case", "208");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[502]), first, "IntMulBase.v", 213, 5, ".top.imul.control", "v_line/mul_base_control", "case", "213");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[503]), first, "IntMulBase.v", 196, 1, ".top.imul.control", "v_line/mul_base_control", "block", "196-197");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[504]), first, "IntMulBase.v", 220, 9, ".top.imul.control", "v_line/mul_base_control", "case", "220,222-223,226-227,230,233-234,237-238");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[505]), first, "IntMulBase.v", 258, 7, ".top.imul.control", "v_branch/mul_base_control", "if", "258");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[506]), first, "IntMulBase.v", 258, 8, ".top.imul.control", "v_branch/mul_base_control", "else", "261");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[507]), first, "IntMulBase.v", 240, 9, ".top.imul.control", "v_line/mul_base_control", "case", "240,242-243,246-247,250-251,254-255");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[508]), first, "IntMulBase.v", 263, 9, ".top.imul.control", "v_line/mul_base_control", "case", "263,265-266,269-270,273,276-277,280-281");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[509]), first, "IntMulBase.v", 283, 5, ".top.imul.control", "v_line/mul_base_control", "case", "283,285-293");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[510]), first, "IntMulBase.v", 218, 1, ".top.imul.control", "v_line/mul_base_control", "block", "218-219");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[0]), first, "../vc/counters.v", 16, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "clk", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2]), first, "../vc/counters.v", 17, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "reset", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[483]), first, "../vc/counters.v", 21, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "clear", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[482]), first, "../vc/counters.v", 21, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "clear", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[481]), first, "../vc/counters.v", 22, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "increment", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[511]), first, "../vc/counters.v", 23, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "decrement", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[484]), first, "../vc/counters.v", 27, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count[0]", "");
@@ -4802,7 +4806,7 @@ VL_ATTR_COLD void Vtop___024root___configure_coverage(Vtop___024root* vlSelf, bo
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[487]), first, "../vc/counters.v", 27, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count[3]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[488]), first, "../vc/counters.v", 27, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count[4]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[489]), first, "../vc/counters.v", 28, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count_is_zero", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[482]), first, "../vc/counters.v", 29, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count_is_max", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[483]), first, "../vc/counters.v", 29, 36, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count_is_max", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[512]), first, "../vc/counters.v", 37, 29, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count_next[0]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[513]), first, "../vc/counters.v", 37, 29, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count_next[1]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[514]), first, "../vc/counters.v", 37, 29, ".top.imul.control.cycle_counter", "v_toggle/vc_BasicCounter__P5_PC1f", "count_next[2]", "");
