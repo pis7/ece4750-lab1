@@ -142,7 +142,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1);
-                    vlSymsp->__Vcoverage[545].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[546].fetch_add(1, std::memory_order_relaxed);
                 }
                 if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy) 
                                  & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val)))) {
@@ -169,7 +169,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -232,15 +232,15 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[550].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[551].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy) 
                                         & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val))))) {
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__4__num 
@@ -256,14 +256,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[549].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[550].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy)) 
                                         & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val)))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__5__str,0x00000023);
@@ -289,7 +289,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -352,14 +352,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__6__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -374,14 +374,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[548].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[549].fetch_add(1, std::memory_order_relaxed);
                 } else if ((1U & ((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy)) 
                                   & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val))))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__7__str,0x0000002e);
@@ -407,7 +407,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -470,14 +470,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__8__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -492,14 +492,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[546].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[547].fetch_add(1, std::memory_order_relaxed);
                 } else {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__9__str,0x00000078);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
@@ -524,7 +524,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -587,14 +587,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__10__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -609,16 +609,16 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[547].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[548].fetch_add(1, std::memory_order_relaxed);
                 }
-                vlSymsp->__Vcoverage[551].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[552].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__11__str,0x00000028);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -642,7 +642,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -703,14 +703,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__12__str,0x00000029);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -734,7 +734,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -795,14 +795,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                 VL_SFORMAT_X(4096,vlSelf->top__DOT__imul__DOT__str
                              ,"%x",32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
                 VL_ASSIGN_W(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__str, vlSelf->top__DOT__imul__DOT__str);
@@ -832,7 +832,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1);
-                    vlSymsp->__Vcoverage[545].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[546].fetch_add(1, std::memory_order_relaxed);
                 }
                 if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy) 
                                  & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val)))) {
@@ -859,7 +859,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -922,15 +922,15 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[550].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[551].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy) 
                                         & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val))))) {
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__15__num 
@@ -946,14 +946,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[549].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[550].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy)) 
                                         & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val)))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__16__str,0x00000023);
@@ -979,7 +979,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1042,14 +1042,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__17__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1064,14 +1064,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[548].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[549].fetch_add(1, std::memory_order_relaxed);
                 } else if ((1U & ((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy)) 
                                   & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val))))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__18__str,0x0000002e);
@@ -1097,7 +1097,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1160,14 +1160,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__19__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1182,14 +1182,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[546].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[547].fetch_add(1, std::memory_order_relaxed);
                 } else {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__20__str,0x00000078);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
@@ -1214,7 +1214,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1277,14 +1277,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[536].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__21__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1299,16 +1299,16 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[547].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[548].fetch_add(1, std::memory_order_relaxed);
                 }
-                vlSymsp->__Vcoverage[551].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[552].fetch_add(1, std::memory_order_relaxed);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
                 vlSelf->top__DOT__imul__DOT__idx0 = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
@@ -2130,6 +2130,36 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___act_comb__TOP__0\n"); );
     // Body
+    if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+        if ((1U & (~ (IData)(vlSelf->top__DOT__istream_val)))) {
+            vlSymsp->__Vcoverage[500].fetch_add(1, std::memory_order_relaxed);
+        }
+        if (vlSelf->top__DOT__istream_val) {
+            vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
+            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 1U;
+        } else {
+            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
+        }
+    } else {
+        vlSelf->top__DOT__imul__DOT__control__DOT__nextState 
+            = ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
+                ? ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))
+                    ? 2U : 1U) : ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
+                                   ? ((IData)(vlSelf->top__DOT__ostream_rdy)
+                                       ? 0U : 2U) : 0U));
+    }
+    if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+        if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+            if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+                if (vlSelf->top__DOT__ostream_rdy) {
+                    vlSymsp->__Vcoverage[505].fetch_add(1, std::memory_order_relaxed);
+                }
+                if ((1U & (~ (IData)(vlSelf->top__DOT__ostream_rdy)))) {
+                    vlSymsp->__Vcoverage[506].fetch_add(1, std::memory_order_relaxed);
+                }
+            }
+        }
+    }
     if (((IData)(vlSelf->top__DOT__reset) ^ (IData)(vlSelf->top__DOT____Vtogcov__reset))) {
         vlSymsp->__Vcoverage[2].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__reset = vlSelf->top__DOT__reset;
@@ -2141,41 +2171,6 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     if (((IData)(vlSelf->top__DOT__ostream_rdy) ^ (IData)(vlSelf->top__DOT____Vtogcov__ostream_rdy))) {
         vlSymsp->__Vcoverage[69].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__ostream_rdy = vlSelf->top__DOT__ostream_rdy;
-    }
-    if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((1U & (~ ((IData)(vlSelf->top__DOT__istream_val) 
-                      & (IData)(vlSelf->top__DOT__ostream_rdy))))) {
-            vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
-        }
-        if (((IData)(vlSelf->top__DOT__istream_val) 
-             & (IData)(vlSelf->top__DOT__ostream_rdy))) {
-            vlSymsp->__Vcoverage[498].fetch_add(1, std::memory_order_relaxed);
-            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 1U;
-        } else {
-            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
-        }
-    } else {
-        vlSelf->top__DOT__imul__DOT__control__DOT__nextState 
-            = ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                ? ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))
-                    ? 2U : 1U) : ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                                   ? (((IData)(vlSelf->top__DOT__ostream_rdy) 
-                                       & (IData)(vlSelf->top__DOT__istream_val))
-                                       ? 0U : 2U) : 0U));
-    }
-    if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-            if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-                if (((IData)(vlSelf->top__DOT__ostream_rdy) 
-                     & (IData)(vlSelf->top__DOT__istream_val))) {
-                    vlSymsp->__Vcoverage[504].fetch_add(1, std::memory_order_relaxed);
-                }
-                if ((1U & (~ ((IData)(vlSelf->top__DOT__ostream_rdy) 
-                              & (IData)(vlSelf->top__DOT__istream_val))))) {
-                    vlSymsp->__Vcoverage[505].fetch_add(1, std::memory_order_relaxed);
-                }
-            }
-        }
     }
     if ((1U & (vlSelf->top__DOT__istream_msg_a ^ vlSelf->top__DOT____Vtogcov__istream_msg_a))) {
         vlSymsp->__Vcoverage[105].fetch_add(1, std::memory_order_relaxed);
@@ -3744,11 +3739,11 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
     vlSymsp->__Vcoverage[476].fetch_add(1, std::memory_order_relaxed);
     vlSymsp->__Vcoverage[478].fetch_add(1, std::memory_order_relaxed);
     vlSymsp->__Vcoverage[481].fetch_add(1, std::memory_order_relaxed);
-    vlSymsp->__Vcoverage[497].fetch_add(1, std::memory_order_relaxed);
-    vlSymsp->__Vcoverage[524].fetch_add(1, std::memory_order_relaxed);
-    vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[498].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[525].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
     if (vlSelf->top__DOT__reset) {
-        vlSymsp->__Vcoverage[495].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[496].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__cycles = 0U;
         vlSelf->top__DOT__imul__DOT__control__DOT__count = 0U;
         vlSelf->top__DOT__imul__DOT__control__DOT__state = 0U;
@@ -3761,7 +3756,7 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
             = vlSelf->top__DOT__imul__DOT__control__DOT__nextState;
     }
     if ((1U & (~ (IData)(vlSelf->top__DOT__reset)))) {
-        vlSymsp->__Vcoverage[496].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[497].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSelf->top__DOT__imul__DOT__result_en) {
         vlSymsp->__Vcoverage[479].fetch_add(1, std::memory_order_relaxed);
@@ -3777,87 +3772,87 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
         = vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out;
     if (((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done))) {
-        vlSymsp->__Vcoverage[487].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[488].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done 
             = (0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count));
     }
     if (((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero))) {
-        vlSymsp->__Vcoverage[494].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[495].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero 
             = (0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count));
     }
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[488].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[489].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
             = ((0x3eU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((2U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[489].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[490].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
             = ((0x3dU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((4U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[490].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[491].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
             = ((0x3bU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (4U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((8U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[491].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[492].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
             = ((0x37U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (8U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((0x10U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                   ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[492].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[493].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
             = ((0x2fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (0x10U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((0x20U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                   ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[493].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[494].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
             = ((0x1fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (0x20U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        vlSymsp->__Vcoverage[500].fetch_add(1, std::memory_order_relaxed);
-        vlSymsp->__Vcoverage[509].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[501].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[510].fetch_add(1, std::memory_order_relaxed);
     }
     if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
         if ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-            vlSymsp->__Vcoverage[503].fetch_add(1, std::memory_order_relaxed);
-            vlSymsp->__Vcoverage[512].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[504].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[513].fetch_add(1, std::memory_order_relaxed);
             if ((0x1fU != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))) {
-                vlSymsp->__Vcoverage[502].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[503].fetch_add(1, std::memory_order_relaxed);
             }
             if ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))) {
-                vlSymsp->__Vcoverage[501].fetch_add(1, std::memory_order_relaxed);
-            }
-            if ((1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out)) {
-                vlSymsp->__Vcoverage[510].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[502].fetch_add(1, std::memory_order_relaxed);
             }
             if ((1U & (~ vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out))) {
+                vlSymsp->__Vcoverage[512].fetch_add(1, std::memory_order_relaxed);
+            }
+            if ((1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out)) {
                 vlSymsp->__Vcoverage[511].fetch_add(1, std::memory_order_relaxed);
             }
         }
         if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
             if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-                vlSymsp->__Vcoverage[506].fetch_add(1, std::memory_order_relaxed);
-                vlSymsp->__Vcoverage[513].fetch_add(1, std::memory_order_relaxed);
-            }
-            if ((2U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
                 vlSymsp->__Vcoverage[507].fetch_add(1, std::memory_order_relaxed);
                 vlSymsp->__Vcoverage[514].fetch_add(1, std::memory_order_relaxed);
+            }
+            if ((2U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+                vlSymsp->__Vcoverage[508].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[515].fetch_add(1, std::memory_order_relaxed);
             }
         }
     }
@@ -3879,11 +3874,13 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
                                      & ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
                                         & (2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))));
     vlSelf->top__DOT__istream_rdy = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                     | ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                        & (2U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))));
-    vlSelf->top__DOT__imul__DOT__result_en = ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                              & (1U 
+                                     | (1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
+    vlSelf->top__DOT__imul__DOT__result_en = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                              | (1U 
                                                  == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
+    vlSelf->top__DOT__imul__DOT__control__DOT__count_clear 
+        = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+           | (1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
     vlSelf->top__DOT__imul__DOT__control__DOT__counter_en 
         = ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
            & (1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
@@ -5169,6 +5166,12 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
         vlSelf->top__DOT__imul__DOT____Vtogcov__result_en 
             = vlSelf->top__DOT__imul__DOT__result_en;
     }
+    if (((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear) 
+         ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear))) {
+        vlSymsp->__Vcoverage[487].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear 
+            = vlSelf->top__DOT__imul__DOT__control__DOT__count_clear;
+    }
     if (((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__counter_en) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__counter_en))) {
         vlSymsp->__Vcoverage[486].fetch_add(1, std::memory_order_relaxed);
@@ -5429,51 +5432,52 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
     }
     if (((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__do_increment))) {
-        vlSymsp->__Vcoverage[523].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[524].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__do_increment 
             = vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment;
     }
     vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next 
-        = (0x3fU & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
-                    + (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment)));
+        = ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear)
+            ? 0U : (0x3fU & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
+                             + (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment))));
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[517].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[518].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
             = ((0x3eU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((2U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[518].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[519].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
             = ((0x3dU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((4U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[519].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[520].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
             = ((0x3bU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (4U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((8U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[520].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[521].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
             = ((0x37U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (8U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((0x10U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                   ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[521].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[522].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
             = ((0x2fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (0x10U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((0x20U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                   ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[522].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[523].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
             = ((0x1fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (0x20U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
@@ -7039,13 +7043,11 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__1\n"); );
     // Body
     if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((1U & (~ ((IData)(vlSelf->top__DOT__istream_val) 
-                      & (IData)(vlSelf->top__DOT__ostream_rdy))))) {
-            vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
+        if ((1U & (~ (IData)(vlSelf->top__DOT__istream_val)))) {
+            vlSymsp->__Vcoverage[500].fetch_add(1, std::memory_order_relaxed);
         }
-        if (((IData)(vlSelf->top__DOT__istream_val) 
-             & (IData)(vlSelf->top__DOT__ostream_rdy))) {
-            vlSymsp->__Vcoverage[498].fetch_add(1, std::memory_order_relaxed);
+        if (vlSelf->top__DOT__istream_val) {
+            vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
             vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 1U;
         } else {
             vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
@@ -7055,20 +7057,17 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
             = ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
                 ? ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))
                     ? 2U : 1U) : ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                                   ? (((IData)(vlSelf->top__DOT__ostream_rdy) 
-                                       & (IData)(vlSelf->top__DOT__istream_val))
+                                   ? ((IData)(vlSelf->top__DOT__ostream_rdy)
                                        ? 0U : 2U) : 0U));
     }
     if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
         if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
             if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-                if (((IData)(vlSelf->top__DOT__ostream_rdy) 
-                     & (IData)(vlSelf->top__DOT__istream_val))) {
-                    vlSymsp->__Vcoverage[504].fetch_add(1, std::memory_order_relaxed);
-                }
-                if ((1U & (~ ((IData)(vlSelf->top__DOT__ostream_rdy) 
-                              & (IData)(vlSelf->top__DOT__istream_val))))) {
+                if (vlSelf->top__DOT__ostream_rdy) {
                     vlSymsp->__Vcoverage[505].fetch_add(1, std::memory_order_relaxed);
+                }
+                if ((1U & (~ (IData)(vlSelf->top__DOT__ostream_rdy)))) {
+                    vlSymsp->__Vcoverage[506].fetch_add(1, std::memory_order_relaxed);
                 }
             }
         }

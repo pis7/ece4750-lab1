@@ -178,10 +178,11 @@ logic [1:0] state;
 logic [1:0] nextState;
 
 logic counter_en;
+logic count_clear;
 logic count_done;
 logic [5:0] count;
 logic count_is_zero;
-vc_BasicCounter #(.p_count_nbits(6), .p_count_clear_value(0), .p_count_max_value(31)) cycle_counter(.clk(clk), .reset(reset), .clear(0), .increment(counter_en), .decrement(0), .count(count), .count_is_zero(count_is_zero), .count_is_max(count_done));
+vc_BasicCounter #(.p_count_nbits(6), .p_count_clear_value(0), .p_count_max_value(31)) cycle_counter(.clk(clk), .reset(reset), .clear(count_clear), .increment(counter_en), .decrement(0), .count(count), .count_is_zero(count_is_zero), .count_is_max(count_done));
 
 // State register
 always_ff @(posedge clk) begin
@@ -197,7 +198,7 @@ always_comb begin
   case (state)
     IDLE: begin
       // If input value ready then go to CALC state
-      if (req_val && resp_rdy) nextState = CALC;
+      if (req_val) nextState = CALC;
       else nextState = IDLE;
     end
     CALC: begin
@@ -207,7 +208,7 @@ always_comb begin
     end
     DONE: begin
       // If output device ready to receive value then go back to IDLE state
-      if (resp_rdy && req_val) nextState = IDLE;
+      if (resp_rdy) nextState = IDLE;
       else nextState = DONE;
     end
     default: nextState = IDLE;
@@ -224,12 +225,13 @@ always_comb begin
 
       // Set result to 0 and disable reg
       result_mux_sel = 1;
-      result_en = 0;
+      result_en = 1;
 
       // Do not add result of adder to result
       add_mux_sel = 1;
 
       // Clear counter to 0 and disable it
+      count_clear = 1;
       counter_en = 0;
 
       // Ready to receive input and not ready to output value
@@ -242,6 +244,7 @@ always_comb begin
       a_mux_sel = 0;
 
       // Do not clear counter and enable it
+      count_clear = 0;
       counter_en = 1;
 
       // Enable result register on clock and do not pass in 0 from mux
@@ -271,10 +274,11 @@ always_comb begin
       add_mux_sel = 1;
 
       // Clear counter and disable it
+      count_clear = 1;
       counter_en = 0;
 
-      // Not ready to receive new input and output value is ready
-      req_rdy = 0;
+      // Ready to receive new input and output value is ready
+      req_rdy = 1;
       resp_val = 1;
     end
     default: begin
@@ -284,6 +288,7 @@ always_comb begin
       result_mux_sel = 1;
       result_en = 0;
       add_mux_sel = 1;
+      count_clear = 1;
       counter_en = 0;
       req_rdy = 1;
       resp_val = 0;

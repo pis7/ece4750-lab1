@@ -16,20 +16,20 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__dat
     // Body
     if (vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel) {
         if (vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel) {
-            vlSymsp->__Vcoverage[553].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[554].fetch_add(1, std::memory_order_relaxed);
             vlSelf->out = (IData)(vlSymsp->TOP.top__DOT__istream_msg);
         } else {
             vlSelf->out = 0U;
         }
         if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel)))) {
-            vlSymsp->__Vcoverage[554].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[555].fetch_add(1, std::memory_order_relaxed);
         }
     } else {
         vlSelf->out = (vlSymsp->TOP.top__DOT__imul__DOT__datapath__DOT__b_reg_out 
                        >> 1U);
     }
     if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel)))) {
-        vlSymsp->__Vcoverage[552].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[553].fetch_add(1, std::memory_order_relaxed);
     }
 }
 
@@ -40,21 +40,21 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__dat
     // Body
     if (vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel) {
         if (vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel) {
-            vlSymsp->__Vcoverage[553].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[554].fetch_add(1, std::memory_order_relaxed);
             vlSelf->out = (IData)((vlSymsp->TOP.top__DOT__istream_msg 
                                    >> 0x20U));
         } else {
             vlSelf->out = 0U;
         }
         if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel)))) {
-            vlSymsp->__Vcoverage[554].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[555].fetch_add(1, std::memory_order_relaxed);
         }
     } else {
         vlSelf->out = (vlSymsp->TOP.top__DOT__imul__DOT__datapath__DOT__a_reg_out 
                        << 1U);
     }
     if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel)))) {
-        vlSymsp->__Vcoverage[552].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[553].fetch_add(1, std::memory_order_relaxed);
     }
 }
 
@@ -96,38 +96,38 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___configure_coverage(Vtop_vc_Mux2__P20* vlSe
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[473]), first, "../vc/muxes.v", 16, 30, "", "v_toggle/vc_Mux2__P20", "in0[29]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[474]), first, "../vc/muxes.v", 16, 30, "", "v_toggle/vc_Mux2__P20", "in0[30]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[475]), first, "../vc/muxes.v", 16, 30, "", "v_toggle/vc_Mux2__P20", "in0[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[0]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[1]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[2]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[3]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[4]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[5]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[6]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[7]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[8]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[9]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[10]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[11]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[12]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[13]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[14]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[15]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[16]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[17]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[18]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[19]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[20]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[21]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[22]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[23]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[24]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[25]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[26]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[27]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[28]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[29]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[30]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[516]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[31]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[0]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[1]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[2]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[3]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[4]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[5]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[6]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[7]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[8]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[9]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[10]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[11]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[12]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[13]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[14]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[15]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[16]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[17]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[18]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[19]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[20]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[21]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[22]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[23]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[24]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[25]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[26]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[27]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[28]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[29]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[30]", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[517]), first, "../vc/muxes.v", 16, 35, "", "v_toggle/vc_Mux2__P20", "in1[31]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[187]), first, "../vc/muxes.v", 17, 30, "", "v_toggle/vc_Mux2__P20", "sel", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[444]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[0]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[445]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[1]", "");
@@ -161,8 +161,8 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___configure_coverage(Vtop_vc_Mux2__P20* vlSe
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[473]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[29]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[474]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[30]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[475]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[552]), first, "../vc/muxes.v", 24, 12, "", "v_line/vc_Mux2__P20", "case", "24");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[553]), first, "../vc/muxes.v", 25, 12, "", "v_line/vc_Mux2__P20", "case", "25");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[554]), first, "../vc/muxes.v", 26, 7, "", "v_line/vc_Mux2__P20", "case", "26");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[555]), first, "../vc/muxes.v", 21, 3, "", "v_line/vc_Mux2__P20", "block", "21-23");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[553]), first, "../vc/muxes.v", 24, 12, "", "v_line/vc_Mux2__P20", "case", "24");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[554]), first, "../vc/muxes.v", 25, 12, "", "v_line/vc_Mux2__P20", "case", "25");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[555]), first, "../vc/muxes.v", 26, 7, "", "v_line/vc_Mux2__P20", "case", "26");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[556]), first, "../vc/muxes.v", 21, 3, "", "v_line/vc_Mux2__P20", "block", "21-23");
 }
