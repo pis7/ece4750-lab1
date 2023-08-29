@@ -28,8 +28,6 @@ void Vtop___024root___eval_initial(Vtop___024root* vlSelf) {
     Vtop_vc_Mux2__P20___eval_initial__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux));
     Vtop_vc_Mux2__P20___eval_initial__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux));
     vlSelf->__Vtrigprevexpr___TOP__clk__0 = vlSelf->clk;
-    vlSelf->__Vtrigprevexpr___TOP__top__DOT__imul__DOT__result_en__0 
-        = vlSelf->top__DOT__imul__DOT__result_en;
     vlSelf->__Vtrigprevexpr___TOP__top__DOT__ostream_val__0 
         = vlSelf->top__DOT__ostream_val;
 }
@@ -144,7 +142,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1);
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[545].fetch_add(1, std::memory_order_relaxed);
                 }
                 if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy) 
                                  & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val)))) {
@@ -171,7 +169,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -234,15 +232,15 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[544].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[550].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy) 
                                         & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val))))) {
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__4__num 
@@ -258,14 +256,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[543].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[549].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy)) 
                                         & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val)))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__5__str,0x00000023);
@@ -291,7 +289,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -354,14 +352,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__6__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -376,14 +374,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[542].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[548].fetch_add(1, std::memory_order_relaxed);
                 } else if ((1U & ((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy)) 
                                   & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val))))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__7__str,0x0000002e);
@@ -409,7 +407,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -472,14 +470,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__8__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -494,14 +492,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[546].fetch_add(1, std::memory_order_relaxed);
                 } else {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__9__str,0x00000078);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
@@ -526,7 +524,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -589,14 +587,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__10__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -611,16 +609,16 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[541].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[547].fetch_add(1, std::memory_order_relaxed);
                 }
-                vlSymsp->__Vcoverage[545].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[551].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__11__str,0x00000028);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -644,7 +642,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -705,14 +703,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__12__str,0x00000029);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -736,7 +734,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -797,16 +795,16 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                 VL_SFORMAT_X(4096,vlSelf->top__DOT__imul__DOT__str
-                             ,"%x",32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                             ,"%x",32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
                 VL_ASSIGN_W(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__str, vlSelf->top__DOT__imul__DOT__str);
                 __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy 
                     = vlSelf->top__DOT__ostream_rdy;
@@ -834,7 +832,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1);
-                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[545].fetch_add(1, std::memory_order_relaxed);
                 }
                 if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy) 
                                  & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val)))) {
@@ -861,7 +859,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -924,15 +922,15 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[544].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[550].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy) 
                                         & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val))))) {
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__15__num 
@@ -948,14 +946,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[543].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[549].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy)) 
                                         & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val)))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__16__str,0x00000023);
@@ -981,7 +979,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1044,14 +1042,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__17__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1066,14 +1064,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[542].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[548].fetch_add(1, std::memory_order_relaxed);
                 } else if ((1U & ((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__rdy)) 
                                   & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__13__val))))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__18__str,0x0000002e);
@@ -1099,7 +1097,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1162,14 +1160,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__19__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1184,14 +1182,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[540].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[546].fetch_add(1, std::memory_order_relaxed);
                 } else {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__20__str,0x00000078);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
@@ -1216,7 +1214,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[527].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1279,14 +1277,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[528].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[534].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[529].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[535].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__21__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1301,16 +1299,16 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[538].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[533].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[541].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[539].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[547].fetch_add(1, std::memory_order_relaxed);
                 }
-                vlSymsp->__Vcoverage[545].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[551].fetch_add(1, std::memory_order_relaxed);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
                 vlSelf->top__DOT__imul__DOT__idx0 = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
@@ -1410,13 +1408,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        116);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     if (vlSymsp->_vm_contextp__->assertOn()) {
-        if (VL_LIKELY((6U == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+        if (VL_LIKELY((6U == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,vlSelf->top__DOT__istream_msg_a,
                           32,vlSelf->top__DOT__istream_msg_b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1424,7 +1422,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,vlSelf->top__DOT__istream_msg_a,
                       32,vlSelf->top__DOT__istream_msg_b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 126, "");
         }
     }
@@ -1474,13 +1472,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        150);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     if (vlSymsp->_vm_contextp__->assertOn()) {
-        if (VL_LIKELY((0x14U == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+        if (VL_LIKELY((0x14U == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,vlSelf->top__DOT__istream_msg_a,
                           32,vlSelf->top__DOT__istream_msg_b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1488,7 +1486,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,vlSelf->top__DOT__istream_msg_a,
                       32,vlSelf->top__DOT__istream_msg_b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 160, "");
         }
     }
@@ -1538,13 +1536,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        184);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     if (vlSymsp->_vm_contextp__->assertOn()) {
-        if (VL_LIKELY((0xcU == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+        if (VL_LIKELY((0xcU == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,vlSelf->top__DOT__istream_msg_a,
                           32,vlSelf->top__DOT__istream_msg_b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1552,7 +1550,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,vlSelf->top__DOT__istream_msg_a,
                       32,vlSelf->top__DOT__istream_msg_b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 194, "");
         }
     }
@@ -1602,13 +1600,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        218);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     if (vlSymsp->_vm_contextp__->assertOn()) {
-        if (VL_LIKELY((0x82U == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+        if (VL_LIKELY((0x82U == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,vlSelf->top__DOT__istream_msg_a,
                           32,vlSelf->top__DOT__istream_msg_b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1616,7 +1614,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,vlSelf->top__DOT__istream_msg_a,
                       32,vlSelf->top__DOT__istream_msg_b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 228, "");
         }
     }
@@ -1674,13 +1672,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__30__a 
                         * __Vtask_top__DOT__test_task__30__b) 
-                       == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+                       == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,__Vtask_top__DOT__test_task__30__a,
                           32,__Vtask_top__DOT__test_task__30__b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1688,7 +1686,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__30__a,
                       32,__Vtask_top__DOT__test_task__30__b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 300, "");
         }
     }
@@ -1746,13 +1744,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__33__a 
                         * __Vtask_top__DOT__test_task__33__b) 
-                       == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+                       == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,__Vtask_top__DOT__test_task__33__a,
                           32,__Vtask_top__DOT__test_task__33__b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1760,7 +1758,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__33__a,
                       32,__Vtask_top__DOT__test_task__33__b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 300, "");
         }
     }
@@ -1815,13 +1813,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__33__a 
                         * __Vtask_top__DOT__test_task__33__b) 
-                       == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+                       == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,__Vtask_top__DOT__test_task__33__a,
                           32,__Vtask_top__DOT__test_task__33__b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1829,7 +1827,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__33__a,
                       32,__Vtask_top__DOT__test_task__33__b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 300, "");
         }
     }
@@ -1884,13 +1882,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__33__a 
                         * __Vtask_top__DOT__test_task__33__b) 
-                       == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+                       == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,__Vtask_top__DOT__test_task__33__a,
                           32,__Vtask_top__DOT__test_task__33__b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1898,7 +1896,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__33__a,
                       32,__Vtask_top__DOT__test_task__33__b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 300, "");
         }
     }
@@ -1953,13 +1951,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__33__a 
                         * __Vtask_top__DOT__test_task__33__b) 
-                       == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+                       == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,__Vtask_top__DOT__test_task__33__a,
                           32,__Vtask_top__DOT__test_task__33__b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -1967,7 +1965,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__33__a,
                       32,__Vtask_top__DOT__test_task__33__b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 300, "");
         }
     }
@@ -2022,13 +2020,13 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__33__a 
                         * __Vtask_top__DOT__test_task__33__b) 
-                       == vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q))) {
+                       == vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out))) {
             if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
                 Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
                 VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
                           32,__Vtask_top__DOT__test_task__33__a,
                           32,__Vtask_top__DOT__test_task__33__b,
-                          32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                          32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
@@ -2036,7 +2034,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__33__a,
                       32,__Vtask_top__DOT__test_task__33__b,
-                      32,vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
+                      32,vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
             VL_STOP_MT("tb_IntMul.v", 300, "");
         }
     }
@@ -2095,20 +2093,6 @@ VL_INLINE_OPT void Vtop___024root___ico_sequent__TOP__0(Vtop___024root* vlSelf) 
         vlSymsp->__Vcoverage[1].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__linetrace = vlSelf->linetrace;
     }
-    vlSelf->top__DOT__imul__DOT__result_en = ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                              & ((1U 
-                                                  == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                                                  ? (IData)(vlSelf->clk)
-                                                  : 
-                                                 ((2U 
-                                                   == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                                  & (IData)(vlSelf->clk))));
-    if (((IData)(vlSelf->top__DOT__imul__DOT__result_en) 
-         ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__result_en))) {
-        vlSymsp->__Vcoverage[186].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__result_en 
-            = vlSelf->top__DOT__imul__DOT__result_en;
-    }
 }
 
 #ifdef VL_DEBUG
@@ -2122,21 +2106,17 @@ void Vtop___024root___eval_triggers__act(Vtop___024root* vlSelf) {
     // Body
     vlSelf->__VactTriggered.set(0U, ((IData)(vlSelf->clk) 
                                      & (~ (IData)(vlSelf->__Vtrigprevexpr___TOP__clk__0))));
-    vlSelf->__VactTriggered.set(1U, ((IData)(vlSelf->top__DOT__imul__DOT__result_en) 
-                                     & (~ (IData)(vlSelf->__Vtrigprevexpr___TOP__top__DOT__imul__DOT__result_en__0))));
-    vlSelf->__VactTriggered.set(2U, ((~ (IData)(vlSelf->clk)) 
+    vlSelf->__VactTriggered.set(1U, ((~ (IData)(vlSelf->clk)) 
                                      & (IData)(vlSelf->__Vtrigprevexpr___TOP__clk__0)));
-    vlSelf->__VactTriggered.set(3U, vlSelf->__VdlySched.awaitingCurrentTime());
-    vlSelf->__VactTriggered.set(4U, ((IData)(vlSelf->top__DOT__ostream_val) 
+    vlSelf->__VactTriggered.set(2U, vlSelf->__VdlySched.awaitingCurrentTime());
+    vlSelf->__VactTriggered.set(3U, ((IData)(vlSelf->top__DOT__ostream_val) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__top__DOT__ostream_val__0)));
     vlSelf->__Vtrigprevexpr___TOP__clk__0 = vlSelf->clk;
-    vlSelf->__Vtrigprevexpr___TOP__top__DOT__imul__DOT__result_en__0 
-        = vlSelf->top__DOT__imul__DOT__result_en;
     vlSelf->__Vtrigprevexpr___TOP__top__DOT__ostream_val__0 
         = vlSelf->top__DOT__ostream_val;
     if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->__VactDidInit))))) {
         vlSelf->__VactDidInit = 1U;
-        vlSelf->__VactTriggered.set(4U, 1U);
+        vlSelf->__VactTriggered.set(3U, 1U);
     }
 #ifdef VL_DEBUG
     if (VL_UNLIKELY(vlSymsp->_vm_contextp__->debug())) {
@@ -2150,36 +2130,6 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___act_comb__TOP__0\n"); );
     // Body
-    if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((1U & (~ (IData)(vlSelf->top__DOT__istream_val)))) {
-            vlSymsp->__Vcoverage[494].fetch_add(1, std::memory_order_relaxed);
-        }
-        if (vlSelf->top__DOT__istream_val) {
-            vlSymsp->__Vcoverage[493].fetch_add(1, std::memory_order_relaxed);
-            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 1U;
-        } else {
-            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
-        }
-    } else {
-        vlSelf->top__DOT__imul__DOT__control__DOT__nextState 
-            = ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                ? ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))
-                    ? 2U : 1U) : ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                                   ? ((IData)(vlSelf->top__DOT__ostream_rdy)
-                                       ? 0U : 2U) : 0U));
-    }
-    if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-            if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-                if (vlSelf->top__DOT__ostream_rdy) {
-                    vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
-                }
-                if ((1U & (~ (IData)(vlSelf->top__DOT__ostream_rdy)))) {
-                    vlSymsp->__Vcoverage[500].fetch_add(1, std::memory_order_relaxed);
-                }
-            }
-        }
-    }
     if (((IData)(vlSelf->top__DOT__reset) ^ (IData)(vlSelf->top__DOT____Vtogcov__reset))) {
         vlSymsp->__Vcoverage[2].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__reset = vlSelf->top__DOT__reset;
@@ -2191,6 +2141,41 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     if (((IData)(vlSelf->top__DOT__ostream_rdy) ^ (IData)(vlSelf->top__DOT____Vtogcov__ostream_rdy))) {
         vlSymsp->__Vcoverage[69].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__ostream_rdy = vlSelf->top__DOT__ostream_rdy;
+    }
+    if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+        if ((1U & (~ ((IData)(vlSelf->top__DOT__istream_val) 
+                      & (IData)(vlSelf->top__DOT__ostream_rdy))))) {
+            vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
+        }
+        if (((IData)(vlSelf->top__DOT__istream_val) 
+             & (IData)(vlSelf->top__DOT__ostream_rdy))) {
+            vlSymsp->__Vcoverage[498].fetch_add(1, std::memory_order_relaxed);
+            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 1U;
+        } else {
+            vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
+        }
+    } else {
+        vlSelf->top__DOT__imul__DOT__control__DOT__nextState 
+            = ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
+                ? ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))
+                    ? 2U : 1U) : ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
+                                   ? (((IData)(vlSelf->top__DOT__ostream_rdy) 
+                                       & (IData)(vlSelf->top__DOT__istream_val))
+                                       ? 0U : 2U) : 0U));
+    }
+    if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+        if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+            if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
+                if (((IData)(vlSelf->top__DOT__ostream_rdy) 
+                     & (IData)(vlSelf->top__DOT__istream_val))) {
+                    vlSymsp->__Vcoverage[504].fetch_add(1, std::memory_order_relaxed);
+                }
+                if ((1U & (~ ((IData)(vlSelf->top__DOT__ostream_rdy) 
+                              & (IData)(vlSelf->top__DOT__istream_val))))) {
+                    vlSymsp->__Vcoverage[505].fetch_add(1, std::memory_order_relaxed);
+                }
+            }
+        }
     }
     if ((1U & (vlSelf->top__DOT__istream_msg_a ^ vlSelf->top__DOT____Vtogcov__istream_msg_a))) {
         vlSymsp->__Vcoverage[105].fetch_add(1, std::memory_order_relaxed);
@@ -2628,14 +2613,14 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
                                       << 0x20U) | (QData)((IData)(vlSelf->top__DOT__istream_msg_b)));
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)))) {
-        vlSymsp->__Vcoverage[479].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[484].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState 
             = ((2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)) 
                | (1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState)));
     }
     if ((2U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)))) {
-        vlSymsp->__Vcoverage[480].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[485].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState 
             = ((1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState)));
@@ -3743,7 +3728,7 @@ void Vtop___024root___eval_act(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_act\n"); );
     // Body
-    if ((0x1cULL & vlSelf->__VactTriggered.word(0U))) {
+    if ((0xeULL & vlSelf->__VactTriggered.word(0U))) {
         Vtop___024root___act_comb__TOP__0(vlSelf);
         Vtop_vc_Mux2__P20___act_comb__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux));
         Vtop_vc_Mux2__P20___act_comb__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux));
@@ -3756,11 +3741,14 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__0\n"); );
     // Body
-    vlSymsp->__Vcoverage[492].fetch_add(1, std::memory_order_relaxed);
-    vlSymsp->__Vcoverage[518].fetch_add(1, std::memory_order_relaxed);
-    vlSymsp->__Vcoverage[526].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[476].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[478].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[481].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[497].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[524].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[532].fetch_add(1, std::memory_order_relaxed);
     if (vlSelf->top__DOT__reset) {
-        vlSymsp->__Vcoverage[490].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[495].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__cycles = 0U;
         vlSelf->top__DOT__imul__DOT__control__DOT__count = 0U;
         vlSelf->top__DOT__imul__DOT__control__DOT__state = 0U;
@@ -3768,96 +3756,121 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__cycles 
             = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__cycles_next;
         vlSelf->top__DOT__imul__DOT__control__DOT__count 
-            = (0x1fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next));
+            = (0x3fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next));
         vlSelf->top__DOT__imul__DOT__control__DOT__state 
             = vlSelf->top__DOT__imul__DOT__control__DOT__nextState;
     }
     if ((1U & (~ (IData)(vlSelf->top__DOT__reset)))) {
-        vlSymsp->__Vcoverage[491].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[496].fetch_add(1, std::memory_order_relaxed);
     }
+    if (vlSelf->top__DOT__imul__DOT__result_en) {
+        vlSymsp->__Vcoverage[479].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+            = vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out;
+    }
+    if ((1U & (~ (IData)(vlSelf->top__DOT__imul__DOT__result_en)))) {
+        vlSymsp->__Vcoverage[480].fetch_add(1, std::memory_order_relaxed);
+    }
+    vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+        = vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux.out;
+    vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+        = vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux.out;
     if (((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done))) {
-        vlSymsp->__Vcoverage[483].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[487].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_done 
             = (0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count));
     }
     if (((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero))) {
-        vlSymsp->__Vcoverage[489].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[494].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero 
             = (0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count));
     }
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[484].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[488].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
-            = ((0x1eU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
+            = ((0x3eU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((2U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[485].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[489].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
-            = ((0x1dU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
+            = ((0x3dU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((4U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[486].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[490].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
-            = ((0x1bU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
+            = ((0x3bU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (4U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((8U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[487].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[491].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
-            = ((0x17U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
+            = ((0x37U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (8U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
     if ((0x10U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
                   ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
-        vlSymsp->__Vcoverage[488].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[492].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
-            = ((0xfU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
+            = ((0x2fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
                | (0x10U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
     }
+    if ((0x20U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
+                  ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)))) {
+        vlSymsp->__Vcoverage[493].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count 
+            = ((0x1fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count)) 
+               | (0x20U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count)));
+    }
     if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        vlSymsp->__Vcoverage[495].fetch_add(1, std::memory_order_relaxed);
-        vlSymsp->__Vcoverage[504].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[500].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[509].fetch_add(1, std::memory_order_relaxed);
     }
     if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
         if ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-            vlSymsp->__Vcoverage[498].fetch_add(1, std::memory_order_relaxed);
-            vlSymsp->__Vcoverage[507].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[503].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[512].fetch_add(1, std::memory_order_relaxed);
             if ((0x1fU != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))) {
-                vlSymsp->__Vcoverage[497].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[502].fetch_add(1, std::memory_order_relaxed);
             }
             if ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))) {
-                vlSymsp->__Vcoverage[496].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[501].fetch_add(1, std::memory_order_relaxed);
+            }
+            if ((1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out)) {
+                vlSymsp->__Vcoverage[510].fetch_add(1, std::memory_order_relaxed);
+            }
+            if ((1U & (~ vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out))) {
+                vlSymsp->__Vcoverage[511].fetch_add(1, std::memory_order_relaxed);
             }
         }
         if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
             if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-                vlSymsp->__Vcoverage[501].fetch_add(1, std::memory_order_relaxed);
-                vlSymsp->__Vcoverage[508].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[506].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[513].fetch_add(1, std::memory_order_relaxed);
             }
             if ((2U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-                vlSymsp->__Vcoverage[502].fetch_add(1, std::memory_order_relaxed);
-                vlSymsp->__Vcoverage[509].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[507].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[514].fetch_add(1, std::memory_order_relaxed);
             }
         }
     }
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state)))) {
-        vlSymsp->__Vcoverage[477].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[482].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state 
             = ((2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state)) 
                | (1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
     }
     if ((2U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state)))) {
-        vlSymsp->__Vcoverage[478].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[483].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state 
             = ((1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__state)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
@@ -3869,16 +3882,8 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
                                      | ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
                                         & (2U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))));
     vlSelf->top__DOT__imul__DOT__result_en = ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                              & ((1U 
-                                                  == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                                                  ? (IData)(vlSelf->clk)
-                                                  : 
-                                                 ((2U 
-                                                   == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                                  & (IData)(vlSelf->clk))));
-    vlSelf->top__DOT__imul__DOT__control__DOT__count_clear 
-        = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-           | (1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
+                                              & (1U 
+                                                 == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
     vlSelf->top__DOT__imul__DOT__control__DOT__counter_en 
         = ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
            & (1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
@@ -3889,12 +3894,1267 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
                                                        != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
                                                       & (2U 
                                                          != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))));
-    vlSelf->top__DOT__imul__DOT__b_mux_sel = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                              | (1U 
-                                                 != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
     vlSelf->top__DOT__imul__DOT__a_mux_sel = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
                                               | (1U 
                                                  != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
+    vlSelf->top__DOT__imul__DOT__b_mux_sel = ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                              | (1U 
+                                                 != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)));
+    if ((1U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[188].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((2U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[189].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (2U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((4U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[190].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (4U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((8U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[191].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (8U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x10U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[192].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x10U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x20U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[193].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x20U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x40U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[194].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x40U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x80U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[195].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x80U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x100U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[196].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x100U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x200U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[197].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x200U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x400U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[198].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x400U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x800U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[199].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x800U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x1000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[200].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x1000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x2000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[201].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x2000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x4000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[202].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x4000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x8000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[203].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x8000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x10000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[204].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x10000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x20000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[205].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x20000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x40000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[206].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x40000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x80000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[207].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x80000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x100000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[208].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x100000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x200000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[209].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x200000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x400000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[210].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x400000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x800000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[211].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x800000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x1000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[212].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x1000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x2000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[213].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x2000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x4000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[214].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x4000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x8000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[215].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x8000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x10000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[216].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x10000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x20000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[217].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x20000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((0x40000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
+        vlSymsp->__Vcoverage[218].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x40000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if (((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+          ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+         >> 0x1fU)) {
+        vlSymsp->__Vcoverage[219].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
+            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+               | (0x80000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 1U) ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out))) {
+        vlSymsp->__Vcoverage[252].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (1U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                        >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 2U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 1U)))) {
+        vlSymsp->__Vcoverage[253].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (2U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                        >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 3U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 2U)))) {
+        vlSymsp->__Vcoverage[254].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (4U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                        >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 4U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 3U)))) {
+        vlSymsp->__Vcoverage[255].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (8U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                        >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 5U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 4U)))) {
+        vlSymsp->__Vcoverage[256].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x10U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                           >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 6U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 5U)))) {
+        vlSymsp->__Vcoverage[257].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x20U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                           >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 7U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 6U)))) {
+        vlSymsp->__Vcoverage[258].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x40U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                           >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 8U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 7U)))) {
+        vlSymsp->__Vcoverage[259].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x80U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                           >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 9U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                          >> 8U)))) {
+        vlSymsp->__Vcoverage[260].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x100U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                            >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0xaU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                            >> 9U)))) {
+        vlSymsp->__Vcoverage[261].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x200U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                            >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0xbU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                            >> 0xaU)))) {
+        vlSymsp->__Vcoverage[262].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x400U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                            >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0xcU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                            >> 0xbU)))) {
+        vlSymsp->__Vcoverage[263].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x800U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                            >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0xdU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                            >> 0xcU)))) {
+        vlSymsp->__Vcoverage[264].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x1000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                             >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0xeU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                            >> 0xdU)))) {
+        vlSymsp->__Vcoverage[265].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x2000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                             >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0xfU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                            >> 0xeU)))) {
+        vlSymsp->__Vcoverage[266].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x4000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                             >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x10U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0xfU)))) {
+        vlSymsp->__Vcoverage[267].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x8000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                             >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x11U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x10U)))) {
+        vlSymsp->__Vcoverage[268].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x10000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                              >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x12U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x11U)))) {
+        vlSymsp->__Vcoverage[269].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x20000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                              >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x13U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x12U)))) {
+        vlSymsp->__Vcoverage[270].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x40000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                              >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x14U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x13U)))) {
+        vlSymsp->__Vcoverage[271].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x80000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                              >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x15U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x14U)))) {
+        vlSymsp->__Vcoverage[272].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x100000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                               >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x16U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x15U)))) {
+        vlSymsp->__Vcoverage[273].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x200000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                               >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x17U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x16U)))) {
+        vlSymsp->__Vcoverage[274].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x400000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                               >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x18U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x17U)))) {
+        vlSymsp->__Vcoverage[275].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x800000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                               >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x19U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x18U)))) {
+        vlSymsp->__Vcoverage[276].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x1000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                                >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x1aU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x19U)))) {
+        vlSymsp->__Vcoverage[277].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x2000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                                >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x1bU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x1aU)))) {
+        vlSymsp->__Vcoverage[278].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x4000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                                >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x1cU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x1bU)))) {
+        vlSymsp->__Vcoverage[279].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x8000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                                >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x1dU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x1cU)))) {
+        vlSymsp->__Vcoverage[280].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x10000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                                 >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x1eU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x1dU)))) {
+        vlSymsp->__Vcoverage[281].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x20000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                                 >> 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                >> 0x1fU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+                             >> 0x1eU)))) {
+        vlSymsp->__Vcoverage[282].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
+               | (0x40000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out 
+                                 >> 1U)));
+    }
+    if ((vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+         >> 0x1fU)) {
+        vlSymsp->__Vcoverage[283].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
+            = (0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out);
+    }
+    vlSelf->top__DOT__imul__DOT__add_mux_sel = (1U 
+                                                & ((0U 
+                                                    == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                                   | ((1U 
+                                                       != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
+                                                      | (~ vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out))));
+    if ((1U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[316].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((2U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[317].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (2U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((4U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[318].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (4U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((8U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[319].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (8U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x10U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[320].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x10U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x20U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[321].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x20U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x40U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[322].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x40U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x80U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[323].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x80U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x100U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[324].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x100U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x200U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[325].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x200U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x400U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[326].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x400U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x800U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[327].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x800U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x1000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[328].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x1000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x2000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[329].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x2000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x4000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[330].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x4000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x8000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[331].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x8000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x10000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[332].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x10000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x20000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[333].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x20000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x40000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[334].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x40000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x80000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[335].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x80000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x100000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[336].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x100000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x200000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[337].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x200000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x400000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[338].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x400000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x800000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[339].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x800000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x1000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[340].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x1000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x2000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[341].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x2000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x4000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[342].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x4000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x8000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[343].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x8000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x10000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[344].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x10000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x20000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[345].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x20000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((0x40000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
+        vlSymsp->__Vcoverage[346].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x40000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if (((vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+         >> 0x1fU)) {
+        vlSymsp->__Vcoverage[347].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
+            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
+               | (0x80000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                << 1U) ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out))) {
+        vlSymsp->__Vcoverage[348].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (1U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        << 1U)));
+    }
+    if ((1U & ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out) 
+               ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                  >> 1U)))) {
+        vlSymsp->__Vcoverage[349].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (2U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        << 1U)));
+    }
+    if ((1U & ((0x3fffffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                               >> 1U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                          >> 2U)))) {
+        vlSymsp->__Vcoverage[350].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (4U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        << 1U)));
+    }
+    if ((1U & ((0x1fffffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                               >> 2U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                          >> 3U)))) {
+        vlSymsp->__Vcoverage[351].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (8U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        << 1U)));
+    }
+    if ((1U & ((0xfffffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              >> 3U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 4U)))) {
+        vlSymsp->__Vcoverage[352].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x10U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           << 1U)));
+    }
+    if ((1U & ((0x7ffffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              >> 4U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 5U)))) {
+        vlSymsp->__Vcoverage[353].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x20U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           << 1U)));
+    }
+    if ((1U & ((0x3ffffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              >> 5U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 6U)))) {
+        vlSymsp->__Vcoverage[354].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x40U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           << 1U)));
+    }
+    if ((1U & ((0x1ffffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              >> 6U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 7U)))) {
+        vlSymsp->__Vcoverage[355].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x80U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           << 1U)));
+    }
+    if ((1U & ((0xffffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             >> 7U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 8U)))) {
+        vlSymsp->__Vcoverage[356].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x100U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            << 1U)));
+    }
+    if ((1U & ((0x7fffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             >> 8U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 9U)))) {
+        vlSymsp->__Vcoverage[357].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x200U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            << 1U)));
+    }
+    if ((1U & ((0x3fffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             >> 9U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 0xaU)))) {
+        vlSymsp->__Vcoverage[358].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x400U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            << 1U)));
+    }
+    if ((1U & ((0x1fffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             >> 0xaU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                          >> 0xbU)))) {
+        vlSymsp->__Vcoverage[359].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x800U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            << 1U)));
+    }
+    if ((1U & ((0xfffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            >> 0xbU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 0xcU)))) {
+        vlSymsp->__Vcoverage[360].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x1000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             << 1U)));
+    }
+    if ((1U & ((0x7ffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            >> 0xcU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 0xdU)))) {
+        vlSymsp->__Vcoverage[361].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x2000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             << 1U)));
+    }
+    if ((1U & ((0x3ffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            >> 0xdU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 0xeU)))) {
+        vlSymsp->__Vcoverage[362].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x4000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             << 1U)));
+    }
+    if ((1U & ((0x1ffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                            >> 0xeU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 0xfU)))) {
+        vlSymsp->__Vcoverage[363].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x8000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                             << 1U)));
+    }
+    if ((1U & ((0xffffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           >> 0xfU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 0x10U)))) {
+        vlSymsp->__Vcoverage[364].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x10000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              << 1U)));
+    }
+    if ((1U & ((0x7fffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           >> 0x10U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 0x11U)))) {
+        vlSymsp->__Vcoverage[365].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x20000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              << 1U)));
+    }
+    if ((1U & ((0x3fffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           >> 0x11U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 0x12U)))) {
+        vlSymsp->__Vcoverage[366].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x40000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              << 1U)));
+    }
+    if ((1U & ((0x1fffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                           >> 0x12U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                         >> 0x13U)))) {
+        vlSymsp->__Vcoverage[367].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x80000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                              << 1U)));
+    }
+    if ((1U & ((0xfffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                          >> 0x13U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 0x14U)))) {
+        vlSymsp->__Vcoverage[368].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x100000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                               << 1U)));
+    }
+    if ((1U & ((0x7ffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                          >> 0x14U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 0x15U)))) {
+        vlSymsp->__Vcoverage[369].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x200000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                               << 1U)));
+    }
+    if ((1U & ((0x3ffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                          >> 0x15U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 0x16U)))) {
+        vlSymsp->__Vcoverage[370].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x400000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                               << 1U)));
+    }
+    if ((1U & ((0x1ffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                          >> 0x16U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                        >> 0x17U)))) {
+        vlSymsp->__Vcoverage[371].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x800000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                               << 1U)));
+    }
+    if ((1U & ((0xffU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                         >> 0x17U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                       >> 0x18U)))) {
+        vlSymsp->__Vcoverage[372].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x1000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                << 1U)));
+    }
+    if ((1U & ((0x7fU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                         >> 0x18U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                       >> 0x19U)))) {
+        vlSymsp->__Vcoverage[373].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x2000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                << 1U)));
+    }
+    if ((1U & ((0x3fU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                         >> 0x19U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                       >> 0x1aU)))) {
+        vlSymsp->__Vcoverage[374].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x4000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                << 1U)));
+    }
+    if ((1U & ((0x1fU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                         >> 0x1aU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                       >> 0x1bU)))) {
+        vlSymsp->__Vcoverage[375].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x8000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                << 1U)));
+    }
+    if ((1U & ((0xfU & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                        >> 0x1bU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                      >> 0x1cU)))) {
+        vlSymsp->__Vcoverage[376].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x10000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                 << 1U)));
+    }
+    if ((1U & ((7U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                      >> 0x1cU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                    >> 0x1dU)))) {
+        vlSymsp->__Vcoverage[377].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x20000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                 << 1U)));
+    }
+    if ((1U & ((3U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                      >> 0x1dU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                                    >> 0x1eU)))) {
+        vlSymsp->__Vcoverage[378].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x40000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                 << 1U)));
+    }
+    if ((1U & ((vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                >> 0x1eU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+                             >> 0x1fU)))) {
+        vlSymsp->__Vcoverage[379].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
+            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
+               | (0x80000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+                                 << 1U)));
+    }
+    if ((1U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[71].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffffffeU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((2U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[72].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffffffdU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (2U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((4U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[73].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffffffbU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (4U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((8U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[74].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffffff7U & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (8U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x10U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[75].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffffffefU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x10U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x20U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[76].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffffffdfU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x20U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x40U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[77].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffffffbfU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x40U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x80U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[78].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffffff7fU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x80U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x100U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[79].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffffeffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x100U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x200U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[80].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffffdffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x200U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x400U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[81].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffffbffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x400U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x800U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[82].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffff7ffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x800U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x1000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[83].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffffefffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x1000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x2000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[84].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffffdfffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x2000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x4000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[85].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffffbfffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x4000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x8000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[86].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffff7fffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x8000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x10000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[87].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffeffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x10000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x20000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[88].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffdffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x20000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x40000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[89].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfffbffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x40000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x80000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[90].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfff7ffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x80000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x100000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[91].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffefffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x100000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x200000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[92].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffdfffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x200000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x400000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[93].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xffbfffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x400000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x800000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[94].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xff7fffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x800000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x1000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[95].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfeffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x1000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x2000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[96].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfdffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x2000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x4000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[97].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xfbffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x4000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x8000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[98].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xf7ffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x8000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x10000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                        ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[99].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xefffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x10000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x20000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                        ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[100].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xdfffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x20000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if ((0x40000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+                        ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
+        vlSymsp->__Vcoverage[101].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0xbfffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x40000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    if (((vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out 
+          ^ vlSelf->top__DOT____Vtogcov__ostream_msg) 
+         >> 0x1fU)) {
+        vlSymsp->__Vcoverage[102].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT____Vtogcov__ostream_msg = 
+            ((0x7fffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
+             | (0x80000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out));
+    }
+    vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+        = (vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
+           + vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out);
     if (((IData)(vlSelf->top__DOT__ostream_val) ^ (IData)(vlSelf->top__DOT____Vtogcov__ostream_val))) {
         vlSymsp->__Vcoverage[70].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT____Vtogcov__ostream_val = vlSelf->top__DOT__ostream_val;
@@ -3909,15 +5169,9 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
         vlSelf->top__DOT__imul__DOT____Vtogcov__result_en 
             = vlSelf->top__DOT__imul__DOT__result_en;
     }
-    if (((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear) 
-         ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear))) {
-        vlSymsp->__Vcoverage[482].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear 
-            = vlSelf->top__DOT__imul__DOT__control__DOT__count_clear;
-    }
     if (((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__counter_en) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__counter_en))) {
-        vlSymsp->__Vcoverage[481].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[486].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__counter_en 
             = vlSelf->top__DOT__imul__DOT__control__DOT__counter_en;
     }
@@ -3930,62 +5184,299 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
         vlSelf->top__DOT__imul__DOT____Vtogcov__result_mux_sel 
             = vlSelf->top__DOT__imul__DOT__result_mux_sel;
     }
-    if (((IData)(vlSelf->top__DOT__imul__DOT__b_mux_sel) 
-         ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__b_mux_sel))) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_mux_sel 
-            = vlSelf->top__DOT__imul__DOT__b_mux_sel;
-    }
     if (((IData)(vlSelf->top__DOT__imul__DOT__a_mux_sel) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__a_mux_sel))) {
         vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__a_mux_sel 
             = vlSelf->top__DOT__imul__DOT__a_mux_sel;
     }
+    if (((IData)(vlSelf->top__DOT__imul__DOT__b_mux_sel) 
+         ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__b_mux_sel))) {
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__b_mux_sel 
+            = vlSelf->top__DOT__imul__DOT__b_mux_sel;
+    }
+    if (((IData)(vlSelf->top__DOT__imul__DOT__add_mux_sel) 
+         ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__add_mux_sel))) {
+        vlSymsp->__Vcoverage[187].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT____Vtogcov__add_mux_sel 
+            = vlSelf->top__DOT__imul__DOT__add_mux_sel;
+    }
+    if ((1U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[412].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((2U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[413].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (2U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((4U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[414].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (4U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((8U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[415].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (8U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x10U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[416].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x10U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x20U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[417].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x20U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x40U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[418].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x40U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x80U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[419].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x80U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x100U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[420].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x100U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x200U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[421].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x200U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x400U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[422].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x400U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x800U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[423].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x800U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x1000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[424].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x1000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x2000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[425].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x2000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x4000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[426].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x4000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x8000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[427].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x8000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x10000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[428].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x10000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x20000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[429].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x20000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x40000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[430].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x40000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x80000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[431].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x80000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x100000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[432].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x100000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x200000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[433].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x200000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x400000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[434].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x400000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x800000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[435].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x800000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x1000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[436].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x1000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x2000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[437].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x2000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x4000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[438].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x4000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x8000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[439].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x8000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x10000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[440].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x10000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x20000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[441].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x20000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if ((0x40000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
+        vlSymsp->__Vcoverage[442].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x40000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
+    if (((vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
+          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+         >> 0x1fU)) {
+        vlSymsp->__Vcoverage[443].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
+            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
+               | (0x80000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
+    }
     if (((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__do_increment))) {
-        vlSymsp->__Vcoverage[517].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[523].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__do_increment 
             = vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment;
     }
     vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next 
-        = ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear)
-            ? 0U : (0x1fU & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
-                             + (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment))));
+        = (0x3fU & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count) 
+                    + (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment)));
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[512].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[517].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
-            = ((0x1eU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
+            = ((0x3eU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((2U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[513].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[518].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
-            = ((0x1dU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
+            = ((0x3dU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((4U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[514].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[519].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
-            = ((0x1bU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
+            = ((0x3bU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (4U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((8U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[515].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[520].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
-            = ((0x17U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
+            = ((0x37U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (8U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
     if ((0x10U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
                   ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
-        vlSymsp->__Vcoverage[516].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[521].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
-            = ((0xfU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
+            = ((0x2fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
                | (0x10U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
+    }
+    if ((0x20U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next) 
+                  ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)))) {
+        vlSymsp->__Vcoverage[522].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next 
+            = ((0x1fU & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next)) 
+               | (0x20U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next)));
     }
 }
 
@@ -3994,1048 +5485,230 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__1(Vtop___024root* vlSelf) 
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__1\n"); );
     // Body
-    if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-            if ((1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q)) {
-                vlSymsp->__Vcoverage[505].fetch_add(1, std::memory_order_relaxed);
-            }
-            if ((1U & (~ vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q))) {
-                vlSymsp->__Vcoverage[506].fetch_add(1, std::memory_order_relaxed);
-            }
-        }
+    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[444].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[188].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[445].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[189].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[446].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[190].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[447].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[191].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[448].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[192].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[449].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[193].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[450].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[194].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[451].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[195].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[452].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[196].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[453].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[197].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[454].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[198].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[455].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[199].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[456].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[200].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[457].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[201].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[458].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[202].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[459].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[203].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[460].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[204].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[461].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[205].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[462].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[206].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[463].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[207].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[464].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[208].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[465].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[209].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[466].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[210].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[467].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[211].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[468].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[212].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[469].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[213].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[470].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[214].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[471].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[215].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[472].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[216].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[473].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[217].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
+    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
+        vlSymsp->__Vcoverage[474].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
-    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb))) {
-        vlSymsp->__Vcoverage[218].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
-    }
-    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-          ^ vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
+    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
+          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
          >> 0x1fU)) {
-        vlSymsp->__Vcoverage[219].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb 
-            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb) 
-               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 1U) ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out))) {
-        vlSymsp->__Vcoverage[252].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                        >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 2U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 1U)))) {
-        vlSymsp->__Vcoverage[253].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                        >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 3U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 2U)))) {
-        vlSymsp->__Vcoverage[254].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                        >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 4U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 3U)))) {
-        vlSymsp->__Vcoverage[255].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                        >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 5U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 4U)))) {
-        vlSymsp->__Vcoverage[256].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                           >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 6U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 5U)))) {
-        vlSymsp->__Vcoverage[257].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                           >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 7U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 6U)))) {
-        vlSymsp->__Vcoverage[258].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                           >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 8U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 7U)))) {
-        vlSymsp->__Vcoverage[259].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                           >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 9U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                          >> 8U)))) {
-        vlSymsp->__Vcoverage[260].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                            >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0xaU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                            >> 9U)))) {
-        vlSymsp->__Vcoverage[261].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                            >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0xbU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                            >> 0xaU)))) {
-        vlSymsp->__Vcoverage[262].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                            >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0xcU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                            >> 0xbU)))) {
-        vlSymsp->__Vcoverage[263].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                            >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0xdU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                            >> 0xcU)))) {
-        vlSymsp->__Vcoverage[264].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                             >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0xeU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                            >> 0xdU)))) {
-        vlSymsp->__Vcoverage[265].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                             >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0xfU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                            >> 0xeU)))) {
-        vlSymsp->__Vcoverage[266].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                             >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x10U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0xfU)))) {
-        vlSymsp->__Vcoverage[267].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                             >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x11U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x10U)))) {
-        vlSymsp->__Vcoverage[268].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                              >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x12U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x11U)))) {
-        vlSymsp->__Vcoverage[269].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                              >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x13U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x12U)))) {
-        vlSymsp->__Vcoverage[270].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                              >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x14U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x13U)))) {
-        vlSymsp->__Vcoverage[271].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                              >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x15U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x14U)))) {
-        vlSymsp->__Vcoverage[272].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                               >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x16U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x15U)))) {
-        vlSymsp->__Vcoverage[273].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                               >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x17U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x16U)))) {
-        vlSymsp->__Vcoverage[274].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                               >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x18U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x17U)))) {
-        vlSymsp->__Vcoverage[275].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                               >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x19U) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x18U)))) {
-        vlSymsp->__Vcoverage[276].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                                >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x1aU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x19U)))) {
-        vlSymsp->__Vcoverage[277].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                                >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x1bU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x1aU)))) {
-        vlSymsp->__Vcoverage[278].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                                >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x1cU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x1bU)))) {
-        vlSymsp->__Vcoverage[279].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                                >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x1dU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x1cU)))) {
-        vlSymsp->__Vcoverage[280].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                                 >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x1eU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x1dU)))) {
-        vlSymsp->__Vcoverage[281].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                                 >> 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                >> 0x1fU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-                             >> 0x1eU)))) {
-        vlSymsp->__Vcoverage[282].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out) 
-               | (0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q 
-                                 >> 1U)));
-    }
-    if ((vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-         >> 0x1fU)) {
-        vlSymsp->__Vcoverage[283].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out 
-            = (0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out);
-    }
-    vlSelf->top__DOT__imul__DOT__add_mux_sel = (1U 
-                                                & ((0U 
-                                                    == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                                   | ((1U 
-                                                       != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state)) 
-                                                      | (~ vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg.q))));
-    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[316].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[317].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[318].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[319].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[320].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[321].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[322].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[323].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[324].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[325].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[326].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[327].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[328].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[329].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[330].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[331].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[332].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[333].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[334].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[335].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[336].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[337].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[338].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[339].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[340].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[341].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[342].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[343].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[344].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[345].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out))) {
-        vlSymsp->__Vcoverage[346].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-         >> 0x1fU)) {
-        vlSymsp->__Vcoverage[347].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out 
-            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_reg_out) 
-               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                << 1U) ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out))) {
-        vlSymsp->__Vcoverage[348].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        << 1U)));
-    }
-    if ((1U & ((0x7fffffffU & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q) 
-               ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                  >> 1U)))) {
-        vlSymsp->__Vcoverage[349].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        << 1U)));
-    }
-    if ((1U & ((0x3fffffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                               >> 1U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                          >> 2U)))) {
-        vlSymsp->__Vcoverage[350].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        << 1U)));
-    }
-    if ((1U & ((0x1fffffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                               >> 2U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                          >> 3U)))) {
-        vlSymsp->__Vcoverage[351].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        << 1U)));
-    }
-    if ((1U & ((0xfffffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              >> 3U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 4U)))) {
-        vlSymsp->__Vcoverage[352].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           << 1U)));
-    }
-    if ((1U & ((0x7ffffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              >> 4U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 5U)))) {
-        vlSymsp->__Vcoverage[353].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           << 1U)));
-    }
-    if ((1U & ((0x3ffffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              >> 5U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 6U)))) {
-        vlSymsp->__Vcoverage[354].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           << 1U)));
-    }
-    if ((1U & ((0x1ffffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              >> 6U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 7U)))) {
-        vlSymsp->__Vcoverage[355].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           << 1U)));
-    }
-    if ((1U & ((0xffffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             >> 7U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 8U)))) {
-        vlSymsp->__Vcoverage[356].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            << 1U)));
-    }
-    if ((1U & ((0x7fffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             >> 8U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 9U)))) {
-        vlSymsp->__Vcoverage[357].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            << 1U)));
-    }
-    if ((1U & ((0x3fffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             >> 9U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 0xaU)))) {
-        vlSymsp->__Vcoverage[358].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            << 1U)));
-    }
-    if ((1U & ((0x1fffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             >> 0xaU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                          >> 0xbU)))) {
-        vlSymsp->__Vcoverage[359].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            << 1U)));
-    }
-    if ((1U & ((0xfffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            >> 0xbU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 0xcU)))) {
-        vlSymsp->__Vcoverage[360].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             << 1U)));
-    }
-    if ((1U & ((0x7ffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            >> 0xcU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 0xdU)))) {
-        vlSymsp->__Vcoverage[361].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             << 1U)));
-    }
-    if ((1U & ((0x3ffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            >> 0xdU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 0xeU)))) {
-        vlSymsp->__Vcoverage[362].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             << 1U)));
-    }
-    if ((1U & ((0x1ffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                            >> 0xeU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 0xfU)))) {
-        vlSymsp->__Vcoverage[363].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                             << 1U)));
-    }
-    if ((1U & ((0xffffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           >> 0xfU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 0x10U)))) {
-        vlSymsp->__Vcoverage[364].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              << 1U)));
-    }
-    if ((1U & ((0x7fffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           >> 0x10U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 0x11U)))) {
-        vlSymsp->__Vcoverage[365].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              << 1U)));
-    }
-    if ((1U & ((0x3fffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           >> 0x11U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 0x12U)))) {
-        vlSymsp->__Vcoverage[366].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              << 1U)));
-    }
-    if ((1U & ((0x1fffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                           >> 0x12U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                         >> 0x13U)))) {
-        vlSymsp->__Vcoverage[367].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                              << 1U)));
-    }
-    if ((1U & ((0xfffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                          >> 0x13U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 0x14U)))) {
-        vlSymsp->__Vcoverage[368].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                               << 1U)));
-    }
-    if ((1U & ((0x7ffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                          >> 0x14U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 0x15U)))) {
-        vlSymsp->__Vcoverage[369].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                               << 1U)));
-    }
-    if ((1U & ((0x3ffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                          >> 0x15U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 0x16U)))) {
-        vlSymsp->__Vcoverage[370].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                               << 1U)));
-    }
-    if ((1U & ((0x1ffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                          >> 0x16U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                        >> 0x17U)))) {
-        vlSymsp->__Vcoverage[371].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                               << 1U)));
-    }
-    if ((1U & ((0xffU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                         >> 0x17U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                       >> 0x18U)))) {
-        vlSymsp->__Vcoverage[372].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                << 1U)));
-    }
-    if ((1U & ((0x7fU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                         >> 0x18U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                       >> 0x19U)))) {
-        vlSymsp->__Vcoverage[373].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                << 1U)));
-    }
-    if ((1U & ((0x3fU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                         >> 0x19U)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                       >> 0x1aU)))) {
-        vlSymsp->__Vcoverage[374].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                << 1U)));
-    }
-    if ((1U & ((0x1fU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                         >> 0x1aU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                       >> 0x1bU)))) {
-        vlSymsp->__Vcoverage[375].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                << 1U)));
-    }
-    if ((1U & ((0xfU & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                        >> 0x1bU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                      >> 0x1cU)))) {
-        vlSymsp->__Vcoverage[376].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                 << 1U)));
-    }
-    if ((1U & ((7U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                      >> 0x1cU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                    >> 0x1dU)))) {
-        vlSymsp->__Vcoverage[377].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                 << 1U)));
-    }
-    if ((1U & ((3U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                      >> 0x1dU)) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                                    >> 0x1eU)))) {
-        vlSymsp->__Vcoverage[378].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                 << 1U)));
-    }
-    if ((1U & ((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                >> 0x1eU) ^ (vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-                             >> 0x1fU)))) {
-        vlSymsp->__Vcoverage[379].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out 
-            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__l_shift_out) 
-               | (0x80000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-                                 << 1U)));
-    }
-    if (((IData)(vlSelf->top__DOT__imul__DOT__add_mux_sel) 
-         ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__add_mux_sel))) {
-        vlSymsp->__Vcoverage[187].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT____Vtogcov__add_mux_sel 
-            = vlSelf->top__DOT__imul__DOT__add_mux_sel;
+        vlSymsp->__Vcoverage[475].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
+            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
+               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
     }
 }
 
@@ -5044,230 +5717,230 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__2(Vtop___024root* vlSelf) 
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__2\n"); );
     // Body
-    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[71].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffffffeU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[380].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[72].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffffffdU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[381].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[73].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffffffbU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[382].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-               ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[74].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffffff7U & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[383].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[75].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffffffefU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[384].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[76].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffffffdfU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[385].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[77].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffffffbfU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[386].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                  ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[78].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffffff7fU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[387].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[79].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffffeffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[388].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[80].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffffdffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[389].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[81].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffffbffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[390].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                   ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[82].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffff7ffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[391].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[83].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffffefffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[392].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[84].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffffdfffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[393].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[85].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffffbfffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[394].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                    ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[86].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffff7fffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[395].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[87].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffeffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[396].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[88].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffdffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[397].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[89].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfffbffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[398].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                     ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[90].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfff7ffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[399].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[91].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffefffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[400].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[92].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffdfffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[401].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[93].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xffbfffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[402].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                      ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[94].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xff7fffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[403].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[95].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfeffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[404].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[96].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfdffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[405].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[97].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xfbffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[406].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                       ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[98].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xf7ffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[407].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                        ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[99].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xefffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[408].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                        ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[100].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xdfffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[409].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-                        ^ vlSelf->top__DOT____Vtogcov__ostream_msg))) {
-        vlSymsp->__Vcoverage[101].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0xbfffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
+        vlSymsp->__Vcoverage[410].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
-    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q 
-          ^ vlSelf->top__DOT____Vtogcov__ostream_msg) 
+    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
+          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
          >> 0x1fU)) {
-        vlSymsp->__Vcoverage[102].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT____Vtogcov__ostream_msg = 
-            ((0x7fffffffU & vlSelf->top__DOT____Vtogcov__ostream_msg) 
-             | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q));
+        vlSymsp->__Vcoverage[411].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
+            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
+               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
     }
 }
 
@@ -6366,11 +7039,13 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__1\n"); );
     // Body
     if ((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-        if ((1U & (~ (IData)(vlSelf->top__DOT__istream_val)))) {
-            vlSymsp->__Vcoverage[494].fetch_add(1, std::memory_order_relaxed);
+        if ((1U & (~ ((IData)(vlSelf->top__DOT__istream_val) 
+                      & (IData)(vlSelf->top__DOT__ostream_rdy))))) {
+            vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
         }
-        if (vlSelf->top__DOT__istream_val) {
-            vlSymsp->__Vcoverage[493].fetch_add(1, std::memory_order_relaxed);
+        if (((IData)(vlSelf->top__DOT__istream_val) 
+             & (IData)(vlSelf->top__DOT__ostream_rdy))) {
+            vlSymsp->__Vcoverage[498].fetch_add(1, std::memory_order_relaxed);
             vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 1U;
         } else {
             vlSelf->top__DOT__imul__DOT__control__DOT__nextState = 0U;
@@ -6380,745 +7055,45 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
             = ((1U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
                 ? ((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))
                     ? 2U : 1U) : ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))
-                                   ? ((IData)(vlSelf->top__DOT__ostream_rdy)
+                                   ? (((IData)(vlSelf->top__DOT__ostream_rdy) 
+                                       & (IData)(vlSelf->top__DOT__istream_val))
                                        ? 0U : 2U) : 0U));
     }
     if ((0U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
         if ((1U != (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
             if ((2U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__state))) {
-                if (vlSelf->top__DOT__ostream_rdy) {
-                    vlSymsp->__Vcoverage[499].fetch_add(1, std::memory_order_relaxed);
+                if (((IData)(vlSelf->top__DOT__ostream_rdy) 
+                     & (IData)(vlSelf->top__DOT__istream_val))) {
+                    vlSymsp->__Vcoverage[504].fetch_add(1, std::memory_order_relaxed);
                 }
-                if ((1U & (~ (IData)(vlSelf->top__DOT__ostream_rdy)))) {
-                    vlSymsp->__Vcoverage[500].fetch_add(1, std::memory_order_relaxed);
+                if ((1U & (~ ((IData)(vlSelf->top__DOT__ostream_rdy) 
+                              & (IData)(vlSelf->top__DOT__istream_val))))) {
+                    vlSymsp->__Vcoverage[505].fetch_add(1, std::memory_order_relaxed);
                 }
             }
         }
     }
     if ((1U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)))) {
-        vlSymsp->__Vcoverage[479].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[484].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState 
             = ((2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)) 
                | (1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState)));
     }
     if ((2U & ((IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState) 
                ^ (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)))) {
-        vlSymsp->__Vcoverage[480].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[485].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState 
             = ((1U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT____Vtogcov__nextState)) 
                | (2U & (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__nextState)));
     }
 }
 
-VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__3(Vtop___024root* vlSelf) {
-    if (false && vlSelf) {}  // Prevent unused
-    Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__3\n"); );
-    // Body
-    vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-        = (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg.q 
-           + vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg.q);
-    if ((1U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[412].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (1U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((2U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[413].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (2U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((4U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[414].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (4U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((8U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[415].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (8U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x10U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[416].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x10U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x20U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[417].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x20U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x40U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[418].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x40U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x80U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[419].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x80U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x100U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[420].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x100U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x200U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[421].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x200U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x400U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[422].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x400U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x800U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[423].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x800U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x1000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[424].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x1000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x2000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[425].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x2000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x4000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[426].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x4000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x8000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[427].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x8000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x10000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[428].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x10000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x20000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[429].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x20000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x40000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[430].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x40000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x80000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[431].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x80000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x100000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[432].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x100000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x200000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[433].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x200000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x400000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[434].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x400000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x800000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[435].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x800000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x1000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[436].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x1000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x2000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[437].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x2000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x4000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[438].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x4000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x8000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[439].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x8000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x10000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[440].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x10000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x20000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[441].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x20000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if ((0x40000000U & (vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out))) {
-        vlSymsp->__Vcoverage[442].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x40000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-    if (((vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out 
-          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-         >> 0x1fU)) {
-        vlSymsp->__Vcoverage[443].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out 
-            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out) 
-               | (0x80000000U & vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out));
-    }
-}
-
-VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__4(Vtop___024root* vlSelf) {
-    if (false && vlSelf) {}  // Prevent unused
-    Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__4\n"); );
-    // Body
-    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[444].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[445].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[446].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[447].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[448].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[449].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[450].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[451].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[452].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[453].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[454].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[455].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[456].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[457].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[458].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[459].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[460].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[461].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[462].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[463].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[464].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[465].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[466].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[467].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[468].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[469].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[470].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[471].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[472].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[473].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out))) {
-        vlSymsp->__Vcoverage[474].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out 
-          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-         >> 0x1fU)) {
-        vlSymsp->__Vcoverage[475].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out 
-            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out) 
-               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out));
-    }
-}
-
-VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__5(Vtop___024root* vlSelf) {
-    if (false && vlSelf) {}  // Prevent unused
-    Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__5\n"); );
-    // Body
-    if ((1U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[380].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (1U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((2U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[381].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (2U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((4U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[382].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (4U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((8U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-               ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[383].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (8U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x10U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[384].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffffffefU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x10U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x20U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[385].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x20U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x40U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[386].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x40U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x80U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                  ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[387].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x80U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x100U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[388].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x100U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x200U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[389].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x200U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x400U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[390].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x400U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x800U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                   ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[391].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x800U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x1000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[392].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffffefffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x1000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x2000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[393].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x2000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x4000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[394].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x4000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x8000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                    ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[395].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x8000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x10000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[396].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x10000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x20000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[397].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x20000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x40000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[398].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x40000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x80000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                     ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[399].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x80000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x100000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[400].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffefffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x100000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x200000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[401].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x200000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x400000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[402].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x400000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x800000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                      ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[403].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x800000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x1000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[404].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x1000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x2000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[405].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x2000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x4000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[406].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x4000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x8000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                       ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[407].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x8000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x10000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[408].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xefffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x10000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x20000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[409].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x20000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if ((0x40000000U & (vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-                        ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out))) {
-        vlSymsp->__Vcoverage[410].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x40000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-    if (((vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out 
-          ^ vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-         >> 0x1fU)) {
-        vlSymsp->__Vcoverage[411].fetch_add(1, std::memory_order_relaxed);
-        vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out 
-            = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out) 
-               | (0x80000000U & vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out));
-    }
-}
-
-void Vtop_vc_Reg__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_reg__0(Vtop_vc_Reg__P20* vlSelf);
-void Vtop_vc_Reg__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_reg__0(Vtop_vc_Reg__P20* vlSelf);
 void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0(Vtop_vc_Mux2__P20* vlSelf);
-void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0(Vtop_vc_Mux2__P20* vlSelf);
 void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0(Vtop_vc_Mux2__P20* vlSelf);
+void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0(Vtop_vc_Mux2__P20* vlSelf);
 void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0(Vtop_vc_Mux2__P20* vlSelf);
-void Vtop_vc_Reg__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_reg__0(Vtop_vc_Reg__P20* vlSelf);
-void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0(Vtop_vc_Mux2__P20* vlSelf);
-void Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0(Vtop_vc_Mux2__P20* vlSelf);
+void Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__1(Vtop_vc_Mux2__P20* vlSelf);
 
 void Vtop___024root___eval_nba(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
@@ -7128,33 +7103,21 @@ void Vtop___024root___eval_nba(Vtop___024root* vlSelf) {
     if ((1ULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_sequent__TOP__0(vlSelf);
         vlSelf->__Vm_traceActivity[4U] = 1U;
-        Vtop_vc_Reg__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_reg__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_reg));
-        Vtop_vc_Reg__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_reg__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_reg));
         Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux));
-        Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux));
         Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux));
-        Vtop___024root___nba_sequent__TOP__1(vlSelf);
+        Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux));
         Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux));
-    }
-    if ((2ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        Vtop_vc_Reg__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_reg__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_reg));
+        Vtop___024root___nba_sequent__TOP__1(vlSelf);
+        Vtop_vc_Mux2__P20___nba_sequent__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__1((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux));
         Vtop___024root___nba_sequent__TOP__2(vlSelf);
     }
-    if ((0x1cULL & vlSelf->__VnbaTriggered.word(0U))) {
+    if ((0xeULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_comb__TOP__0(vlSelf);
     }
-    if ((0x1dULL & vlSelf->__VnbaTriggered.word(0U))) {
+    if ((0xfULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_comb__TOP__1(vlSelf);
         Vtop_vc_Mux2__P20___act_comb__TOP__top__DOT__imul__DOT__datapath__DOT__b_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__b_mux));
         Vtop_vc_Mux2__P20___act_comb__TOP__top__DOT__imul__DOT__datapath__DOT__a_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__a_mux));
         Vtop___024root___act_comb__TOP__1(vlSelf);
-    }
-    if ((3ULL & vlSelf->__VnbaTriggered.word(0U))) {
-        Vtop___024root___nba_comb__TOP__3(vlSelf);
-        vlSelf->__Vm_traceActivity[5U] = 1U;
-        Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux));
-        Vtop___024root___nba_comb__TOP__4(vlSelf);
-        Vtop_vc_Mux2__P20___nba_comb__TOP__top__DOT__imul__DOT__datapath__DOT__result_mux__0((&vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux));
-        Vtop___024root___nba_comb__TOP__5(vlSelf);
     }
 }

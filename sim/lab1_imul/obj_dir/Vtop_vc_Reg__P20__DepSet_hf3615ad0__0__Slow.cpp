@@ -80,5 +80,5 @@ VL_ATTR_COLD void Vtop_vc_Reg__P20___configure_coverage(Vtop_vc_Reg__P20* vlSelf
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[409]), first, "../vc/regs.v", 25, 30, "", "v_toggle/vc_Reg__P20", "d[29]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[410]), first, "../vc/regs.v", 25, 30, "", "v_toggle/vc_Reg__P20", "d[30]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[411]), first, "../vc/regs.v", 25, 30, "", "v_toggle/vc_Reg__P20", "d[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[550]), first, "../vc/regs.v", 28, 3, "", "v_line/vc_Reg__P20", "block", "28-29");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[551]), first, "../vc/regs.v", 28, 3, "", "v_line/vc_Reg__P20", "block", "28-29");
 }

@@ -42,7 +42,7 @@ void Vtop___024root___eval(Vtop___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval\n"); );
     // Init
     CData/*0:0*/ __VicoContinue;
-    VlTriggerVec<5> __VpreTriggered;
+    VlTriggerVec<4> __VpreTriggered;
     IData/*31:0*/ __VnbaIterCount;
     CData/*0:0*/ __VnbaContinue;
     // Body
@@ -110,10 +110,10 @@ void Vtop___024root___timing_commit(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___timing_commit\n"); );
     // Body
-    if ((! (4ULL & vlSelf->__VactTriggered.word(0U)))) {
+    if ((! (2ULL & vlSelf->__VactTriggered.word(0U)))) {
         vlSelf->__VtrigSched_h3cadd47d__0.commit("@(negedge clk)");
     }
-    if ((! (0x10ULL & vlSelf->__VactTriggered.word(0U)))) {
+    if ((! (8ULL & vlSelf->__VactTriggered.word(0U)))) {
         vlSelf->__VtrigSched_hb9476d33__0.commit("@([changed] top.ostream_val)");
     }
 }
@@ -123,13 +123,13 @@ void Vtop___024root___timing_resume(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___timing_resume\n"); );
     // Body
-    if ((4ULL & vlSelf->__VactTriggered.word(0U))) {
+    if ((2ULL & vlSelf->__VactTriggered.word(0U))) {
         vlSelf->__VtrigSched_h3cadd47d__0.resume("@(negedge clk)");
     }
-    if ((8ULL & vlSelf->__VactTriggered.word(0U))) {
+    if ((4ULL & vlSelf->__VactTriggered.word(0U))) {
         vlSelf->__VdlySched.resume();
     }
-    if ((0x10ULL & vlSelf->__VactTriggered.word(0U))) {
+    if ((8ULL & vlSelf->__VactTriggered.word(0U))) {
         vlSelf->__VtrigSched_hb9476d33__0.resume("@([changed] top.ostream_val)");
     }
 }

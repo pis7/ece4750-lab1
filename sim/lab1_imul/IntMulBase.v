@@ -38,13 +38,13 @@ module lab1_imul_IntMulBase
   // Instantiate datapath and control models here and then connect them
   // together.
   // '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''\
-  wire b_mux_sel;
-  wire a_mux_sel;
-  wire result_mux_sel;
-  wire result_en;
-  wire add_mux_sel;
-  wire [31:0] b_lsb;
-  mul_base_datapath datapath(.clk(clk), .req_msg(istream_msg), .resp_msg(ostream_msg), .b_mux_sel(b_mux_sel), .a_mux_sel(a_mux_sel), .result_mux_sel(result_mux_sel),
+  logic b_mux_sel;
+  logic a_mux_sel;
+  logic result_mux_sel;
+  logic result_en;
+  logic add_mux_sel;
+  logic [31:0] b_lsb;
+  mul_base_datapath datapath(.clk(clk), .reset(reset), .req_msg(istream_msg), .resp_msg(ostream_msg), .b_mux_sel(b_mux_sel), .a_mux_sel(a_mux_sel), .result_mux_sel(result_mux_sel),
   .result_en(result_en), .add_mux_sel(add_mux_sel), .b_lsb(b_lsb));
   mul_base_control control(.clk(clk), .reset(reset), .req_val(istream_val), .req_rdy(istream_rdy), .resp_rdy(ostream_rdy), .resp_val(ostream_val),
   .b_mux_sel(b_mux_sel), .a_mux_sel(a_mux_sel), .result_mux_sel(result_mux_sel), .result_en(result_en), .add_mux_sel(add_mux_sel), .b_lsb(b_lsb));
@@ -85,6 +85,7 @@ endmodule
 module mul_base_datapath
 (
   input clk,
+  input reset,
 
   // Data
   input logic [63:0] req_msg,
@@ -139,7 +140,7 @@ vc_Mux2 #(.p_nbits(32)) result_mux(.in0(add_mux_out), .in1(0), .sel(result_mux_s
 
 // Result register
 logic [31:0] result_reg_out;
-vc_Reg #(.p_nbits(32)) result_reg(.clk(result_en), .q(result_reg_out), .d(result_mux_out));
+vc_EnReg #(.p_nbits(32)) result_reg(.clk(clk), .reset(reset), .q(result_reg_out), .d(result_mux_out), .en(result_en));
 
 // Adder
 logic [31:0] adder_out;
@@ -177,11 +178,10 @@ logic [1:0] state;
 logic [1:0] nextState;
 
 logic counter_en;
-logic count_clear;
 logic count_done;
-logic [4:0] count;
+logic [5:0] count;
 logic count_is_zero;
-vc_BasicCounter #(.p_count_nbits(5), .p_count_clear_value(0), .p_count_max_value(31)) cycle_counter(.clk(clk), .reset(reset), .clear(count_clear), .increment(counter_en), .decrement(0), .count(count), .count_is_zero(count_is_zero), .count_is_max(count_done));
+vc_BasicCounter #(.p_count_nbits(6), .p_count_clear_value(0), .p_count_max_value(31)) cycle_counter(.clk(clk), .reset(reset), .clear(0), .increment(counter_en), .decrement(0), .count(count), .count_is_zero(count_is_zero), .count_is_max(count_done));
 
 // State register
 always_ff @(posedge clk) begin
@@ -197,7 +197,7 @@ always_comb begin
   case (state)
     IDLE: begin
       // If input value ready then go to CALC state
-      if (req_val) nextState = CALC;
+      if (req_val && resp_rdy) nextState = CALC;
       else nextState = IDLE;
     end
     CALC: begin
@@ -207,7 +207,7 @@ always_comb begin
     end
     DONE: begin
       // If output device ready to receive value then go back to IDLE state
-      if (resp_rdy) nextState = IDLE;
+      if (resp_rdy && req_val) nextState = IDLE;
       else nextState = DONE;
     end
     default: nextState = IDLE;
@@ -230,7 +230,6 @@ always_comb begin
       add_mux_sel = 1;
 
       // Clear counter to 0 and disable it
-      count_clear = 1;
       counter_en = 0;
 
       // Ready to receive input and not ready to output value
@@ -243,11 +242,10 @@ always_comb begin
       a_mux_sel = 0;
 
       // Do not clear counter and enable it
-      count_clear = 0;
       counter_en = 1;
 
       // Enable result register on clock and do not pass in 0 from mux
-      result_en = clk;
+      result_en = 1;
       result_mux_sel = 0;
 
       // Not ready to receive new input and output value not ready
@@ -273,7 +271,6 @@ always_comb begin
       add_mux_sel = 1;
 
       // Clear counter and disable it
-      count_clear = 1;
       counter_en = 0;
 
       // Not ready to receive new input and output value is ready
@@ -287,7 +284,6 @@ always_comb begin
       result_mux_sel = 1;
       result_en = 0;
       add_mux_sel = 1;
-      count_clear = 1;
       counter_en = 0;
       req_rdy = 1;
       resp_val = 0;

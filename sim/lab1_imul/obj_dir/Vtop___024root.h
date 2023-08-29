@@ -10,7 +10,6 @@
 #include "verilated_timing.h"
 class Vtop___024unit;
 class Vtop_vc_Mux2__P20;
-class Vtop_vc_Reg__P20;
 
 
 class Vtop__Syms;
@@ -20,11 +19,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
     // CELLS
     Vtop___024unit* __PVT____024unit;
     Vtop_vc_Mux2__P20* __PVT__top__DOT__imul__DOT__datapath__DOT__b_mux;
-    Vtop_vc_Reg__P20* __PVT__top__DOT__imul__DOT__datapath__DOT__b_reg;
     Vtop_vc_Mux2__P20* __PVT__top__DOT__imul__DOT__datapath__DOT__a_mux;
-    Vtop_vc_Reg__P20* __PVT__top__DOT__imul__DOT__datapath__DOT__a_reg;
     Vtop_vc_Mux2__P20* __PVT__top__DOT__imul__DOT__datapath__DOT__result_mux;
-    Vtop_vc_Reg__P20* __PVT__top__DOT__imul__DOT__datapath__DOT__result_reg;
     Vtop_vc_Mux2__P20* __PVT__top__DOT__imul__DOT__datapath__DOT__adder_mux;
 
     // DESIGN SPECIFIC STATE
@@ -32,7 +28,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
     struct {
         VL_IN8(clk,0,0);
         CData/*0:0*/ top__DOT__ostream_val;
-        CData/*0:0*/ top__DOT__imul__DOT__result_en;
         VL_IN8(linetrace,0,0);
         CData/*0:0*/ top__DOT__reset;
         CData/*0:0*/ top__DOT__istream_val;
@@ -52,6 +47,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*0:0*/ top__DOT__imul__DOT__b_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT__a_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT__result_mux_sel;
+        CData/*0:0*/ top__DOT__imul__DOT__result_en;
         CData/*0:0*/ top__DOT__imul__DOT__add_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT____Vtogcov__b_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT____Vtogcov__a_mux_sel;
@@ -62,24 +58,21 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT__state;
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT__nextState;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__counter_en;
-        CData/*0:0*/ top__DOT__imul__DOT__control__DOT__count_clear;
-        CData/*4:0*/ top__DOT__imul__DOT__control__DOT__count;
+        CData/*5:0*/ top__DOT__imul__DOT__control__DOT__count;
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__state;
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__nextState;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__counter_en;
-        CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_done;
-        CData/*4:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count;
+        CData/*5:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero;
-        CData/*4:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next;
+        CData/*5:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment;
-        CData/*0:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__decrement;
-        CData/*4:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next;
+        CData/*0:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__clear;
+        CData/*5:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__count_next;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__do_increment;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT__level;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT____Vtogcov__level;
         CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
-        CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__imul__DOT__result_en__0;
         CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__ostream_val__0;
         CData/*0:0*/ __VactDidInit;
         CData/*0:0*/ __VactContinue;
@@ -93,6 +86,9 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         IData/*31:0*/ top__DOT__imul__DOT__idx1;
         IData/*31:0*/ top__DOT__imul__DOT__idx0;
         IData/*31:0*/ top__DOT__imul__DOT____Vtogcov__b_lsb;
+        IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__b_reg_out;
+        IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__a_reg_out;
+        IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__result_reg_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__adder_out;
     };
     struct {
@@ -116,15 +112,15 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         IData/*31:0*/ __VactIterCount;
         QData/*63:0*/ top__DOT__istream_msg;
         QData/*63:0*/ top__DOT____Vtogcov__istream_msg;
-        VlUnpacked<CData/*0:0*/, 6> __Vm_traceActivity;
+        VlUnpacked<CData/*0:0*/, 5> __Vm_traceActivity;
     };
     VlTriggerScheduler __VtrigSched_h3cadd47d__0;
     VlDelayScheduler __VdlySched;
     VlTriggerScheduler __VtrigSched_hb9476d33__0;
     VlTriggerVec<1> __VstlTriggered;
     VlTriggerVec<1> __VicoTriggered;
-    VlTriggerVec<5> __VactTriggered;
-    VlTriggerVec<5> __VnbaTriggered;
+    VlTriggerVec<4> __VactTriggered;
+    VlTriggerVec<4> __VnbaTriggered;
 
     // INTERNAL VARIABLES
     Vtop__Syms* const vlSymsp;

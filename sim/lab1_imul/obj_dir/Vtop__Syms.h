@@ -17,7 +17,6 @@
 #include "Vtop___024root.h"
 #include "Vtop___024unit.h"
 #include "Vtop_vc_Mux2__P20.h"
-#include "Vtop_vc_Reg__P20.h"
 
 // DPI TYPES for DPI Export callbacks (Internal use)
 
@@ -35,15 +34,12 @@ class alignas(VL_CACHE_LINE_BYTES)Vtop__Syms final : public VerilatedSyms {
     Vtop___024root                 TOP;
     Vtop___024unit                 TOP____024unit;
     Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__a_mux;
-    Vtop_vc_Reg__P20               TOP__top__DOT__imul__DOT__datapath__DOT__a_reg;
     Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux;
     Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__b_mux;
-    Vtop_vc_Reg__P20               TOP__top__DOT__imul__DOT__datapath__DOT__b_reg;
     Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__result_mux;
-    Vtop_vc_Reg__P20               TOP__top__DOT__imul__DOT__datapath__DOT__result_reg;
 
     // COVERAGE
-    std::atomic<uint32_t> __Vcoverage[551];
+    std::atomic<uint32_t> __Vcoverage[556];
 
     // SCOPE NAMES
     VerilatedScope __Vscope_top;

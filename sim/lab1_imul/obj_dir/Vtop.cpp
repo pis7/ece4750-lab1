@@ -16,11 +16,8 @@ Vtop::Vtop(VerilatedContext* _vcontextp__, const char* _vcname__)
     , linetrace{vlSymsp->TOP.linetrace}
     , __PVT____024unit{vlSymsp->TOP.__PVT____024unit}
     , __PVT__top__DOT__imul__DOT__datapath__DOT__b_mux{vlSymsp->TOP.__PVT__top__DOT__imul__DOT__datapath__DOT__b_mux}
-    , __PVT__top__DOT__imul__DOT__datapath__DOT__b_reg{vlSymsp->TOP.__PVT__top__DOT__imul__DOT__datapath__DOT__b_reg}
     , __PVT__top__DOT__imul__DOT__datapath__DOT__a_mux{vlSymsp->TOP.__PVT__top__DOT__imul__DOT__datapath__DOT__a_mux}
-    , __PVT__top__DOT__imul__DOT__datapath__DOT__a_reg{vlSymsp->TOP.__PVT__top__DOT__imul__DOT__datapath__DOT__a_reg}
     , __PVT__top__DOT__imul__DOT__datapath__DOT__result_mux{vlSymsp->TOP.__PVT__top__DOT__imul__DOT__datapath__DOT__result_mux}
-    , __PVT__top__DOT__imul__DOT__datapath__DOT__result_reg{vlSymsp->TOP.__PVT__top__DOT__imul__DOT__datapath__DOT__result_reg}
     , __PVT__top__DOT__imul__DOT__datapath__DOT__adder_mux{vlSymsp->TOP.__PVT__top__DOT__imul__DOT__datapath__DOT__adder_mux}
     , rootp{&(vlSymsp->TOP)}
 {
