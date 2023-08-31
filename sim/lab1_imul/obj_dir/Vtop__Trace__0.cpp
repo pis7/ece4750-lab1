@@ -54,13 +54,12 @@ void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffe
         bufp->chgBit(oldp+275,(vlSelf->top__DOT__imul__DOT__result_en));
         bufp->chgBit(oldp+276,(vlSelf->top__DOT__imul__DOT__add_mux_sel));
         bufp->chgIData(oldp+277,(vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out),32);
-        bufp->chgCData(oldp+278,(vlSelf->top__DOT__imul__DOT__b_shamt),5);
+        bufp->chgCData(oldp+278,(vlSelf->top__DOT__imul__DOT__shamt),5);
         bufp->chgCData(oldp+279,(vlSelf->top__DOT__imul__DOT__control__DOT__state),2);
         bufp->chgBit(oldp+280,(vlSelf->top__DOT__imul__DOT__control__DOT__done));
         bufp->chgIData(oldp+281,(vlSelf->top__DOT__imul__DOT__datapath__DOT__r_shift_out),32);
         bufp->chgIData(oldp+282,(vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out),32);
-        bufp->chgIData(oldp+283,((vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out 
-                                  << 1U)),32);
+        bufp->chgIData(oldp+283,(vlSelf->top__DOT__imul__DOT__datapath__DOT__l_shift_out),32);
         bufp->chgIData(oldp+284,(vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__result_mux.out),32);
         bufp->chgIData(oldp+285,(vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out),32);
         bufp->chgIData(oldp+286,(vlSymsp->TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux.out),32);

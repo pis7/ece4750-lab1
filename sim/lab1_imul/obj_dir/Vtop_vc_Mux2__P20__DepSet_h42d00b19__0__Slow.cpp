@@ -16,19 +16,19 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__dat
     // Body
     if (vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel) {
         if (vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel) {
-            vlSymsp->__Vcoverage[575].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[574].fetch_add(1, std::memory_order_relaxed);
             vlSelf->out = (IData)(vlSymsp->TOP.top__DOT__istream_msg);
         } else {
             vlSelf->out = 0U;
         }
         if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel)))) {
-            vlSymsp->__Vcoverage[576].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[575].fetch_add(1, std::memory_order_relaxed);
         }
     } else {
         vlSelf->out = vlSymsp->TOP.top__DOT__imul__DOT__datapath__DOT__r_shift_out;
     }
     if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__b_mux_sel)))) {
-        vlSymsp->__Vcoverage[574].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[573].fetch_add(1, std::memory_order_relaxed);
     }
 }
 
@@ -39,21 +39,20 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___stl_sequent__TOP__top__DOT__imul__DOT__dat
     // Body
     if (vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel) {
         if (vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel) {
-            vlSymsp->__Vcoverage[575].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[574].fetch_add(1, std::memory_order_relaxed);
             vlSelf->out = (IData)((vlSymsp->TOP.top__DOT__istream_msg 
                                    >> 0x20U));
         } else {
             vlSelf->out = 0U;
         }
         if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel)))) {
-            vlSymsp->__Vcoverage[576].fetch_add(1, std::memory_order_relaxed);
+            vlSymsp->__Vcoverage[575].fetch_add(1, std::memory_order_relaxed);
         }
     } else {
-        vlSelf->out = (vlSymsp->TOP.top__DOT__imul__DOT__datapath__DOT__a_reg_out 
-                       << 1U);
+        vlSelf->out = vlSymsp->TOP.top__DOT__imul__DOT__datapath__DOT__l_shift_out;
     }
     if ((1U & (~ (IData)(vlSymsp->TOP.top__DOT__imul__DOT__a_mux_sel)))) {
-        vlSymsp->__Vcoverage[574].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[573].fetch_add(1, std::memory_order_relaxed);
     }
 }
 
@@ -160,8 +159,8 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___configure_coverage(Vtop_vc_Mux2__P20* vlSe
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[478]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[29]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[479]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[30]", "");
     vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[480]), first, "../vc/muxes.v", 18, 30, "", "v_toggle/vc_Mux2__P20", "out[31]", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[574]), first, "../vc/muxes.v", 24, 12, "", "v_line/vc_Mux2__P20", "case", "24");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[575]), first, "../vc/muxes.v", 25, 12, "", "v_line/vc_Mux2__P20", "case", "25");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[576]), first, "../vc/muxes.v", 26, 7, "", "v_line/vc_Mux2__P20", "case", "26");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[577]), first, "../vc/muxes.v", 21, 3, "", "v_line/vc_Mux2__P20", "block", "21-23");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[573]), first, "../vc/muxes.v", 24, 12, "", "v_line/vc_Mux2__P20", "case", "24");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[574]), first, "../vc/muxes.v", 25, 12, "", "v_line/vc_Mux2__P20", "case", "25");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[575]), first, "../vc/muxes.v", 26, 7, "", "v_line/vc_Mux2__P20", "case", "26");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[576]), first, "../vc/muxes.v", 21, 3, "", "v_line/vc_Mux2__P20", "block", "21-23");
 }

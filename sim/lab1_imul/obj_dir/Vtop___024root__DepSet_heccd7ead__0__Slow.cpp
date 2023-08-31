@@ -176,7 +176,7 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__imul__DOT__result_mux_sel = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT__result_en = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT__add_mux_sel = VL_RAND_RESET_I(1);
-    vlSelf->top__DOT__imul__DOT__b_shamt = VL_RAND_RESET_I(5);
+    vlSelf->top__DOT__imul__DOT__shamt = VL_RAND_RESET_I(5);
     VL_RAND_RESET_W(4096, vlSelf->top__DOT__imul__DOT__str);
     vlSelf->top__DOT__imul__DOT__idx1 = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__idx0 = VL_RAND_RESET_I(32);
@@ -186,10 +186,11 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__imul__DOT____Vtogcov__result_en = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT____Vtogcov__add_mux_sel = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT____Vtogcov__b_lsb = VL_RAND_RESET_I(32);
-    vlSelf->top__DOT__imul__DOT____Vtogcov__b_shamt = VL_RAND_RESET_I(5);
+    vlSelf->top__DOT__imul__DOT____Vtogcov__shamt = VL_RAND_RESET_I(5);
     vlSelf->top__DOT__imul__DOT__datapath__DOT__b_reg_out = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__datapath__DOT__r_shift_out = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__datapath__DOT__a_reg_out = VL_RAND_RESET_I(32);
+    vlSelf->top__DOT__imul__DOT__datapath__DOT__l_shift_out = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__datapath__DOT__result_reg_out = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__datapath__DOT__adder_out = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__b_mux_out = VL_RAND_RESET_I(32);
@@ -200,7 +201,6 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__result_mux_out = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__adder_out = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__datapath__DOT____Vtogcov__add_mux_out = VL_RAND_RESET_I(32);
-    vlSelf->top__DOT__imul__DOT__datapath__DOT__a_l_shifter__DOT____Vtogcov__shamt = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT__control__DOT__state = VL_RAND_RESET_I(2);
     vlSelf->top__DOT__imul__DOT__control__DOT__nextState = VL_RAND_RESET_I(2);
     vlSelf->top__DOT__imul__DOT__control__DOT__done = VL_RAND_RESET_I(1);

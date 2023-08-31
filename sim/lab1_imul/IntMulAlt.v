@@ -43,11 +43,11 @@ module lab1_imul_IntMulAlt
   logic result_en;
   logic add_mux_sel;
   logic [31:0] b_lsb;
-  logic [4:0] b_shamt;
+  logic [4:0] shamt;
   mul_base_datapath datapath(.clk(clk), .reset(reset), .req_msg(istream_msg), .resp_msg(ostream_msg), .b_mux_sel(b_mux_sel), .a_mux_sel(a_mux_sel), .result_mux_sel(result_mux_sel),
-  .result_en(result_en), .add_mux_sel(add_mux_sel), .b_shamt(b_shamt), .b_lsb(b_lsb));
+  .result_en(result_en), .add_mux_sel(add_mux_sel), .shamt(shamt), .b_lsb(b_lsb));
   mul_base_control control(.clk(clk), .reset(reset), .req_val(istream_val), .req_rdy(istream_rdy), .resp_rdy(ostream_rdy), .resp_val(ostream_val),
-  .b_mux_sel(b_mux_sel), .a_mux_sel(a_mux_sel), .result_mux_sel(result_mux_sel), .result_en(result_en), .add_mux_sel(add_mux_sel), .b_shamt(b_shamt), .b_lsb(b_lsb));
+  .b_mux_sel(b_mux_sel), .a_mux_sel(a_mux_sel), .result_mux_sel(result_mux_sel), .result_en(result_en), .add_mux_sel(add_mux_sel), .shamt(shamt), .b_lsb(b_lsb));
 
   //----------------------------------------------------------------------
   // Line Tracing
@@ -83,8 +83,8 @@ endmodule
 
 module mul_base_datapath
 (
-  input clk,
-  input reset,
+  input logic clk,
+  input logic reset,
 
   // Data
   input logic [63:0] req_msg,
@@ -96,7 +96,7 @@ module mul_base_datapath
   input logic result_mux_sel,
   input logic result_en,
   input logic add_mux_sel,
-  input logic[4:0] b_shamt,
+  input logic[4:0] shamt,
   output logic [31:0] b_lsb
 );
 
@@ -118,7 +118,7 @@ assign b_lsb = b_reg_out;
 
 // B right shifter
 logic [31:0] r_shift_out;
-vc_RightLogicalShifter #(.p_nbits(32), .p_shamt_nbits(5))  b_r_shifter(.in(b_reg_out), .shamt(b_shamt), .out(r_shift_out));
+vc_RightLogicalShifter #(.p_nbits(32), .p_shamt_nbits(5))  b_r_shifter(.in(b_reg_out), .shamt(shamt), .out(r_shift_out));
 
 // A logic ---------------------------------
 // A mux
@@ -131,7 +131,7 @@ vc_Reg #(.p_nbits(32)) a_reg(.clk(clk), .q(a_reg_out), .d(a_mux_out));
 
 // A left shifter
 logic [31:0] l_shift_out;
-vc_LeftLogicalShifter #(.p_nbits(32), .p_shamt_nbits(1))  a_l_shifter(.in(a_reg_out), .shamt(1), .out(l_shift_out));
+vc_LeftLogicalShifter #(.p_nbits(32), .p_shamt_nbits(5))  a_l_shifter(.in(a_reg_out), .shamt(shamt), .out(l_shift_out));
 
 // Result logic ----------------------------
 // Result mux
@@ -155,17 +155,17 @@ assign resp_msg = result_reg_out;
 endmodule
 
 module mul_base_control (
-  input clk,
-  input reset,
+  input logic clk,
+  input logic reset,
 
   // Datapath I/O
-  input [31:0] b_lsb,
+  input logic [31:0] b_lsb,
   output logic b_mux_sel,
   output logic a_mux_sel,
   output logic result_en,
   output logic result_mux_sel,
   output logic add_mux_sel,
-  output logic[4:0] b_shamt,
+  output logic [4:0] shamt,
 
   // Parent module I/O
   input logic req_val,
@@ -217,7 +217,7 @@ always_comb begin
       // Do not shift a and b
       b_mux_sel = 1;
       a_mux_sel = 1;
-      b_shamt = 0;
+      shamt = 0;
 
       // Set result to 0 and disable reg
       result_mux_sel = 1;
@@ -254,44 +254,44 @@ always_comb begin
         add_mux_sel = 0;
         done = 0;
       end
-      if (b_lsb[1]) b_shamt = 1;
-      else if (b_lsb[2]) b_shamt = 2;
-      else if (b_lsb[3]) b_shamt = 3;
-      else if (b_lsb[4]) b_shamt = 4;
-      else if (b_lsb[5]) b_shamt = 5;
-      else if (b_lsb[6]) b_shamt = 6;
-      else if (b_lsb[7]) b_shamt = 7;
-      else if (b_lsb[8]) b_shamt = 8;
-      else if (b_lsb[9]) b_shamt = 9;
-      else if (b_lsb[10]) b_shamt = 10;
-      else if (b_lsb[11]) b_shamt = 11;
-      else if (b_lsb[12]) b_shamt = 12;
-      else if (b_lsb[13]) b_shamt = 13;
-      else if (b_lsb[14]) b_shamt = 14;
-      else if (b_lsb[15]) b_shamt = 15;
-      else if (b_lsb[16]) b_shamt = 16;
-      else if (b_lsb[17]) b_shamt = 17;
-      else if (b_lsb[18]) b_shamt = 18;
-      else if (b_lsb[19]) b_shamt = 19;
-      else if (b_lsb[20]) b_shamt = 20;
-      else if (b_lsb[21]) b_shamt = 21;
-      else if (b_lsb[22]) b_shamt = 22;
-      else if (b_lsb[23]) b_shamt = 23;
-      else if (b_lsb[24]) b_shamt = 24;
-      else if (b_lsb[25]) b_shamt = 25;
-      else if (b_lsb[26]) b_shamt = 26;
-      else if (b_lsb[27]) b_shamt = 27;
-      else if (b_lsb[28]) b_shamt = 28;
-      else if (b_lsb[29]) b_shamt = 29;
-      else if (b_lsb[30]) b_shamt = 30;
-      else if (b_lsb[31]) b_shamt = 31;
-      else b_shamt = 1;
+      if (b_lsb[1]) shamt = 1;
+      else if (b_lsb[2]) shamt = 2;
+      else if (b_lsb[3]) shamt = 3;
+      else if (b_lsb[4]) shamt = 4;
+      else if (b_lsb[5]) shamt = 5;
+      else if (b_lsb[6]) shamt = 6;
+      else if (b_lsb[7]) shamt = 7;
+      else if (b_lsb[8]) shamt = 8;
+      else if (b_lsb[9]) shamt = 9;
+      else if (b_lsb[10]) shamt = 10;
+      else if (b_lsb[11]) shamt = 11;
+      else if (b_lsb[12]) shamt = 12;
+      else if (b_lsb[13]) shamt = 13;
+      else if (b_lsb[14]) shamt = 14;
+      else if (b_lsb[15]) shamt = 15;
+      else if (b_lsb[16]) shamt = 16;
+      else if (b_lsb[17]) shamt = 17;
+      else if (b_lsb[18]) shamt = 18;
+      else if (b_lsb[19]) shamt = 19;
+      else if (b_lsb[20]) shamt = 20;
+      else if (b_lsb[21]) shamt = 21;
+      else if (b_lsb[22]) shamt = 22;
+      else if (b_lsb[23]) shamt = 23;
+      else if (b_lsb[24]) shamt = 24;
+      else if (b_lsb[25]) shamt = 25;
+      else if (b_lsb[26]) shamt = 26;
+      else if (b_lsb[27]) shamt = 27;
+      else if (b_lsb[28]) shamt = 28;
+      else if (b_lsb[29]) shamt = 29;
+      else if (b_lsb[30]) shamt = 30;
+      else if (b_lsb[31]) shamt = 31;
+      else shamt = 1;
     end
     DONE: begin
       // Do not shift a and b
       b_mux_sel = 1;
       a_mux_sel = 1;
-      b_shamt = 0;
+      shamt = 0;
 
       // Keep result register output previous value before calculation done (not 0)
       result_mux_sel = 0;
@@ -310,7 +310,7 @@ always_comb begin
       // Same as IDLE state
       b_mux_sel = 1;
       a_mux_sel = 1;
-      b_shamt = 0;
+      shamt = 0;
       result_mux_sel = 1;
       result_en = 0;
       add_mux_sel = 1;

@@ -49,14 +49,13 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*0:0*/ top__DOT__imul__DOT__result_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT__result_en;
         CData/*0:0*/ top__DOT__imul__DOT__add_mux_sel;
-        CData/*4:0*/ top__DOT__imul__DOT__b_shamt;
+        CData/*4:0*/ top__DOT__imul__DOT__shamt;
         CData/*0:0*/ top__DOT__imul__DOT____Vtogcov__b_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT____Vtogcov__a_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT____Vtogcov__result_mux_sel;
         CData/*0:0*/ top__DOT__imul__DOT____Vtogcov__result_en;
         CData/*0:0*/ top__DOT__imul__DOT____Vtogcov__add_mux_sel;
-        CData/*4:0*/ top__DOT__imul__DOT____Vtogcov__b_shamt;
-        CData/*0:0*/ top__DOT__imul__DOT__datapath__DOT__a_l_shifter__DOT____Vtogcov__shamt;
+        CData/*4:0*/ top__DOT__imul__DOT____Vtogcov__shamt;
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT__state;
         CData/*1:0*/ top__DOT__imul__DOT__control__DOT__nextState;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__done;
@@ -82,6 +81,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__b_reg_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__r_shift_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__a_reg_out;
+        IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__l_shift_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__result_reg_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__adder_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT____Vtogcov__b_mux_out;
