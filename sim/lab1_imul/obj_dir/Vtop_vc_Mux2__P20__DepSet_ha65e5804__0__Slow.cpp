@@ -17,4 +17,5 @@ VL_ATTR_COLD void Vtop_vc_Mux2__P20___ctor_var_reset(Vtop_vc_Mux2__P20* vlSelf) 
     vlSelf->in1 = VL_RAND_RESET_I(32);
     vlSelf->sel = VL_RAND_RESET_I(1);
     vlSelf->out = VL_RAND_RESET_I(32);
+    vlSelf->__Vtogcov__in1 = VL_RAND_RESET_I(32);
 }
