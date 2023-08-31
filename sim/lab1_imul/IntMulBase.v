@@ -190,6 +190,8 @@ input logic counter_en;
 input logic req_rdy;
 input logic resp_val
 );
+
+ //tab(1 , 1,  1):
 */
 
 begin
@@ -244,7 +246,7 @@ always_comb begin
     IDLE: begin
       // Do not shift a and b
 
-      //tab(1 , 1,  1):
+     
       b_mux_sel = 1;
       a_mux_sel = 1;
 
