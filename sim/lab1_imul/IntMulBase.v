@@ -159,6 +159,7 @@ module mul_base_control (
   input reset,
 
   // Datapath I/O
+
   input [31:0] b_lsb,
   output logic b_mux_sel,
   output logic a_mux_sel,
@@ -172,6 +173,29 @@ module mul_base_control (
   input logic resp_rdy,
   output logic resp_val
 );
+
+/*
+function void tab
+(
+input logic a_mux_sel;
+input logic b_mux_sel;
+
+input logic result_mux_sel;
+input logic result_en;
+
+input logic add_mux_sel; 
+
+input logic counter_en;
+
+input logic req_rdy;
+input logic resp_val
+);
+*/
+
+begin
+
+end
+endfunction
 
 localparam[1:0]  IDLE = 2'b00, CALC = 2'b01, DONE = 2'b10;
 logic [1:0] state;
@@ -219,6 +243,8 @@ always_comb begin
   case(state)
     IDLE: begin
       // Do not shift a and b
+
+      //tab(1 , 1,  1):
       b_mux_sel = 1;
       a_mux_sel = 1;
 
@@ -259,6 +285,7 @@ always_comb begin
       else add_mux_sel = 1;
     end
     DONE: begin
+    
       // Do not shift a and b
       b_mux_sel = 1;
       a_mux_sel = 1;
