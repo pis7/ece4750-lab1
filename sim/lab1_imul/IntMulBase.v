@@ -174,7 +174,7 @@ module mul_base_control (
   output logic resp_val
 );
 
-/*
+
 function void tab
 (
 input logic a_mux_sel;
@@ -190,10 +190,6 @@ input logic counter_en;
 input logic req_rdy;
 input logic resp_val
 );
-
- //tab(1 , 1,  1):
-*/
-
 begin
 
 end
@@ -243,11 +239,15 @@ end
 
 // Output logic
 always_comb begin
+  tab(1, 1 , 1, 0, 1, 1, , 0, 1, ,0)
   case(state)
     IDLE: begin
       // Do not shift a and b
-
      
+      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+
+      //tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 20      );
+
       b_mux_sel = 1;
       a_mux_sel = 1;
 
@@ -267,6 +267,11 @@ always_comb begin
       resp_val = 0;
     end
     CALC: begin
+
+      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+
+      //tab(0        , 0        , 0             , 1        ,           , 0           , 0         , 0      , 0);
+
       // Shift a and b
       b_mux_sel = 0;
       a_mux_sel = 0;
@@ -290,7 +295,12 @@ always_comb begin
       else add_mux_sel = 1;
     end
     DONE: begin
-    
+      
+      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+
+      //tab(1        , 1        , 0             , 0        , 1          , 1          , 0         , 1      , 1       );
+
+
       // Do not shift a and b
       b_mux_sel = 1;
       a_mux_sel = 1;
@@ -312,6 +322,10 @@ always_comb begin
     end
     default: begin
       // Same as IDLE state
+
+      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+
+      //tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 20      );
       b_mux_sel = 1;
       a_mux_sel = 1;
       result_mux_sel = 1;
@@ -324,7 +338,6 @@ always_comb begin
     end
   endcase
 end
-
 endmodule
 
 `endif /* LAB1_IMUL_INT_MUL_BASE_V */
