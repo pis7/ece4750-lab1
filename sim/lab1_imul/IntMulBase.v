@@ -191,7 +191,18 @@ input logic req_rdy;
 input logic resp_val
 );
 begin
+    tab_a_mux_sel = a_mux_sel;
+    tab_b_mux_sel = b_mux_sel;
 
+    tab_result_mux_sel = result_mux_sel;
+    tab_result_en = result_en;
+
+    tab_add_mux_sel = add_mux_sel; 
+
+    tab_counter_en = counter_en;
+
+    tab_req_rdy = req_rdy;
+    tab_resp_val = resp_val;
 end
 endfunction
 
@@ -244,10 +255,10 @@ always_comb begin
     IDLE: begin
       // Do not shift a and b
      
-      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+    //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
-      //tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 20      );
-
+      tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 20      );
+/*
       b_mux_sel = 1;
       a_mux_sel = 1;
 
@@ -265,12 +276,13 @@ always_comb begin
       // Ready to receive input and not ready to output value
       req_rdy = 1;
       resp_val = 0;
+ */
     end
     CALC: begin
 
-      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+    //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
-      //tab(0        , 0        , 0             , 1        ,           , 0           , 0         , 0      , 0);
+      tab(0        , 0        , 0             , 1        ,           , 0           , 0         , 0      , 0);
 
       // Shift a and b
       b_mux_sel = 0;
@@ -296,11 +308,11 @@ always_comb begin
     end
     DONE: begin
       
-      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+    //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
-      //tab(1        , 1        , 0             , 0        , 1          , 1          , 0         , 1      , 1       );
+      tab(1        , 1        , 0             , 0        , 1          , 1          , 0         , 1      , 1       );
 
-
+/*
       // Do not shift a and b
       b_mux_sel = 1;
       a_mux_sel = 1;
@@ -319,13 +331,15 @@ always_comb begin
       // Ready to receive new input and output value is ready
       req_rdy = 1;
       resp_val = 1;
+      */
     end
     default: begin
       // Same as IDLE state
 
-      //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
+    //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
-      //tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 20      );
+      tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 0      );
+      /*
       b_mux_sel = 1;
       a_mux_sel = 1;
       result_mux_sel = 1;
@@ -335,6 +349,7 @@ always_comb begin
       counter_en = 0;
       req_rdy = 1;
       resp_val = 0;
+      */
     end
   endcase
 end
