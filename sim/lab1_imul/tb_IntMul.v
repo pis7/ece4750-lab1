@@ -484,7 +484,7 @@ module top(  input logic clk, input logic linetrace );
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // P_Test #7
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    // Multiplying -3 and 4 
+    // Multiplying 4 and -3 
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #7");
 
@@ -503,6 +503,150 @@ module top(  input logic clk, input logic linetrace );
         
         // Check the result
         assert (-12 == ostream_msg) begin
+          pass(); // Book keeping
+          $display( "OK: in0 = %d, in1 = %d, out = %d", 
+                    istream_msg_a, istream_msg_b, ostream_msg );
+        end
+        else begin
+          fail(); // Book keeping
+          $error( "Failed: in0 = %d, in1 = %d, out = %d", 
+                  istream_msg_a, istream_msg_b, ostream_msg );
+        end
+      
+        #10
+        @(negedge clk);
+
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // P_Test #8
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Multiplying 4 and -3 
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #8");
+
+        //Set inputs
+        istream_msg_a =  32'd10 //10 in decimal
+        istream_msg_b =  32'd4294967293; //-3 in decimal
+        istream_val   =  1'b1;
+        ostream_rdy   =  1'b1;
+
+        while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+        @(negedge clk); // Move to next cycle.
+        
+        istream_val = 1'b0; // Deassert ready input
+        if(!ostream_val) @(ostream_val);// Wait for response
+        @(negedge clk); // read at low clk
+        
+        // Check the result
+        assert (- == ostream_msg) begin
+          pass(); // Book keeping
+          $display( "OK: in0 = %d, in1 = %d, out = %d", 
+                    istream_msg_a, istream_msg_b, ostream_msg );
+        end
+        else begin
+          fail(); // Book keeping
+          $error( "Failed: in0 = %d, in1 = %d, out = %d", 
+                  istream_msg_a, istream_msg_b, ostream_msg );
+        end
+      
+        #10
+        @(negedge clk);
+
+
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // P_Test #9
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Multiplying -3 and -3 
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #9");
+
+        //Set inputs
+        istream_msg_a =  32'd4294967293; //-3 in decimal
+        istream_msg_b =  32'd4294967293; //-3 in decimal
+        istream_val   =  1'b1;
+        ostream_rdy   =  1'b1;
+
+        while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+        @(negedge clk); // Move to next cycle.
+        
+        istream_val = 1'b0; // Deassert ready input
+        if(!ostream_val) @(ostream_val);// Wait for response
+        @(negedge clk); // read at low clk
+        
+        // Check the result
+        assert (9 == ostream_msg) begin
+          pass(); // Book keeping
+          $display( "OK: in0 = %d, in1 = %d, out = %d", 
+                    istream_msg_a, istream_msg_b, ostream_msg );
+        end
+        else begin
+          fail(); // Book keeping
+          $error( "Failed: in0 = %d, in1 = %d, out = %d", 
+                  istream_msg_a, istream_msg_b, ostream_msg );
+        end
+      
+        #10
+        @(negedge clk);
+
+
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // P_Test #10
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Multiplying -5 and -1
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #10");
+
+        //Set inputs
+        istream_msg_a =  32'd4294967291; //-5 in decimal
+        istream_msg_b =  32'd4294967295; //-1 in decimal
+        istream_val   =  1'b1;
+        ostream_rdy   =  1'b1;
+
+        while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+        @(negedge clk); // Move to next cycle.
+        
+        istream_val = 1'b0; // Deassert ready input
+        if(!ostream_val) @(ostream_val);// Wait for response
+        @(negedge clk); // read at low clk
+        
+        // Check the result
+        assert (5 == ostream_msg) begin
+          pass(); // Book keeping
+          $display( "OK: in0 = %d, in1 = %d, out = %d", 
+                    istream_msg_a, istream_msg_b, ostream_msg );
+        end
+        else begin
+          fail(); // Book keeping
+          $error( "Failed: in0 = %d, in1 = %d, out = %d", 
+                  istream_msg_a, istream_msg_b, ostream_msg );
+        end
+      
+        #10
+        @(negedge clk);
+
+
+
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // P_Test #11
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Multiplying -5 and -1
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #10");
+
+        //Set inputs
+        istream_msg_a =  32'd4294967291; //-5 in decimal
+        istream_msg_b =  32'd4294967295; //-1 in decimal
+        istream_val   =  1'b1;
+        ostream_rdy   =  1'b1;
+
+        while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+        @(negedge clk); // Move to next cycle.
+        
+        istream_val = 1'b0; // Deassert ready input
+        if(!ostream_val) @(ostream_val);// Wait for response
+        @(negedge clk); // read at low clk
+        
+        // Check the result
+        assert (5 == ostream_msg) begin
           pass(); // Book keeping
           $display( "OK: in0 = %d, in1 = %d, out = %d", 
                     istream_msg_a, istream_msg_b, ostream_msg );
