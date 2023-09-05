@@ -177,18 +177,18 @@ module mul_base_control (
 
 function void tab
 (
-input logic a_mux_sel;
-input logic b_mux_sel;
+output logic a_mux_sel;
+output logic b_mux_sel;
 
-input logic result_mux_sel;
-input logic result_en;
+output logic result_mux_sel;
+output logic result_en;
 
-input logic add_mux_sel; 
+output logic add_mux_sel; 
 
-input logic counter_en;
-
-input logic req_rdy;
-input logic resp_val
+logic count_clear;
+logic counter_en;
+output logic req_rdy;
+output logic resp_val;
 );
 begin
     tab_a_mux_sel = a_mux_sel;
@@ -198,7 +198,7 @@ begin
     tab_result_en = result_en;
 
     tab_add_mux_sel = add_mux_sel; 
-
+    tab_count_clear = count_clear;
     tab_counter_en = counter_en;
 
     tab_req_rdy = req_rdy;
@@ -206,7 +206,15 @@ begin
 end
 endfunction
 
-//assign
+assign a_mux_sel = tab_a_mux_sel;
+assign b_mux_sel = tab_b_mux_sel;
+assign result_mux_sel = tab_result_mux_sel;
+assign result_en = tab_result_en;
+assign add_mux_sel = tab_add_mux_sel;
+assign counter_en = tab_counter_en;
+assign req_rdy = tab_req_rdy;
+assign resp_val = tab_resp_val;
+
 
 localparam[1:0]  IDLE = 2'b00, CALC = 2'b01, DONE = 2'b10;
 logic [1:0] state;
@@ -287,7 +295,7 @@ always_comb begin
     //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
       tab(0        , 0        , 0             , 1        , temp _add_mux         , 0           , 0         , 0      , 0);
-
+      /*
       // Shift a and b
       b_mux_sel = 0;
       a_mux_sel = 0;
@@ -309,6 +317,7 @@ always_comb begin
 
       // If b_lsb == 0 - do not add anything to result
       else add_mux_sel = 1;
+      */
     end
     DONE: begin
       
