@@ -175,47 +175,6 @@ module mul_base_control (
 );
 
 
-function void tab
-(
-output logic a_mux_sel;
-output logic b_mux_sel;
-
-output logic result_mux_sel;
-output logic result_en;
-
-output logic add_mux_sel; 
-
-logic count_clear;
-logic counter_en;
-output logic req_rdy;
-output logic resp_val;
-);
-begin
-    tab_a_mux_sel = a_mux_sel;
-    tab_b_mux_sel = b_mux_sel;
-
-    tab_result_mux_sel = result_mux_sel;
-    tab_result_en = result_en;
-
-    tab_add_mux_sel = add_mux_sel; 
-    tab_count_clear = count_clear;
-    tab_counter_en = counter_en;
-
-    tab_req_rdy = req_rdy;
-    tab_resp_val = resp_val;
-end
-endfunction
-
-assign a_mux_sel = tab_a_mux_sel;
-assign b_mux_sel = tab_b_mux_sel;
-assign result_mux_sel = tab_result_mux_sel;
-assign result_en = tab_result_en;
-assign add_mux_sel = tab_add_mux_sel;
-assign counter_en = tab_counter_en;
-assign req_rdy = tab_req_rdy;
-assign resp_val = tab_resp_val;
-
-
 localparam[1:0]  IDLE = 2'b00, CALC = 2'b01, DONE = 2'b10;
 logic [1:0] state;
 logic [1:0] nextState;
@@ -226,6 +185,35 @@ logic count_done;
 logic [5:0] count;
 logic count_is_zero;
 vc_BasicCounter #(.p_count_nbits(6), .p_count_clear_value(0), .p_count_max_value(31)) cycle_counter(.clk(clk), .reset(reset), .clear(count_clear), .increment(counter_en), .decrement(0), .count(count), .count_is_zero(count_is_zero), .count_is_max(count_done));
+
+
+function void tab
+(
+input logic t_a_mux_sel,
+input logic t_b_mux_sel,
+
+input logic t_result_mux_sel,
+input logic t_result_en,
+
+input logic t_add_mux_sel, 
+
+input logic t_count_clear,
+input logic t_counter_en,
+input logic t_req_rdy,
+input logic t_resp_val
+);
+begin
+  assign a_mux_sel = t_a_mux_sel;
+  assign b_mux_sel = t_b_mux_sel;
+  assign result_mux_sel = t_result_mux_sel;
+  assign result_en = t_result_en;
+  assign add_mux_sel = t_add_mux_sel;
+  assign count_clear = t_count_clear;
+  assign counter_en = t_counter_en;
+  assign req_rdy = t_req_rdy;
+  assign resp_val = t_resp_val;
+end
+endfunction
 
 // State register
 always_ff @(posedge clk) begin
@@ -260,7 +248,7 @@ end
 
 // Output logic
 always_comb begin
-  tab(1, 1 , 1, 0, 1, 1, , 0, 1, ,0)
+  //tab(1, 1 , 1, 0, 1, 1, , 0, 1, ,0)
   case(state)
     IDLE: begin
       // Do not shift a and b
@@ -268,56 +256,56 @@ always_comb begin
     //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
       tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 0      );
-/*
-      b_mux_sel = 1;
-      a_mux_sel = 1;
 
-      // Set result to 0 and disable reg
-      result_mux_sel = 1;
-      result_en = 1;
+      // b_mux_sel = 1;
+      // a_mux_sel = 1;
 
-      // Do not add result of adder to result
-      add_mux_sel = 1;
+      // // Set result to 0 and disable reg
+      // result_mux_sel = 1;
+      // result_en = 1;
 
-      // Clear counter to 0 and disable it
-      count_clear = 1;
-      counter_en = 0;
+      // // Do not add result of adder to result
+      // add_mux_sel = 1;
 
-      // Ready to receive input and not ready to output value
-      req_rdy = 1;
-      resp_val = 0;
- */
+      // // Clear counter to 0 and disable it
+      // count_clear = 1;
+      // counter_en = 0;
+
+      // // Ready to receive input and not ready to output value
+      // req_rdy = 1;
+      // resp_val = 0;
+ 
     end
     CALC: begin
-      logic temp_add_mux = 0;
+      logic temp_add_mux;
       if (b_lsb[0] == 1) temp_add_mux = 0;
       else temp_add_mux = 1;
     //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
-      tab(0        , 0        , 0             , 1        , temp _add_mux         , 0           , 0         , 0      , 0);
-      /*
+      tab(0        , 0        , 0             , 1        , temp_add_mux         , 0           , 1         , 0      , 0);
+      
       // Shift a and b
-      b_mux_sel = 0;
-      a_mux_sel = 0;
+      // b_mux_sel = 0;
+      // a_mux_sel = 0;
 
-      // Do not clear counter and enable it
-      count_clear = 0;
-      counter_en = 1;
+      // // Do not clear counter and enable it
+      // count_clear = 0;
+      // counter_en = 1;
 
-      // Enable result register on clock and do not pass in 0 from mux
-      result_en = 1;
-      result_mux_sel = 0;
+      // // Enable result register on clock and do not pass in 0 from mux
+      // result_en = 1;
+      // result_mux_sel = 0;
 
-      // Not ready to receive new input and output value not ready
-      req_rdy = 0;
-      resp_val = 0;
+      // // Not ready to receive new input and output value not ready
+      // req_rdy = 0;
+      // resp_val = 0;
 
-      // If b_lsb is 1 - add result of adder to result
-      if (b_lsb[0] == 1) add_mux_sel = 0;
+      // // If b_lsb is 1 - add result of adder to result
+      // if (b_lsb[0] == 1) add_mux_sel = 0;
 
-      // If b_lsb == 0 - do not add anything to result
-      else add_mux_sel = 1;
-      */
+      // // If b_lsb == 0 - do not add anything to result
+      // else add_mux_sel = 1;
+      
     end
     DONE: begin
       
@@ -325,26 +313,26 @@ always_comb begin
 
       tab(1        , 1        , 0             , 0        , 1          , 1          , 0         , 1      , 1       );
 
-/*
+
       // Do not shift a and b
-      b_mux_sel = 1;
-      a_mux_sel = 1;
+      // b_mux_sel = 1;
+      // a_mux_sel = 1;
 
-      // Keep result register output previous value before calculation done (not 0)
-      result_mux_sel = 0;
-      result_en = 0;
+      // // Keep result register output previous value before calculation done (not 0)
+      // result_mux_sel = 0;
+      // result_en = 0;
 
-      // keep result register updated with current result value
-      add_mux_sel = 1;
+      // // keep result register updated with current result value
+      // add_mux_sel = 1;
 
-      // Clear counter and disable it
-      count_clear = 1;
-      counter_en = 0;
+      // // Clear counter and disable it
+      // count_clear = 1;
+      // counter_en = 0;
 
-      // Ready to receive new input and output value is ready
-      req_rdy = 1;
-      resp_val = 1;
-      */
+      // // Ready to receive new input and output value is ready
+      // req_rdy = 1;
+      // resp_val = 1;
+      
     end
     default: begin
       // Same as IDLE state
@@ -352,17 +340,17 @@ always_comb begin
     //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
       tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 0      );
-      /*
-      b_mux_sel = 1;
-      a_mux_sel = 1;
-      result_mux_sel = 1;
-      result_en = 0;
-      add_mux_sel = 1;
-      count_clear = 1;
-      counter_en = 0;
-      req_rdy = 1;
-      resp_val = 0;
-      */
+      
+      // b_mux_sel = 1;
+      // a_mux_sel = 1;
+      // result_mux_sel = 1;
+      // result_en = 0;
+      // add_mux_sel = 1;
+      // count_clear = 1;
+      // counter_en = 0;
+      // req_rdy = 1;
+      // resp_val = 0;
+      
     end
   endcase
 end
