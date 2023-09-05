@@ -206,6 +206,8 @@ begin
 end
 endfunction
 
+//assign
+
 localparam[1:0]  IDLE = 2'b00, CALC = 2'b01, DONE = 2'b10;
 logic [1:0] state;
 logic [1:0] nextState;
@@ -257,7 +259,7 @@ always_comb begin
      
     //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
-      tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 20      );
+      tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 0      );
 /*
       b_mux_sel = 1;
       a_mux_sel = 1;
@@ -279,10 +281,12 @@ always_comb begin
  */
     end
     CALC: begin
-
+      logic temp_add_mux = 0;
+      if (b_lsb[0] == 1) temp_add_mux = 0;
+      else temp_add_mux = 1;
     //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
 
-      tab(0        , 0        , 0             , 1        ,           , 0           , 0         , 0      , 0);
+      tab(0        , 0        , 0             , 1        , temp _add_mux         , 0           , 0         , 0      , 0);
 
       // Shift a and b
       b_mux_sel = 0;
