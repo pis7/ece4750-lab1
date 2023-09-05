@@ -39,7 +39,7 @@ class alignas(VL_CACHE_LINE_BYTES)Vtop__Syms final : public VerilatedSyms {
     Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__result_mux;
 
     // COVERAGE
-    std::atomic<uint32_t> __Vcoverage[558];
+    std::atomic<uint32_t> __Vcoverage[556];
 
     // SCOPE NAMES
     VerilatedScope __Vscope_top;

@@ -242,7 +242,10 @@ always_comb begin
       if (resp_rdy) nextState = IDLE;
       else nextState = DONE;
     end
-    default: nextState = IDLE;
+    default: begin
+      $stop;
+      nextState = IDLE;
+    end
   endcase
 end
 
@@ -338,7 +341,7 @@ always_comb begin
       // Same as IDLE state
 
     //tab(a_mux_sel, b_mux_sel, result_mux_sel, result_en, add_mux_sel, count_clear, counter_en, req_rdy, resp_val)
-
+      $stop;
       tab(1        , 1        , 1             , 1        , 1          , 1          , 0         , 1      , 0      );
       
       // b_mux_sel = 1;

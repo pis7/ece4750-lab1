@@ -179,6 +179,31 @@ logic [1:0] state;
 logic [1:0] nextState;
 logic done;
 
+function void tab
+(
+input logic t_a_mux_sel,
+input logic t_b_mux_sel,
+input logic [4:0] t_shamt,
+input logic t_result_mux_sel,
+input logic t_result_en,
+input logic t_add_mux_sel,
+input logic t_req_rdy,
+input logic t_resp_val,
+input logic t_done
+);
+begin
+  assign a_mux_sel = t_a_mux_sel;
+  assign b_mux_sel = t_b_mux_sel;
+  assign shamt = t_shamt;
+  assign result_mux_sel = t_result_mux_sel;
+  assign result_en = t_result_en;
+  assign add_mux_sel = t_add_mux_sel;
+  assign req_rdy = t_req_rdy;
+  assign resp_val = t_resp_val;
+  assign done = t_done;
+end
+endfunction
+
 // State register
 always_ff @(posedge clk) begin
   // reset state to idle if reset signal high
@@ -206,7 +231,10 @@ always_comb begin
       if (resp_rdy) nextState = IDLE;
       else nextState = DONE;
     end
-    default: nextState = IDLE;
+    default: begin
+      $stop;
+      nextState = IDLE;
+    end
   endcase
 end
 
@@ -214,109 +242,117 @@ end
 always_comb begin
   case(state)
     IDLE: begin
+      tab(1, 1, 0, 1, 1, 1, 1, 0, 0);
       // Do not shift a and b
-      b_mux_sel = 1;
-      a_mux_sel = 1;
-      shamt = 0;
+    //   b_mux_sel = 1;
+    //   a_mux_sel = 1;
+    //   shamt = 0;
 
-      // Set result to 0 and disable reg
-      result_mux_sel = 1;
-      result_en = 1;
+    //   // Set result to 0 and disable reg
+    //   result_mux_sel = 1;
+    //   result_en = 1;
 
-      // Do not add result of adder to result
-      add_mux_sel = 1;
+    //   // Do not add result of adder to result
+    //   add_mux_sel = 1;
 
-      // Ready to receive input and not ready to output value
-      req_rdy = 1;
-      resp_val = 0;
+    //   // Ready to receive input and not ready to output value
+    //   req_rdy = 1;
+    //   resp_val = 0;
 
-      done = 0;
+    //   done = 0;
     end
     CALC: begin
-      // Shift a and b
-      b_mux_sel = 0;
-      a_mux_sel = 0;
-
-      // Enable result register on clock and do not pass in 0 from mux
-      result_en = 1;
-      result_mux_sel = 0;
-
-      // Not ready to receive new input and output value not ready
-      req_rdy = 0;
-      resp_val = 0;
+      logic [4:0] temp_shamt;
+      logic temp_done;
+      logic temp_add_mux_sel;
+      if (b_lsb[1]) temp_shamt = 1;
+      else if (b_lsb[2]) temp_shamt = 2;
+      else if (b_lsb[3]) temp_shamt = 3;
+      else if (b_lsb[4]) temp_shamt = 4;
+      else if (b_lsb[5]) temp_shamt = 5;
+      else if (b_lsb[6]) temp_shamt = 6;
+      else if (b_lsb[7]) temp_shamt = 7;
+      else if (b_lsb[8]) temp_shamt = 8;
+      else if (b_lsb[9]) temp_shamt = 9;
+      else if (b_lsb[10]) temp_shamt = 10;
+      else if (b_lsb[11]) temp_shamt = 11;
+      else if (b_lsb[12]) temp_shamt = 12;
+      else if (b_lsb[13]) temp_shamt = 13;
+      else if (b_lsb[14]) temp_shamt = 14;
+      else if (b_lsb[15]) temp_shamt = 15;
+      else if (b_lsb[16]) temp_shamt = 16;
+      else if (b_lsb[17]) temp_shamt = 17;
+      else if (b_lsb[18]) temp_shamt = 18;
+      else if (b_lsb[19]) temp_shamt = 19;
+      else if (b_lsb[20]) temp_shamt = 20;
+      else if (b_lsb[21]) temp_shamt = 21;
+      else if (b_lsb[22]) temp_shamt = 22;
+      else if (b_lsb[23]) temp_shamt = 23;
+      else if (b_lsb[24]) temp_shamt = 24;
+      else if (b_lsb[25]) temp_shamt = 25;
+      else if (b_lsb[26]) temp_shamt = 26;
+      else if (b_lsb[27]) temp_shamt = 27;
+      else if (b_lsb[28]) temp_shamt = 28;
+      else if (b_lsb[29]) temp_shamt = 29;
+      else if (b_lsb[30]) temp_shamt = 30;
+      else if (b_lsb[31]) temp_shamt = 31;
+      else temp_shamt = 1;
 
       if (b_lsb[0] == 0) begin
-        add_mux_sel = 1;
-        if (b_lsb == 32'b0) done = 1;
-        else done = 0;
+        temp_add_mux_sel = 1;
+        if (b_lsb == 32'b0) temp_done = 1;
+        else temp_done = 0;
       end
       else begin
-        add_mux_sel = 0;
-        done = 0;
+        temp_add_mux_sel = 0;
+        temp_done = 0;
       end
-      if (b_lsb[1]) shamt = 1;
-      else if (b_lsb[2]) shamt = 2;
-      else if (b_lsb[3]) shamt = 3;
-      else if (b_lsb[4]) shamt = 4;
-      else if (b_lsb[5]) shamt = 5;
-      else if (b_lsb[6]) shamt = 6;
-      else if (b_lsb[7]) shamt = 7;
-      else if (b_lsb[8]) shamt = 8;
-      else if (b_lsb[9]) shamt = 9;
-      else if (b_lsb[10]) shamt = 10;
-      else if (b_lsb[11]) shamt = 11;
-      else if (b_lsb[12]) shamt = 12;
-      else if (b_lsb[13]) shamt = 13;
-      else if (b_lsb[14]) shamt = 14;
-      else if (b_lsb[15]) shamt = 15;
-      else if (b_lsb[16]) shamt = 16;
-      else if (b_lsb[17]) shamt = 17;
-      else if (b_lsb[18]) shamt = 18;
-      else if (b_lsb[19]) shamt = 19;
-      else if (b_lsb[20]) shamt = 20;
-      else if (b_lsb[21]) shamt = 21;
-      else if (b_lsb[22]) shamt = 22;
-      else if (b_lsb[23]) shamt = 23;
-      else if (b_lsb[24]) shamt = 24;
-      else if (b_lsb[25]) shamt = 25;
-      else if (b_lsb[26]) shamt = 26;
-      else if (b_lsb[27]) shamt = 27;
-      else if (b_lsb[28]) shamt = 28;
-      else if (b_lsb[29]) shamt = 29;
-      else if (b_lsb[30]) shamt = 30;
-      else if (b_lsb[31]) shamt = 31;
-      else shamt = 1;
+      tab(0, 0, temp_shamt, 0, 1, temp_add_mux_sel, 0, 0, temp_done);
+      // // Shift a and b
+      // b_mux_sel = 0;
+      // a_mux_sel = 0;
+
+      // // Enable result register on clock and do not pass in 0 from mux
+      // result_en = 1;
+      // result_mux_sel = 0;
+
+      // // Not ready to receive new input and output value not ready
+      // req_rdy = 0;
+      // resp_val = 0;
     end
     DONE: begin
+      tab(1, 1, 0, 0, 0, 1, 1, 1, 0);
       // Do not shift a and b
-      b_mux_sel = 1;
-      a_mux_sel = 1;
-      shamt = 0;
+      // b_mux_sel = 1;
+      // a_mux_sel = 1;
+      // shamt = 0;
 
-      // Keep result register output previous value before calculation done (not 0)
-      result_mux_sel = 0;
-      result_en = 0;
+      // // Keep result register output previous value before calculation done (not 0)
+      // result_mux_sel = 0;
+      // result_en = 0;
 
-      // keep result register updated with current result value
-      add_mux_sel = 1;
+      // // keep result register updated with current result value
+      // add_mux_sel = 1;
 
-      // Ready to receive new input and output value is ready
-      req_rdy = 1;
-      resp_val = 1;
+      // // Ready to receive new input and output value is ready
+      // req_rdy = 1;
+      // resp_val = 1;
 
-      done = 0;
+      // done = 0;
     end
     default: begin
+      $stop;
+      tab(1, 1, 0, 1, 0, 1, 1, 0, 0);
       // Same as IDLE state
-      b_mux_sel = 1;
-      a_mux_sel = 1;
-      shamt = 0;
-      result_mux_sel = 1;
-      result_en = 0;
-      add_mux_sel = 1;
-      req_rdy = 1;
-      resp_val = 0;
-      done = 0;
+      // b_mux_sel = 1;
+      // a_mux_sel = 1;
+      // shamt = 0;
+      // result_mux_sel = 1;
+      // result_en = 0;
+      // add_mux_sel = 1;
+      // req_rdy = 1;
+      // resp_val = 0;
+      // done = 0;
     end
   endcase
 end

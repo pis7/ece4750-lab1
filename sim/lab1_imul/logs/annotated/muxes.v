@@ -14,16 +14,16 @@
         #(
           parameter p_nbits = 1
         )(
- 000002   input  logic [p_nbits-1:0] in0, in1,
- 000114   input  logic               sel,
- 000004   output logic [p_nbits-1:0] out
+ 000006   input  logic [p_nbits-1:0] in0, in1,
+ 000262   input  logic               sel,
+ 000010   output logic [p_nbits-1:0] out
         );
         
 %000000   always_comb
 %000000   begin
 %000000     case ( sel )
- 001535       1'd0 : out = in0;
- 000693       1'd1 : out = in1;
+ 005584       1'd0 : out = in0;
+ 002568       1'd1 : out = in1;
 %000000       default : out = {p_nbits{1'bx}};
             endcase
           end

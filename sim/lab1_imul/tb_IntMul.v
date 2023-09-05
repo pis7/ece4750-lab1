@@ -265,10 +265,23 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // Multiplying Zero and Zero
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    $display("Example Test #6");
+    $display("Start Personal Tests");
+    $display("P_Test #1 - 0x0");
     
-    // We can simplify Testbench with tasks (declared below)
-    test_task(1,1);
+      test_task(0,0);
+
+    #10;
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #2
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Hit each if statement in alt design
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #2 - Every if statement for alt shamt value");
+    
+    for( integer x = 0; x < 32; x++ ) begin
+      test_task(1,2**x);
+    end
 
     #10;
     
