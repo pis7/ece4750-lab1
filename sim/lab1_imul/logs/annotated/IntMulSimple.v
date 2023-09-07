@@ -14,45 +14,45 @@
         
         module lab1_imul_IntMulSimple
         (
- 000359   input clk,
- 000001   input reset,
- 000086   input  logic        istream_val,
- 000086   output logic        istream_rdy,
- 000002   input  logic [63:0] istream_msg,
+ 001004   input clk,
+ 000002   input reset,
+ 000288   input  logic        istream_val,
+ 000288   output logic        istream_rdy,
+ 000038   input  logic [63:0] istream_msg,
         
- 000086   output logic        ostream_val,
- 000079   input  logic        ostream_rdy,
- 000004   output logic [31:0] ostream_msg
+ 000288   output logic        ostream_val,
+ 000280   input  logic        ostream_rdy,
+ 000039   output logic [31:0] ostream_msg
         );
         
- 000002   logic [31:0] a;
- 000003   logic [31:0] b;
- 000086   logic        next_ostream_val;
- 000004   logic [31:0] next_ostream_msg;
+ 000038   logic [31:0] a;
+ 000043   logic [31:0] b;
+ 000288   logic        next_ostream_val;
+ 000039   logic [31:0] next_ostream_msg;
         
           assign  a = istream_msg[63:32];
           assign  b = istream_msg[31:0];
         
- 000179     always_ff @(posedge clk) begin
- 000179         istream_rdy <=1;
- 000043         if( next_ostream_val )begin
- 000043           istream_rdy <=0;
+ 000501     always_ff @(posedge clk) begin
+ 000501         istream_rdy <=1;
+ 000150         if( next_ostream_val )begin
+ 000150           istream_rdy <=0;
                 end
                
- 000179         ostream_val <=next_ostream_val;
- 000179         ostream_msg <=next_ostream_msg;
+ 000501         ostream_val <=next_ostream_val;
+ 000501         ostream_msg <=next_ostream_msg;
                 
             end
             
 %000000     always_comb begin
 %000000       next_ostream_val = ostream_val;
 %000000       next_ostream_msg= ostream_msg;
- 000086       if(istream_val && istream_rdy)begin 
- 000086         next_ostream_msg = a*b; 
- 000086         next_ostream_val = 1;
+ 000288       if(istream_val && istream_rdy)begin 
+ 000288         next_ostream_msg = a*b; 
+ 000288         next_ostream_val = 1;
               end
- 000098       if(ostream_val && ostream_rdy) begin
- 000098             next_ostream_val =0;
+ 000300       if(ostream_val && ostream_rdy) begin
+ 000300             next_ostream_val =0;
               end
             end
         

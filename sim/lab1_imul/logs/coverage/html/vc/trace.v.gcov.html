@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-05 18:46:06</td>
+            <td class="headerValue">2023-09-07 13:14:09</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">0</td>
@@ -79,8 +79,8 @@
 <a name="17"><span class="lineNum">      17 </span>            : </a>
 <a name="18"><span class="lineNum">      18 </span>            : module vc_Trace</a>
 <a name="19"><span class="lineNum">      19 </span>            : (</a>
-<a name="20"><span class="lineNum">      20 </span><span class="lineCov">       4438 :   input logic clk,</span></a>
-<a name="21"><span class="lineNum">      21 </span><span class="lineCov">          4 :   input logic reset</span></a>
+<a name="20"><span class="lineNum">      20 </span><span class="lineCov">      15622 :   input logic clk,</span></a>
+<a name="21"><span class="lineNum">      21 </span><span class="lineCov">          6 :   input logic reset</span></a>
 <a name="22"><span class="lineNum">      22 </span>            : );</a>
 <a name="23"><span class="lineNum">      23 </span>            : </a>
 <a name="24"><span class="lineNum">      24 </span>            :   integer len0;</a>
@@ -130,8 +130,8 @@
 <a name="68"><span class="lineNum">      68 </span>            : </a>
 <a name="69"><span class="lineNum">      69 </span>            :   // Track cycle count</a>
 <a name="70"><span class="lineNum">      70 </span>            : </a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">       2217 :   always_ff @( posedge clk ) begin</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">       2217 :     cycles &lt;= ( reset ) ? 0 : cycles_next;</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">       7808 :   always_ff @( posedge clk ) begin</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">       7808 :     cycles &lt;= ( reset ) ? 0 : cycles_next;</span></a>
 <a name="73"><span class="lineNum">      73 </span>            :   end</a>
 <a name="74"><span class="lineNum">      74 </span>            : </a>
 <a name="75"><span class="lineNum">      75 </span>            :   //----------------------------------------------------------------------</a>

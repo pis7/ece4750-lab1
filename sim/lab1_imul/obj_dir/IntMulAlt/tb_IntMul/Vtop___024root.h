@@ -67,9 +67,9 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__unnamedblk1__DOT__temp_add_mux_sel;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT__level;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT____Vtogcov__level;
-        CData/*4:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__43__t_shamt;
-        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__43__t_add_mux_sel;
-        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__43__t_done;
+        CData/*4:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__45__t_shamt;
+        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__45__t_add_mux_sel;
+        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__45__t_done;
         CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
         CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__ostream_val__0;
         CData/*0:0*/ __VactDidInit;

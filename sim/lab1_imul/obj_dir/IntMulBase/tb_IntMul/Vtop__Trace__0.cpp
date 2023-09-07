@@ -59,8 +59,8 @@ void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffe
         bufp->chgBit(oldp+280,(vlSelf->top__DOT__imul__DOT__control__DOT__counter_en));
         bufp->chgBit(oldp+281,(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear));
         bufp->chgBit(oldp+282,((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
-        bufp->chgCData(oldp+283,(vlSelf->top__DOT__imul__DOT__control__DOT__count),6);
-        bufp->chgBit(oldp+284,((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
+        bufp->chgBit(oldp+283,((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
+        bufp->chgCData(oldp+284,(vlSelf->top__DOT__imul__DOT__control__DOT__count),6);
         bufp->chgCData(oldp+285,(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next),6);
         bufp->chgBit(oldp+286,(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment));
         bufp->chgBit(oldp+287,(vlSelf->top__DOT__imul__DOT__control__DOT__unnamedblk1__DOT__temp_add_mux));

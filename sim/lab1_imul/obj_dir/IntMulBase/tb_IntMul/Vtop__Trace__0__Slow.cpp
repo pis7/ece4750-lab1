@@ -66,8 +66,8 @@ VL_ATTR_COLD void Vtop___024root__trace_init_sub__TOP__0(Vtop___024root* vlSelf,
     tracep->declBit(c+281,"counter_en",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
     tracep->declBit(c+282,"count_clear",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
     tracep->declBit(c+283,"count_done",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBus(c+284,"count",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 5,0);
-    tracep->declBit(c+285,"count_is_zero",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
+    tracep->declBit(c+284,"count_is_zero",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
+    tracep->declBus(c+285,"count",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 5,0);
     tracep->pushNamePrefix("cycle_counter ");
     tracep->declBus(c+311,"p_count_nbits",-1, FST_VD_IMPLICIT,FST_VT_VCD_PARAMETER, false,-1, 31,0);
     tracep->declBus(c+312,"p_count_clear_value",-1, FST_VD_IMPLICIT,FST_VT_VCD_PARAMETER, false,-1, 31,0);
@@ -77,8 +77,8 @@ VL_ATTR_COLD void Vtop___024root__trace_init_sub__TOP__0(Vtop___024root* vlSelf,
     tracep->declBit(c+282,"clear",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
     tracep->declBit(c+281,"increment",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
     tracep->declBit(c+314,"decrement",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBus(c+284,"count",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1, 5,0);
-    tracep->declBit(c+285,"count_is_zero",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1);
+    tracep->declBus(c+285,"count",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1, 5,0);
+    tracep->declBit(c+284,"count_is_zero",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1);
     tracep->declBit(c+283,"count_is_max",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1);
     tracep->declBus(c+286,"count_next",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 5,0);
     tracep->declBit(c+287,"do_increment",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
@@ -88,7 +88,7 @@ VL_ATTR_COLD void Vtop___024root__trace_init_sub__TOP__0(Vtop___024root* vlSelf,
     tracep->declBus(c+312,"p_reset_value",-1, FST_VD_IMPLICIT,FST_VT_VCD_PARAMETER, false,-1, 31,0);
     tracep->declBit(c+296,"clk",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
     tracep->declBit(c+264,"reset",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBus(c+284,"q",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1, 5,0);
+    tracep->declBus(c+285,"q",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1, 5,0);
     tracep->declBus(c+286,"d",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1, 5,0);
     tracep->popNamePrefix(2);
     tracep->pushNamePrefix("unnamedblk1 ");
@@ -319,8 +319,8 @@ VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, Veril
     bufp->fullBit(oldp+281,(vlSelf->top__DOT__imul__DOT__control__DOT__counter_en));
     bufp->fullBit(oldp+282,(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear));
     bufp->fullBit(oldp+283,((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
-    bufp->fullCData(oldp+284,(vlSelf->top__DOT__imul__DOT__control__DOT__count),6);
-    bufp->fullBit(oldp+285,((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
+    bufp->fullBit(oldp+284,((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
+    bufp->fullCData(oldp+285,(vlSelf->top__DOT__imul__DOT__control__DOT__count),6);
     bufp->fullCData(oldp+286,(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next),6);
     bufp->fullBit(oldp+287,(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment));
     bufp->fullBit(oldp+288,(vlSelf->top__DOT__imul__DOT__control__DOT__unnamedblk1__DOT__temp_add_mux));
