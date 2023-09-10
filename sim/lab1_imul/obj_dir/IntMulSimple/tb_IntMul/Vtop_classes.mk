@@ -16,9 +16,9 @@ VM_PARALLEL_BUILDS = 0
 # Tracing output mode?  0/1 (from --trace/--trace-fst)
 VM_TRACE = 1
 # Tracing output mode in VCD format?  0/1 (from --trace)
-VM_TRACE_VCD = 0
+VM_TRACE_VCD = 1
 # Tracing output mode in FST format?  0/1 (from --trace-fst)
-VM_TRACE_FST = 1
+VM_TRACE_FST = 0
 
 ### Object file lists...
 # Generated module classes, fast-path, compile with highest optimization
@@ -51,7 +51,7 @@ VM_GLOBAL_FAST += \
 	verilated \
 	verilated_dpi \
 	verilated_cov \
-	verilated_fst_c \
+	verilated_vcd_c \
 	verilated_timing \
 	verilated_threads \
 

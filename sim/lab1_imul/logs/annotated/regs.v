@@ -21,13 +21,13 @@
         #(
           parameter p_nbits = 1
         )(
- 008158   input  logic               clk, // Clock input
- 000283   output logic [p_nbits-1:0] q,   // Data output
- 000283   input  logic [p_nbits-1:0] d    // Data input
+ 007684   input  logic               clk, // Clock input
+ 000234   output logic [p_nbits-1:0] q,   // Data output
+ 000234   input  logic [p_nbits-1:0] d    // Data input
         );
         
- 004076   always_ff @( posedge clk )
- 004076     q <= d;
+ 003840   always_ff @( posedge clk )
+ 003840     q <= d;
         
         endmodule
         
@@ -40,14 +40,14 @@
           parameter p_nbits       = 1,
           parameter p_reset_value = 0
         )(
- 003025   input  logic               clk,   // Clock input
+ 003113   input  logic               clk,   // Clock input
  000001   input  logic               reset, // Sync reset input
 %000000   output logic [p_nbits-1:0] q,     // Data output
 %000000   input  logic [p_nbits-1:0] d      // Data input
         );
         
- 001512   always_ff @( posedge clk )
- 001512     q <= reset ? p_reset_value : d;
+ 001556   always_ff @( posedge clk )
+ 001556     q <= reset ? p_reset_value : d;
         
         endmodule
         
@@ -59,16 +59,16 @@
         #(
           parameter p_nbits = 1
         )(
- 004079   input  logic               clk,   // Clock input
- 000003   input  logic               reset, // Sync reset input
- 000010   output logic [p_nbits-1:0] q,     // Data output
- 000010   input  logic [p_nbits-1:0] d,     // Data input
- 000192   input  logic               en     // Enable input
+ 003842   input  logic               clk,   // Clock input
+ 000002   input  logic               reset, // Sync reset input
+ 000008   output logic [p_nbits-1:0] q,     // Data output
+ 000008   input  logic [p_nbits-1:0] d,     // Data input
+ 000176   input  logic               en     // Enable input
         );
         
- 002038   always_ff @( posedge clk )
- 000096     if ( en )
- 001942       q <= d;
+ 001920   always_ff @( posedge clk )
+ 000098     if ( en )
+ 001822       q <= d;
         
           // Assertions
         

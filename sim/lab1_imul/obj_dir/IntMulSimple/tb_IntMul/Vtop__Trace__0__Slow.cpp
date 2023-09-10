@@ -1,71 +1,71 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Tracing implementation internals
-#include "verilated_fst_c.h"
+#include "verilated_vcd_c.h"
 #include "Vtop__Syms.h"
 
 
-VL_ATTR_COLD void Vtop___024root__trace_init_sub__TOP__0(Vtop___024root* vlSelf, VerilatedFst* tracep) {
+VL_ATTR_COLD void Vtop___024root__trace_init_sub__TOP__0(Vtop___024root* vlSelf, VerilatedVcd* tracep) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_init_sub__TOP__0\n"); );
     // Init
     const int c = vlSymsp->__Vm_baseCode;
     // Body
-    tracep->declBit(c+275,"clk",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+276,"linetrace",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
+    tracep->declBit(c+275,"clk", false,-1);
+    tracep->declBit(c+276,"linetrace", false,-1);
     tracep->pushNamePrefix("top ");
-    tracep->declBit(c+275,"clk",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+276,"linetrace",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+264,"reset",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBit(c+265,"istream_val",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBit(c+271,"istream_rdy",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declQuad(c+277,"istream_msg",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 63,0);
-    tracep->declBit(c+266,"ostream_rdy",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBit(c+272,"ostream_val",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBus(c+273,"ostream_msg",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 31,0);
-    tracep->declBit(c+284,"istream_val_f",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBit(c+285,"ostream_rdy_f",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBus(c+267,"istream_msg_a",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 31,0);
-    tracep->declBus(c+268,"istream_msg_b",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 31,0);
+    tracep->declBit(c+275,"clk", false,-1);
+    tracep->declBit(c+276,"linetrace", false,-1);
+    tracep->declBit(c+264,"reset", false,-1);
+    tracep->declBit(c+265,"istream_val", false,-1);
+    tracep->declBit(c+271,"istream_rdy", false,-1);
+    tracep->declQuad(c+277,"istream_msg", false,-1, 63,0);
+    tracep->declBit(c+266,"ostream_rdy", false,-1);
+    tracep->declBit(c+272,"ostream_val", false,-1);
+    tracep->declBus(c+273,"ostream_msg", false,-1, 31,0);
+    tracep->declBit(c+284,"istream_val_f", false,-1);
+    tracep->declBit(c+285,"ostream_rdy_f", false,-1);
+    tracep->declBus(c+267,"istream_msg_a", false,-1, 31,0);
+    tracep->declBus(c+268,"istream_msg_b", false,-1, 31,0);
     tracep->pushNamePrefix("imul ");
-    tracep->declBit(c+275,"clk",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+264,"reset",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+265,"istream_val",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+271,"istream_rdy",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declQuad(c+277,"istream_msg",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1, 63,0);
-    tracep->declBit(c+272,"ostream_val",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+266,"ostream_rdy",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBus(c+273,"ostream_msg",-1,FST_VD_OUTPUT,FST_VT_VCD_WIRE, false,-1, 31,0);
-    tracep->declBus(c+279,"a",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 31,0);
-    tracep->declBus(c+280,"b",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 31,0);
-    tracep->declBit(c+281,"next_ostream_val",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1);
-    tracep->declBus(c+282,"next_ostream_msg",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 31,0);
-    tracep->declArray(c+1,"str",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 4095,0);
-    tracep->declBus(c+129,"idx0",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
-    tracep->declBus(c+130,"idx1",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
+    tracep->declBit(c+275,"clk", false,-1);
+    tracep->declBit(c+264,"reset", false,-1);
+    tracep->declBit(c+265,"istream_val", false,-1);
+    tracep->declBit(c+271,"istream_rdy", false,-1);
+    tracep->declQuad(c+277,"istream_msg", false,-1, 63,0);
+    tracep->declBit(c+272,"ostream_val", false,-1);
+    tracep->declBit(c+266,"ostream_rdy", false,-1);
+    tracep->declBus(c+273,"ostream_msg", false,-1, 31,0);
+    tracep->declBus(c+279,"a", false,-1, 31,0);
+    tracep->declBus(c+280,"b", false,-1, 31,0);
+    tracep->declBit(c+281,"next_ostream_val", false,-1);
+    tracep->declBus(c+282,"next_ostream_msg", false,-1, 31,0);
+    tracep->declArray(c+1,"str", false,-1, 4095,0);
+    tracep->declBus(c+129,"idx0", false,-1, 31,0);
+    tracep->declBus(c+130,"idx1", false,-1, 31,0);
     tracep->pushNamePrefix("vc_trace ");
-    tracep->declBit(c+275,"clk",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBit(c+264,"reset",-1,FST_VD_INPUT,FST_VT_VCD_WIRE, false,-1);
-    tracep->declBus(c+131,"len0",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
-    tracep->declBus(c+132,"len1",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
-    tracep->declBus(c+133,"idx0",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
-    tracep->declBus(c+134,"idx1",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
-    tracep->declBus(c+286,"nchars",-1, FST_VD_IMPLICIT,FST_VT_VCD_PARAMETER, false,-1, 31,0);
-    tracep->declBus(c+287,"nbits",-1, FST_VD_IMPLICIT,FST_VT_VCD_PARAMETER, false,-1, 31,0);
-    tracep->declArray(c+135,"storage",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 4095,0);
-    tracep->declBus(c+263,"cycles_next",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
-    tracep->declBus(c+274,"cycles",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
-    tracep->declBus(c+283,"level",-1, FST_VD_IMPLICIT,FST_VT_SV_LOGIC, false,-1, 3,0);
+    tracep->declBit(c+275,"clk", false,-1);
+    tracep->declBit(c+264,"reset", false,-1);
+    tracep->declBus(c+131,"len0", false,-1, 31,0);
+    tracep->declBus(c+132,"len1", false,-1, 31,0);
+    tracep->declBus(c+133,"idx0", false,-1, 31,0);
+    tracep->declBus(c+134,"idx1", false,-1, 31,0);
+    tracep->declBus(c+286,"nchars", false,-1, 31,0);
+    tracep->declBus(c+287,"nbits", false,-1, 31,0);
+    tracep->declArray(c+135,"storage", false,-1, 4095,0);
+    tracep->declBus(c+263,"cycles_next", false,-1, 31,0);
+    tracep->declBus(c+274,"cycles", false,-1, 31,0);
+    tracep->declBus(c+283,"level", false,-1, 3,0);
     tracep->popNamePrefix(2);
     tracep->pushNamePrefix("unnamedblk1 ");
-    tracep->declBus(c+269,"x",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
+    tracep->declBus(c+269,"x", false,-1, 31,0);
     tracep->popNamePrefix(1);
     tracep->pushNamePrefix("unnamedblk2 ");
-    tracep->declBus(c+270,"x",-1, FST_VD_IMPLICIT,FST_VT_VCD_INTEGER, false,-1, 31,0);
+    tracep->declBus(c+270,"x", false,-1, 31,0);
     tracep->popNamePrefix(2);
 }
 
-VL_ATTR_COLD void Vtop___024root__trace_init_top(Vtop___024root* vlSelf, VerilatedFst* tracep) {
+VL_ATTR_COLD void Vtop___024root__trace_init_top(Vtop___024root* vlSelf, VerilatedVcd* tracep) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_init_top\n"); );
@@ -73,11 +73,11 @@ VL_ATTR_COLD void Vtop___024root__trace_init_top(Vtop___024root* vlSelf, Verilat
     Vtop___024root__trace_init_sub__TOP__0(vlSelf, tracep);
 }
 
-VL_ATTR_COLD void Vtop___024root__trace_full_top_0(void* voidSelf, VerilatedFst::Buffer* bufp);
-void Vtop___024root__trace_chg_top_0(void* voidSelf, VerilatedFst::Buffer* bufp);
-void Vtop___024root__trace_cleanup(void* voidSelf, VerilatedFst* /*unused*/);
+VL_ATTR_COLD void Vtop___024root__trace_full_top_0(void* voidSelf, VerilatedVcd::Buffer* bufp);
+void Vtop___024root__trace_chg_top_0(void* voidSelf, VerilatedVcd::Buffer* bufp);
+void Vtop___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/);
 
-VL_ATTR_COLD void Vtop___024root__trace_register(Vtop___024root* vlSelf, VerilatedFst* tracep) {
+VL_ATTR_COLD void Vtop___024root__trace_register(Vtop___024root* vlSelf, VerilatedVcd* tracep) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_register\n"); );
@@ -87,9 +87,9 @@ VL_ATTR_COLD void Vtop___024root__trace_register(Vtop___024root* vlSelf, Verilat
     tracep->addCleanupCb(&Vtop___024root__trace_cleanup, vlSelf);
 }
 
-VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffer* bufp);
+VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, VerilatedVcd::Buffer* bufp);
 
-VL_ATTR_COLD void Vtop___024root__trace_full_top_0(void* voidSelf, VerilatedFst::Buffer* bufp) {
+VL_ATTR_COLD void Vtop___024root__trace_full_top_0(void* voidSelf, VerilatedVcd::Buffer* bufp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_full_top_0\n"); );
     // Init
     Vtop___024root* const __restrict vlSelf VL_ATTR_UNUSED = static_cast<Vtop___024root*>(voidSelf);
@@ -98,7 +98,7 @@ VL_ATTR_COLD void Vtop___024root__trace_full_top_0(void* voidSelf, VerilatedFst:
     Vtop___024root__trace_full_sub_0((&vlSymsp->TOP), bufp);
 }
 
-VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffer* bufp) {
+VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, VerilatedVcd::Buffer* bufp) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_full_sub_0\n"); );

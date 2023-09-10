@@ -131,7 +131,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1);
-                    vlSymsp->__Vcoverage[245].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[246].fetch_add(1, std::memory_order_relaxed);
                 }
                 if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy) 
                                  & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val)))) {
@@ -158,7 +158,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -221,15 +221,15 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[250].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[251].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy) 
                                         & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val))))) {
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__4__num 
@@ -245,14 +245,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[249].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[250].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy)) 
                                         & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val)))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__5__str,0x00000023);
@@ -278,7 +278,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -341,14 +341,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__6__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -363,14 +363,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[248].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[249].fetch_add(1, std::memory_order_relaxed);
                 } else if ((1U & ((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__rdy)) 
                                   & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__2__val))))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__7__str,0x0000002e);
@@ -396,7 +396,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -459,14 +459,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__8__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -481,14 +481,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[246].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[247].fetch_add(1, std::memory_order_relaxed);
                 } else {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__9__str,0x00000078);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
@@ -513,7 +513,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -576,14 +576,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__10__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -598,16 +598,16 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[247].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[248].fetch_add(1, std::memory_order_relaxed);
                 }
-                vlSymsp->__Vcoverage[251].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[252].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__11__str,0x00000028);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -631,7 +631,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -692,14 +692,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_SFORMAT_X(4096,vlSelf->top__DOT__imul__DOT__str
                              ,"%x",32,(IData)((vlSelf->top__DOT__istream_msg 
                                                >> 0x20U)));
@@ -726,7 +726,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -787,14 +787,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__13__str,0x00000020);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -818,7 +818,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -879,14 +879,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_SFORMAT_X(4096,vlSelf->top__DOT__imul__DOT__str
                              ,"%x",32,(IData)(vlSelf->top__DOT__istream_msg));
                 VL_ASSIGN_W(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__14__str, vlSelf->top__DOT__imul__DOT__str);
@@ -912,7 +912,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -973,14 +973,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__15__str,0x00000020);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -1004,7 +1004,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1065,14 +1065,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_SFORMAT_X(4096,vlSelf->top__DOT__imul__DOT__str
                              ,"%x",1,vlSelf->top__DOT__ostream_val);
                 VL_ASSIGN_W(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__16__str, vlSelf->top__DOT__imul__DOT__str);
@@ -1098,7 +1098,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1159,14 +1159,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__17__str,0x00000020);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -1190,7 +1190,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1251,14 +1251,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__18__str,0x00000029);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
                 while ((0U != (0xffU & (((0U == (0x1fU 
@@ -1282,7 +1282,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1343,14 +1343,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                            - (IData)(1U));
-                    vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                            - (IData)(1U));
                 }
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                 VL_SFORMAT_X(4096,vlSelf->top__DOT__imul__DOT__str
                              ,"%x",32,vlSelf->top__DOT__ostream_msg);
                 VL_ASSIGN_W(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__str, vlSelf->top__DOT__imul__DOT__str);
@@ -1380,7 +1380,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1))))))) {
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                         = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1);
-                    vlSymsp->__Vcoverage[245].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[246].fetch_add(1, std::memory_order_relaxed);
                 }
                 if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__rdy) 
                                  & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__val)))) {
@@ -1407,7 +1407,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1470,15 +1470,15 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[250].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[251].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__rdy) 
                                         & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__val))))) {
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__21__num 
@@ -1494,14 +1494,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[249].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[250].fetch_add(1, std::memory_order_relaxed);
                 } else if (VL_UNLIKELY(((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__rdy)) 
                                         & (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__val)))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__22__str,0x00000023);
@@ -1527,7 +1527,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1590,14 +1590,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__23__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1612,14 +1612,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[248].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[249].fetch_add(1, std::memory_order_relaxed);
                 } else if ((1U & ((~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__rdy)) 
                                   & (~ (IData)(__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_val_rdy_str__19__val))))) {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__24__str,0x0000002e);
@@ -1645,7 +1645,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1708,14 +1708,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__25__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1730,14 +1730,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[246].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[247].fetch_add(1, std::memory_order_relaxed);
                 } else {
                     VL_CONST_W_1X(4096,__Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_str__26__str,0x00000078);
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 = 1U;
@@ -1762,7 +1762,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                                                    & VL_MULS_III(32, (IData)(8U), vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0))))))) {
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len0);
-                        vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
@@ -1825,14 +1825,14 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[234].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                                - (IData)(1U));
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[235].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[236].fetch_add(1, std::memory_order_relaxed);
                     __Vtask_top__DOT__imul__DOT__vc_trace__DOT__append_chars__27__num 
                         = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__len1 
                            - (IData)(1U));
@@ -1847,16 +1847,16 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__0(Vtop___024root* 
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                             = (vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                                - (IData)(1U));
-                        vlSymsp->__Vcoverage[238].fetch_add(1, std::memory_order_relaxed);
+                        vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
                         vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1 
                             = ((IData)(1U) + vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx1);
                     }
                     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U] 
                         = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
-                    vlSymsp->__Vcoverage[239].fetch_add(1, std::memory_order_relaxed);
-                    vlSymsp->__Vcoverage[247].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[240].fetch_add(1, std::memory_order_relaxed);
+                    vlSymsp->__Vcoverage[248].fetch_add(1, std::memory_order_relaxed);
                 }
-                vlSymsp->__Vcoverage[251].fetch_add(1, std::memory_order_relaxed);
+                vlSymsp->__Vcoverage[252].fetch_add(1, std::memory_order_relaxed);
                 vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0 
                     = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__storage[0U];
                 vlSelf->top__DOT__imul__DOT__idx0 = vlSelf->top__DOT__imul__DOT__vc_trace__DOT__idx0;
@@ -2191,7 +2191,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__36__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__36__b;
@@ -2202,28 +2202,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__36__a 
@@ -2238,19 +2238,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__36__a,
                       32,__Vtask_top__DOT__test_task__36__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     co_await vlSelf->__VdlySched.delay(0xaULL, nullptr, 
                                        "tb_IntMul.v", 
@@ -2263,7 +2263,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__39__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__39__b;
@@ -2274,28 +2274,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__39__a 
@@ -2310,19 +2310,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__39__a,
                       32,__Vtask_top__DOT__test_task__39__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[179].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk1__DOT__x = 1U;
@@ -2332,7 +2332,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__39__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__39__b;
@@ -2343,28 +2343,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__39__a 
@@ -2379,19 +2379,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__39__a,
                       32,__Vtask_top__DOT__test_task__39__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[179].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk1__DOT__x = 2U;
@@ -2401,7 +2401,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__39__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__39__b;
@@ -2412,28 +2412,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__39__a 
@@ -2448,19 +2448,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__39__a,
                       32,__Vtask_top__DOT__test_task__39__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[179].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk1__DOT__x = 3U;
@@ -2470,7 +2470,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__39__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__39__b;
@@ -2481,28 +2481,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__39__a 
@@ -2517,19 +2517,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__39__a,
                       32,__Vtask_top__DOT__test_task__39__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[179].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk1__DOT__x = 4U;
@@ -2539,7 +2539,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__39__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__39__b;
@@ -2550,28 +2550,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__39__a 
@@ -2586,19 +2586,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__39__a,
                       32,__Vtask_top__DOT__test_task__39__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[179].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk1__DOT__x = 5U;
@@ -2609,7 +2609,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__42__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__42__b;
@@ -2620,28 +2620,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__42__a 
@@ -2656,19 +2656,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__42__a,
                       32,__Vtask_top__DOT__test_task__42__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     co_await vlSelf->__VdlySched.delay(0xaULL, nullptr, 
                                        "tb_IntMul.v", 
@@ -2681,7 +2681,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -2692,28 +2692,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -2728,19 +2728,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 1U;
@@ -2750,7 +2750,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -2761,28 +2761,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -2797,19 +2797,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 2U;
@@ -2819,7 +2819,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -2830,28 +2830,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -2866,19 +2866,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 3U;
@@ -2888,7 +2888,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -2899,28 +2899,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -2935,19 +2935,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 4U;
@@ -2957,7 +2957,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -2968,28 +2968,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3004,19 +3004,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 5U;
@@ -3026,7 +3026,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3037,28 +3037,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3073,19 +3073,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 6U;
@@ -3095,7 +3095,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3106,28 +3106,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3142,19 +3142,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 7U;
@@ -3164,7 +3164,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3175,28 +3175,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3211,19 +3211,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 8U;
@@ -3233,7 +3233,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3244,28 +3244,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3280,19 +3280,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 9U;
@@ -3302,7 +3302,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3313,28 +3313,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3349,19 +3349,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0xaU;
@@ -3371,7 +3371,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3382,28 +3382,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3418,19 +3418,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0xbU;
@@ -3440,7 +3440,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3451,28 +3451,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3487,19 +3487,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0xcU;
@@ -3509,7 +3509,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3520,28 +3520,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3556,19 +3556,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0xdU;
@@ -3578,7 +3578,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3589,28 +3589,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3625,19 +3625,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0xeU;
@@ -3647,7 +3647,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3658,28 +3658,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3694,19 +3694,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0xfU;
@@ -3716,7 +3716,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3727,28 +3727,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3763,19 +3763,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x10U;
@@ -3785,7 +3785,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3796,28 +3796,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3832,19 +3832,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x11U;
@@ -3854,7 +3854,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3865,28 +3865,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3901,19 +3901,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x12U;
@@ -3923,7 +3923,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -3934,28 +3934,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -3970,19 +3970,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x13U;
@@ -3992,7 +3992,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4003,28 +4003,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4039,19 +4039,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x14U;
@@ -4061,7 +4061,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4072,28 +4072,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4108,19 +4108,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x15U;
@@ -4130,7 +4130,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4141,28 +4141,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4177,19 +4177,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x16U;
@@ -4199,7 +4199,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4210,28 +4210,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4246,19 +4246,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x17U;
@@ -4268,7 +4268,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4279,28 +4279,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4315,19 +4315,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x18U;
@@ -4337,7 +4337,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4348,28 +4348,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4384,19 +4384,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x19U;
@@ -4406,7 +4406,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4417,28 +4417,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4453,19 +4453,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x1aU;
@@ -4475,7 +4475,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4486,28 +4486,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4522,19 +4522,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x1bU;
@@ -4544,7 +4544,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4555,28 +4555,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4591,19 +4591,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x1cU;
@@ -4613,7 +4613,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4624,28 +4624,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4660,19 +4660,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x1dU;
@@ -4682,7 +4682,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4693,28 +4693,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4729,19 +4729,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x1eU;
@@ -4751,7 +4751,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4762,28 +4762,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4798,19 +4798,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x1fU;
@@ -4820,7 +4820,7 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1350);
+                                                       1389);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_msg_a = __Vtask_top__DOT__test_task__45__a;
     vlSelf->top__DOT__istream_msg_b = __Vtask_top__DOT__test_task__45__b;
@@ -4831,28 +4831,28 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                                            nullptr, 
                                                            "@(negedge clk)", 
                                                            "tb_IntMul.v", 
-                                                           1358);
+                                                           1397);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1359);
+                                                       1398);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSelf->top__DOT__istream_val = 0U;
     vlSelf->top__DOT__ostream_rdy = 1U;
     if (vlSelf->top__DOT__ostream_val) {
-        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
     } else {
         co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
                                                            nullptr, 
                                                            "@([changed] top.ostream_val)", 
                                                            "tb_IntMul.v", 
-                                                           1364);
+                                                           1403);
         vlSelf->__Vm_traceActivity[3U] = 1U;
-        vlSymsp->__Vcoverage[182].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[183].fetch_add(1, std::memory_order_relaxed);
     }
     if (vlSymsp->_vm_contextp__->assertOn()) {
         if (VL_LIKELY(((__Vtask_top__DOT__test_task__45__a 
@@ -4867,19 +4867,19 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
             }
         } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
             Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
-            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1373: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:1412: Assertion failed in %Ntop.test_task: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
                       64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
                       32,__Vtask_top__DOT__test_task__45__a,
                       32,__Vtask_top__DOT__test_task__45__b,
                       32,vlSelf->top__DOT__ostream_msg);
-            VL_STOP_MT("tb_IntMul.v", 1373, "");
+            VL_STOP_MT("tb_IntMul.v", 1412, "");
         }
     }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1376);
+                                                       1415);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     vlSymsp->__Vcoverage[180].fetch_add(1, std::memory_order_relaxed);
     vlSelf->top__DOT__unnamedblk2__DOT__x = 0x20U;
@@ -4887,20 +4887,89 @@ VL_INLINE_OPT VlCoroutine Vtop___024root___eval_initial__TOP__1(Vtop___024root* 
                                        "tb_IntMul.v", 
                                        286);
     vlSelf->__Vm_traceActivity[3U] = 1U;
+    VL_WRITEF("P_Test #3 - Test ostream_rdy control\n");
+    vlSelf->top__DOT__istream_msg_a = 2U;
+    vlSelf->top__DOT__istream_msg_b = 3U;
+    vlSelf->top__DOT__istream_val = 1U;
+    vlSelf->top__DOT__ostream_rdy = 0U;
+    while ((1U & (~ (IData)(vlSelf->top__DOT__istream_rdy)))) {
+        co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
+                                                           nullptr, 
+                                                           "@(negedge clk)", 
+                                                           "tb_IntMul.v", 
+                                                           302);
+        vlSelf->__Vm_traceActivity[3U] = 1U;
+        vlSymsp->__Vcoverage[181].fetch_add(1, std::memory_order_relaxed);
+    }
     co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
                                                        nullptr, 
                                                        "@(negedge clk)", 
                                                        "tb_IntMul.v", 
-                                                       1331);
+                                                       303);
+    vlSelf->__Vm_traceActivity[3U] = 1U;
+    vlSelf->top__DOT__istream_val = 0U;
+    if ((1U & (~ (IData)(vlSelf->top__DOT__ostream_val)))) {
+        co_await vlSelf->__VtrigSched_hb9476d33__0.trigger(0U, 
+                                                           nullptr, 
+                                                           "@([changed] top.ostream_val)", 
+                                                           "tb_IntMul.v", 
+                                                           306);
+        vlSelf->__Vm_traceActivity[3U] = 1U;
+    }
+    co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
+                                                       nullptr, 
+                                                       "@(negedge clk)", 
+                                                       "tb_IntMul.v", 
+                                                       307);
+    vlSelf->__Vm_traceActivity[3U] = 1U;
+    co_await vlSelf->__VdlySched.delay(0xaULL, nullptr, 
+                                       "tb_IntMul.v", 
+                                       309);
+    vlSelf->__Vm_traceActivity[3U] = 1U;
+    vlSelf->top__DOT__ostream_rdy = 1U;
+    if (vlSymsp->_vm_contextp__->assertOn()) {
+        if (VL_LIKELY((6U == vlSelf->top__DOT__ostream_msg))) {
+            if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
+                Vtop___024unit____Vdpiimwrap_pass_TOP____024unit();
+                VL_WRITEF("OK: in0 = %10#, in1 = %10#, out = %10#\n",
+                          32,vlSelf->top__DOT__istream_msg_a,
+                          32,vlSelf->top__DOT__istream_msg_b,
+                          32,vlSelf->top__DOT__ostream_msg);
+            }
+        } else if (VL_UNLIKELY(vlSymsp->_vm_contextp__->assertOn())) {
+            Vtop___024unit____Vdpiimwrap_fail_TOP____024unit();
+            VL_WRITEF("[%0t] %%Error: tb_IntMul.v:320: Assertion failed in %Ntop: Failed: in0 = %10#, in1 = %10#, out = %10#\n",
+                      64,VL_TIME_UNITED_Q(1),-12,vlSymsp->name(),
+                      32,vlSelf->top__DOT__istream_msg_a,
+                      32,vlSelf->top__DOT__istream_msg_b,
+                      32,vlSelf->top__DOT__ostream_msg);
+            VL_STOP_MT("tb_IntMul.v", 320, "");
+        }
+    }
+    co_await vlSelf->__VdlySched.delay(0xaULL, nullptr, 
+                                       "tb_IntMul.v", 
+                                       324);
+    vlSelf->__Vm_traceActivity[3U] = 1U;
+    co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
+                                                       nullptr, 
+                                                       "@(negedge clk)", 
+                                                       "tb_IntMul.v", 
+                                                       325);
+    vlSelf->__Vm_traceActivity[3U] = 1U;
+    co_await vlSelf->__VtrigSched_h3cadd47d__0.trigger(0U, 
+                                                       nullptr, 
+                                                       "@(negedge clk)", 
+                                                       "tb_IntMul.v", 
+                                                       1370);
     vlSelf->__Vm_traceActivity[3U] = 1U;
     VL_WRITEF("Testbench finished at %20# cycles\n",
               64,(((QData)(VL_TIME_UNITED_Q(1)) - 0xaULL) 
                   >> 1U));
     co_await vlSelf->__VdlySched.delay(0xaULL, nullptr, 
                                        "tb_IntMul.v", 
-                                       1335);
+                                       1374);
     vlSelf->__Vm_traceActivity[3U] = 1U;
-    VL_FINISH_MT("tb_IntMul.v", 1336, "");
+    VL_FINISH_MT("tb_IntMul.v", 1375, "");
     vlSelf->__Vm_traceActivity[3U] = 1U;
 }
 
@@ -4973,11 +5042,11 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     // Body
     if ((1U & (~ ((IData)(vlSelf->top__DOT__istream_val) 
                   & (IData)(vlSelf->top__DOT__istream_rdy))))) {
-        vlSymsp->__Vcoverage[221].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[222].fetch_add(1, std::memory_order_relaxed);
     }
     if ((1U & (~ ((IData)(vlSelf->top__DOT__ostream_val) 
                   & (IData)(vlSelf->top__DOT__ostream_rdy))))) {
-        vlSymsp->__Vcoverage[223].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[224].fetch_add(1, std::memory_order_relaxed);
     }
     if (((IData)(vlSelf->top__DOT__reset) ^ (IData)(vlSelf->top__DOT____Vtogcov__reset))) {
         vlSymsp->__Vcoverage[2].fetch_add(1, std::memory_order_relaxed);
@@ -4993,10 +5062,10 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     }
     vlSelf->top__DOT__imul__DOT__next_ostream_val = vlSelf->top__DOT__ostream_val;
     if (((IData)(vlSelf->top__DOT__ostream_val) & (IData)(vlSelf->top__DOT__ostream_rdy))) {
-        vlSymsp->__Vcoverage[222].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[223].fetch_add(1, std::memory_order_relaxed);
     }
     if (((IData)(vlSelf->top__DOT__istream_val) & (IData)(vlSelf->top__DOT__istream_rdy))) {
-        vlSymsp->__Vcoverage[220].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[221].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__next_ostream_val = 1U;
     }
     if (((IData)(vlSelf->top__DOT__ostream_val) & (IData)(vlSelf->top__DOT__ostream_rdy))) {
@@ -5438,7 +5507,7 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
                                       << 0x20U) | (QData)((IData)(vlSelf->top__DOT__istream_msg_b)));
     if (((IData)(vlSelf->top__DOT__imul__DOT__next_ostream_val) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_val))) {
-        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[185].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_val 
             = vlSelf->top__DOT__imul__DOT__next_ostream_val;
     }
@@ -6086,217 +6155,217 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     }
     if ((1U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[185].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[186].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (1U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((2U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[186].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[187].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (2U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((4U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[187].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[188].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (4U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((8U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[188].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[189].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (8U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x10U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[189].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[190].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffffefU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x10U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x20U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[190].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[191].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x20U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x40U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[191].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[192].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x40U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x80U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[192].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[193].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x80U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x100U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[193].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[194].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x100U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x200U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[194].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[195].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x200U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x400U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[195].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[196].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x400U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x800U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[196].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[197].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x800U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x1000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[197].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[198].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffefffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x1000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x2000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[198].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[199].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x2000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x4000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[199].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[200].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x4000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x8000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[200].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[201].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x8000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x10000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[201].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[202].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x10000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x20000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[202].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[203].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x20000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x40000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[203].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[204].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x40000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x80000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[204].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[205].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x80000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x100000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[205].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[206].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffefffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x100000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x200000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[206].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[207].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x200000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x400000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[207].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[208].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x400000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x800000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[208].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[209].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x800000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x1000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[209].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[210].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x1000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x2000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[210].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[211].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x2000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x4000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[211].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[212].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x4000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x8000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[212].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[213].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x8000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x10000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                         ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[213].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[214].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xefffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x10000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x20000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                         ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[214].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[215].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x20000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x40000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                         ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[215].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[216].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x40000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
@@ -6304,7 +6373,7 @@ VL_INLINE_OPT void Vtop___024root___act_comb__TOP__0(Vtop___024root* vlSelf) {
     if (((vlSelf->top__DOT__imul__DOT__next_ostream_msg 
           ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
          >> 0x1fU)) {
-        vlSymsp->__Vcoverage[216].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[217].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x80000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
@@ -6316,17 +6385,17 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__0\n"); );
     // Body
-    vlSymsp->__Vcoverage[219].fetch_add(1, std::memory_order_relaxed);
-    vlSymsp->__Vcoverage[232].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[220].fetch_add(1, std::memory_order_relaxed);
+    vlSymsp->__Vcoverage[233].fetch_add(1, std::memory_order_relaxed);
     if ((1U & (~ (IData)(vlSelf->top__DOT__imul__DOT__next_ostream_val)))) {
-        vlSymsp->__Vcoverage[218].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[219].fetch_add(1, std::memory_order_relaxed);
     }
     vlSelf->top__DOT__imul__DOT__vc_trace__DOT__cycles 
         = ((IData)(vlSelf->top__DOT__reset) ? 0U : vlSelf->top__DOT__imul__DOT__vc_trace__DOT__cycles_next);
     if (vlSelf->top__DOT__imul__DOT__next_ostream_val) {
         vlSelf->top__DOT__ostream_val = 1U;
         vlSelf->top__DOT__istream_rdy = 1U;
-        vlSymsp->__Vcoverage[217].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[218].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__istream_rdy = 0U;
     } else {
         vlSelf->top__DOT__ostream_val = 0U;
@@ -7647,18 +7716,18 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
     // Body
     if ((1U & (~ ((IData)(vlSelf->top__DOT__ostream_val) 
                   & (IData)(vlSelf->top__DOT__ostream_rdy))))) {
-        vlSymsp->__Vcoverage[223].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[224].fetch_add(1, std::memory_order_relaxed);
     }
     if ((1U & (~ ((IData)(vlSelf->top__DOT__istream_val) 
                   & (IData)(vlSelf->top__DOT__istream_rdy))))) {
-        vlSymsp->__Vcoverage[221].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[222].fetch_add(1, std::memory_order_relaxed);
     }
     vlSelf->top__DOT__imul__DOT__next_ostream_val = vlSelf->top__DOT__ostream_val;
     if (((IData)(vlSelf->top__DOT__ostream_val) & (IData)(vlSelf->top__DOT__ostream_rdy))) {
-        vlSymsp->__Vcoverage[222].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[223].fetch_add(1, std::memory_order_relaxed);
     }
     if (((IData)(vlSelf->top__DOT__istream_val) & (IData)(vlSelf->top__DOT__istream_rdy))) {
-        vlSymsp->__Vcoverage[220].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[221].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT__next_ostream_val = 1U;
     }
     if (((IData)(vlSelf->top__DOT__ostream_val) & (IData)(vlSelf->top__DOT__ostream_rdy))) {
@@ -7672,223 +7741,223 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
     }
     if (((IData)(vlSelf->top__DOT__imul__DOT__next_ostream_val) 
          ^ (IData)(vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_val))) {
-        vlSymsp->__Vcoverage[184].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[185].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_val 
             = vlSelf->top__DOT__imul__DOT__next_ostream_val;
     }
     if ((1U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[185].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[186].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffffeU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (1U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((2U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[186].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[187].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffffdU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (2U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((4U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[187].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[188].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffffbU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (4U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((8U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[188].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[189].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffff7U & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (8U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x10U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[189].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[190].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffffefU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x10U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x20U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[190].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[191].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffffdfU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x20U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x40U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[191].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[192].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffffbfU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x40U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x80U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                   ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[192].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[193].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffff7fU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x80U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x100U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[193].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[194].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffeffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x100U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x200U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[194].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[195].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffdffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x200U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x400U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[195].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[196].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffffbffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x400U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x800U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                    ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[196].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[197].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffff7ffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x800U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x1000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[197].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[198].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffefffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x1000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x2000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[198].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[199].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffdfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x2000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x4000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[199].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[200].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffffbfffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x4000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x8000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                     ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[200].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[201].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffff7fffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x8000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x10000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[201].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[202].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffeffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x10000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x20000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[202].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[203].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffdffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x20000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x40000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[203].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[204].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfffbffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x40000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x80000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                      ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[204].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[205].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfff7ffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x80000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x100000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[205].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[206].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffefffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x100000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x200000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[206].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[207].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffdfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x200000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x400000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[207].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[208].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xffbfffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x400000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x800000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                       ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[208].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[209].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xff7fffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x800000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x1000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[209].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[210].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfeffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x1000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x2000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[210].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[211].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfdffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x2000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x4000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[211].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[212].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xfbffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x4000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x8000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                        ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[212].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[213].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xf7ffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x8000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x10000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                         ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[213].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[214].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xefffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x10000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x20000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                         ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[214].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[215].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xdfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x20000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
     }
     if ((0x40000000U & (vlSelf->top__DOT__imul__DOT__next_ostream_msg 
                         ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg))) {
-        vlSymsp->__Vcoverage[215].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[216].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0xbfffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x40000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));
@@ -7896,7 +7965,7 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
     if (((vlSelf->top__DOT__imul__DOT__next_ostream_msg 
           ^ vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
          >> 0x1fU)) {
-        vlSymsp->__Vcoverage[216].fetch_add(1, std::memory_order_relaxed);
+        vlSymsp->__Vcoverage[217].fetch_add(1, std::memory_order_relaxed);
         vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg 
             = ((0x7fffffffU & vlSelf->top__DOT__imul__DOT____Vtogcov__next_ostream_msg) 
                | (0x80000000U & vlSelf->top__DOT__imul__DOT__next_ostream_msg));

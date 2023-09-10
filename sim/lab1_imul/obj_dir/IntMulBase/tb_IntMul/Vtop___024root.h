@@ -65,8 +65,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__counter_en;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_clear;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_done;
-        CData/*5:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count_is_zero;
+        CData/*5:0*/ top__DOT__imul__DOT__control__DOT____Vtogcov__count;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__unnamedblk1__DOT__temp_add_mux;
         CData/*5:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next;
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment;
@@ -75,7 +75,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__cycle_counter__DOT____Vtogcov__do_increment;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT__level;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT____Vtogcov__level;
-        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__43__t_add_mux_sel;
+        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__45__t_add_mux_sel;
         CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
         CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__ostream_val__0;
         CData/*0:0*/ __VactDidInit;

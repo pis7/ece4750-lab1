@@ -18,25 +18,25 @@
         // Top-level module
         //------------------------------------------------------------------------
         
-%000000 module top(  input logic clk, input logic linetrace );
+ 000003 module top(  input logic clk, input logic linetrace );
         
           // DUT signals
- 000004   logic        reset;
+ 000003   logic        reset;
         
- 000278   logic        istream_val;
- 000278   logic        istream_rdy;
- 000007   logic [63:0] istream_msg;
+ 000264   logic        istream_val;
+ 000264   logic        istream_rdy;
+ 000006   logic [63:0] istream_msg;
         
- 000250   logic        ostream_rdy;
- 000278   logic        ostream_val;
- 000014   logic [31:0] ostream_msg;
+ 000243   logic        ostream_rdy;
+ 000264   logic        ostream_val;
+ 000012   logic [31:0] ostream_msg;
         
           // Testbench signals
 %000000   logic        istream_val_f;
 %000000   logic        ostream_rdy_f;
         
- 000007   logic [31:0] istream_msg_a;
- 000011   logic [31:0] istream_msg_b;
+ 000006   logic [31:0] istream_msg_a;
+ 000012   logic [31:0] istream_msg_b;
         
           // Form istream_msg
 %000000   always_comb begin
@@ -63,10 +63,10 @@
           );
         
           initial begin 
- 002221     while(1) begin
- 002221       @(negedge clk);  
- 002221       if (linetrace) begin
-%000000            imul.display_trace;
+ 002115     while(1) begin
+ 002115       @(negedge clk);  
+ 000003       if (linetrace) begin
+ 002112            imul.display_trace;
               end
             end 
             $stop;
@@ -249,8 +249,8 @@
             //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
             
             $display("Random Test");
- 000020     for( integer x = 0; x < 5; x++ ) begin
- 000020       test_task( $random, $random );
+ 000015     for( integer x = 0; x < 5; x++ ) begin
+ 000015       test_task( $random, $random );
             end
         
           //end
@@ -283,13 +283,52 @@
  000096     for( integer x = 0; x < 32; x++ ) begin
  000096       test_task(1,2**x);
             end
-%000000 
+        
             #10;
+        
+        
+            // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            // // P_Test #3
+            // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            // // Keep ostream_rdy deasserted until a few clock cycles later
+            // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            $display("P_Test #3 - Test ostream_rdy control");
+        
+            //Set inputs
+            istream_msg_a = 32'd2;
+            istream_msg_b = 32'd3;
+            istream_val   =  1'b1;
+            ostream_rdy   =  1'b0;
+        
+%000000     while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+            @(negedge clk); // Move to next cycle.
+            
+            istream_val = 1'b0; // Deassert ready input
+            if(!ostream_val) @(ostream_val);// Wait for response
+            @(negedge clk); // read at low clk
+        
+            #10
+            ostream_rdy = 1'b1;
+            
+            // Check the result
+            assert ( 6 == ostream_msg) begin
+              pass(); // Book keeping
+              $display( "OK: in0 = %d, in1 = %d, out = %d", 
+                        istream_msg_a, istream_msg_b, ostream_msg );
+            end
+            else begin
+              fail(); // Book keeping
+              $error( "Failed: in0 = %d, in1 = %d, out = %d", 
+                      istream_msg_a, istream_msg_b, ostream_msg );
+            end
+           
+            #10
+            @(negedge clk);
             
             // $display("P_Test #1");
         
             //     //Set inputs
-%000000     //     istream_msg_a = 32'd2;
+            //     istream_msg_a = 32'd2;
             //     istream_msg_b = 32'd3;
             //     istream_val   =  1'b1;
             //     ostream_rdy   =  1'b1;

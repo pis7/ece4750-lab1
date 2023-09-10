@@ -1,12 +1,12 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Tracing implementation internals
-#include "verilated_fst_c.h"
+#include "verilated_vcd_c.h"
 #include "Vtop__Syms.h"
 
 
-void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffer* bufp);
+void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedVcd::Buffer* bufp);
 
-void Vtop___024root__trace_chg_top_0(void* voidSelf, VerilatedFst::Buffer* bufp) {
+void Vtop___024root__trace_chg_top_0(void* voidSelf, VerilatedVcd::Buffer* bufp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_chg_top_0\n"); );
     // Init
     Vtop___024root* const __restrict vlSelf VL_ATTR_UNUSED = static_cast<Vtop___024root*>(voidSelf);
@@ -16,7 +16,7 @@ void Vtop___024root__trace_chg_top_0(void* voidSelf, VerilatedFst::Buffer* bufp)
     Vtop___024root__trace_chg_sub_0((&vlSymsp->TOP), bufp);
 }
 
-void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffer* bufp) {
+void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedVcd::Buffer* bufp) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_chg_sub_0\n"); );
@@ -59,8 +59,8 @@ void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffe
         bufp->chgBit(oldp+280,(vlSelf->top__DOT__imul__DOT__control__DOT__counter_en));
         bufp->chgBit(oldp+281,(vlSelf->top__DOT__imul__DOT__control__DOT__count_clear));
         bufp->chgBit(oldp+282,((0x1fU == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
-        bufp->chgCData(oldp+283,(vlSelf->top__DOT__imul__DOT__control__DOT__count),6);
-        bufp->chgBit(oldp+284,((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
+        bufp->chgBit(oldp+283,((0U == (IData)(vlSelf->top__DOT__imul__DOT__control__DOT__count))));
+        bufp->chgCData(oldp+284,(vlSelf->top__DOT__imul__DOT__control__DOT__count),6);
         bufp->chgCData(oldp+285,(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__count_next),6);
         bufp->chgBit(oldp+286,(vlSelf->top__DOT__imul__DOT__control__DOT__cycle_counter__DOT__do_increment));
         bufp->chgBit(oldp+287,(vlSelf->top__DOT__imul__DOT__control__DOT__unnamedblk1__DOT__temp_add_mux));
@@ -86,7 +86,7 @@ void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedFst::Buffe
     bufp->chgCData(oldp+304,(vlSelf->top__DOT__imul__DOT__vc_trace__DOT__level),4);
 }
 
-void Vtop___024root__trace_cleanup(void* voidSelf, VerilatedFst* /*unused*/) {
+void Vtop___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root__trace_cleanup\n"); );
     // Init
     Vtop___024root* const __restrict vlSelf VL_ATTR_UNUSED = static_cast<Vtop___024root*>(voidSelf);

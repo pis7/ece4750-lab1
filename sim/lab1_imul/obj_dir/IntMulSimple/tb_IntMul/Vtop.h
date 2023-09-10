@@ -14,7 +14,7 @@
 
 class Vtop__Syms;
 class Vtop___024root;
-class VerilatedFstC;
+class VerilatedVcdC;
 class Vtop___024unit;
 
 
@@ -69,7 +69,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop VL_NOT_FINAL : public VerilatedModel {
     /// Returns time at next time slot. Aborts if !eventsPending()
     uint64_t nextTimeSlot();
     /// Trace signals in the model; called by application code
-    void trace(VerilatedFstC* tfp, int levels, int options = 0);
+    void trace(VerilatedVcdC* tfp, int levels, int options = 0);
     /// Retrieve name of this model instance (as passed to constructor).
     const char* name() const;
 
