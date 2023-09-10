@@ -1,7 +1,7 @@
 
 #include <verilated.h>
 
-#include "verilated_fst_c.h"
+#include "verilated_vcd_c.h"
 #include "Vtop.h"
 #include <iostream>
 #include <fstream>
@@ -80,15 +80,15 @@ int main(int argc, char** argv, char** env) {
     Verilated::commandArgs(argc, argv);
     Verilated::mkdir("logs");
     const std::unique_ptr<VerilatedContext> contextp{new VerilatedContext};
-    contextp->traceEverOn(true);
+    Verilated::traceEverOn(true);
     Vtop* top = new Vtop{contextp.get(), "TOP"};  // Or use a const unique_ptr, or the VL_UNIQUE_PTR wrapper
-      //svSetScope (svGetScopeFromName("Vtop.v"));
-    VerilatedFstC* tfp = new VerilatedFstC;
+    //svSetScope (svGetScopeFromName("Vtop.v"));
+    VerilatedVcdC* tfp = new VerilatedVcdC;
     Verilated::traceEverOn(true);
     if(waves){
         top->trace(tfp, 99);  // Trace 99 levels of hierarchy
         Verilated::mkdir("waves");
-        tfp->open((std::string("waves/")+outname +"waves.fst").c_str());
+        tfp->open((std::string("waves/")+outname +"waves.vcd").c_str());
     }
     const int nchars = 512;
      const int nwords = nchars/4;

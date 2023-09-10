@@ -18,7 +18,7 @@
         // Top-level module
         //------------------------------------------------------------------------
         
-%000000 module top(  input logic clk, input logic linetrace );
+ 000003 module top(  input logic clk, input logic linetrace );
         
           // DUT signals
  000003   logic        reset;
@@ -65,8 +65,8 @@
           initial begin 
  002115     while(1) begin
  002115       @(negedge clk);  
- 002115       if (linetrace) begin
-%000000            imul.display_trace;
+ 000003       if (linetrace) begin
+ 002112            imul.display_trace;
               end
             end 
             $stop;

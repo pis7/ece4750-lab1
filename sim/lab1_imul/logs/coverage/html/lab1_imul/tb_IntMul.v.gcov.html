@@ -31,13 +31,13 @@
             <td class="headerValue">coverage.info</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">18</td>
+            <td class="headerCovTableEntry">20</td>
             <td class="headerCovTableEntry">31</td>
-            <td class="headerCovTableEntryLo">58.1 %</td>
+            <td class="headerCovTableEntryLo">64.5 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-07 13:14:09</td>
+            <td class="headerValue">2023-09-09 21:18:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">0</td>
@@ -79,7 +79,7 @@
 <a name="17"><span class="lineNum">      17 </span>            : // Top-level module</a>
 <a name="18"><span class="lineNum">      18 </span>            : //------------------------------------------------------------------------</a>
 <a name="19"><span class="lineNum">      19 </span>            : </a>
-<a name="20"><span class="lineNum">      20 </span><span class="lineNoCov">          0 : module top(  input logic clk, input logic linetrace );</span></a>
+<a name="20"><span class="lineNum">      20 </span><span class="lineCov">          3 : module top(  input logic clk, input logic linetrace );</span></a>
 <a name="21"><span class="lineNum">      21 </span>            : </a>
 <a name="22"><span class="lineNum">      22 </span>            :   // DUT signals</a>
 <a name="23"><span class="lineNum">      23 </span><span class="lineCov">          3 :   logic        reset;</span></a>
@@ -126,8 +126,8 @@
 <a name="64"><span class="lineNum">      64 </span>            :   initial begin </a>
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">       2115 :     while(1) begin</span></a>
 <a name="66"><span class="lineNum">      66 </span><span class="lineCov">       2115 :       @(negedge clk);  </span></a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineCov">       2115 :       if (linetrace) begin</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineNoCov">          0 :            imul.display_trace;</span></a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">          3 :       if (linetrace) begin</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">       2112 :            imul.display_trace;</span></a>
 <a name="69"><span class="lineNum">      69 </span>            :       end</a>
 <a name="70"><span class="lineNum">      70 </span>            :     end </a>
 <a name="71"><span class="lineNum">      71 </span>            :     $stop;</a>
