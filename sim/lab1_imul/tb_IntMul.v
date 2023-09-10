@@ -255,7 +255,7 @@ module top(  input logic clk, input logic linetrace );
   //end
 
   //--------------------------------------------------------------------
-  // Personal Test Bench
+  // Personal Test Bench!
   //--------------------------------------------------------------------
   // This is where Parker and George made our own Test Cases
 
