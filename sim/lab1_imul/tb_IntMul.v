@@ -332,8 +332,8 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #6 - Multiplying Large Positive and Large Positive Numbers");
     
-      test_task(2**18, 2**18);
-      test_task(2**20, 2**16);
+      test_task(128341, 513367);
+      test_task(1026735, 138605);
     #10;
 
 
@@ -345,8 +345,8 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #7 - Large Positive Numbers and Large Negitive Numbers");
     
-      test_task(2**19, -2**16);
-      test_task(2**23, -2**25);
+      test_task(262143, -524287);
+      test_task(193855, -387711);
       
     #10;
 
@@ -357,8 +357,8 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #8 - Large Negitive Numbers and Large Positive Numbers");
     
-      test_task(-2**19, 2**16);
-      test_task(-2**23, 2**19);
+      test_task(-388095, 409281);
+      test_task(-1428831, 1378595);
       
     #10;
 
@@ -369,8 +369,8 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #9 - Large Negitive Numbers and Large Negitive Numbers");
     
-      test_task(-2**17, -2**17);
-      test_task(-2**27, -2**-23);
+      test_task(-1527823, -86098);
+      test_task(-137951, -283812);
       
     #10;
 
@@ -432,7 +432,7 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #14 - Corner Case Testing ");
     
-      test_task(65536, 65536);
+      test_task(2**18, -2**31);
       test_task(-65536, -65536);
       
     #10;
