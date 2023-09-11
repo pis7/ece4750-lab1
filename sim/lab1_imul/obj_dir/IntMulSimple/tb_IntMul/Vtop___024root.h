@@ -53,6 +53,9 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
     IData/*31:0*/ top__DOT____Vtogcov__istream_msg_b;
     IData/*31:0*/ top__DOT__unnamedblk1__DOT__x;
     IData/*31:0*/ top__DOT__unnamedblk2__DOT__x;
+    IData/*31:0*/ top__DOT__unnamedblk3__DOT__x;
+    IData/*31:0*/ top__DOT__unnamedblk4__DOT__x;
+    IData/*31:0*/ top__DOT__unnamedblk5__DOT__x;
     IData/*31:0*/ top__DOT__imul__DOT__next_ostream_msg;
     VlWide<128>/*4095:0*/ top__DOT__imul__DOT__str;
     IData/*31:0*/ top__DOT__imul__DOT__idx1;

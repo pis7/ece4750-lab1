@@ -259,6 +259,28 @@ module top(  input logic clk, input logic linetrace );
   //--------------------------------------------------------------------
   // This is where Parker and George made our own Test Cases
 
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #0
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Keep ostream_rdy deasserted until a few clock cycles later
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #0 - Test ostream_rdy control");
+
+    //Set inputs
+    istream_msg_a = 32'd2;
+    istream_msg_b = 32'd3;
+    istream_val   =  1'b1;
+    ostream_rdy   =  1'b0;
+
+    while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+    @(negedge clk); // Move to next cycle.
+    
+    istream_val = 1'b0; // Deassert ready input
+    if(!ostream_val) @(ostream_val);// Wait for response
+    @(negedge clk); // read at low clk
+
+    #10
+    ostream_rdy = 1'b1;
   
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #1
@@ -266,7 +288,7 @@ module top(  input logic clk, input logic linetrace );
     // // Combonation Of Multiplying Zero, One, and Negitive One
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("Start Personal Tests");
-    $display("P_Test #1 - Combonation Of Multiplying Zero, One, and Negitive One");
+    $display("P_Test #1 - Combination Of Multiplying Zero, One, and Negitive One");
       test_task(0,0);
       test_task(1,0);
       test_task(0,1);

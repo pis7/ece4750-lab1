@@ -14,20 +14,20 @@
           parameter p_count_clear_value = 0,
           parameter p_count_max_value   = 4
         )(
- 003113   input  logic                     clk,
- 000001   input  logic                     reset,
+ 013088   input  logic                     clk,
+ 000002   input  logic                     reset,
         
           // Operations
         
- 000088   input  logic                     clear,
- 000088   input  logic                     increment,
+ 000376   input  logic                     clear,
+ 000376   input  logic                     increment,
 %000000   input  logic                     decrement,
         
           // Outputs
         
 %000000   output logic [p_count_nbits-1:0] count,
- 000088   output logic                     count_is_zero,
- 000088   output logic                     count_is_max
+ 000376   output logic                     count_is_zero,
+ 000376   output logic                     count_is_max
         
         );
         
@@ -49,7 +49,7 @@
           // Combinational Logic
           //----------------------------------------------------------------------
         
- 000088   logic do_increment;
+ 000376   logic do_increment;
           assign do_increment = ( increment && (count < p_count_max_value) );
         
 %000000   logic do_decrement;

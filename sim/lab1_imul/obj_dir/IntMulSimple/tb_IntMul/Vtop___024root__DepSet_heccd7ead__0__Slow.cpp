@@ -185,6 +185,9 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT____Vtogcov__istream_msg_b = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__unnamedblk1__DOT__x = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__unnamedblk2__DOT__x = VL_RAND_RESET_I(32);
+    vlSelf->top__DOT__unnamedblk3__DOT__x = VL_RAND_RESET_I(32);
+    vlSelf->top__DOT__unnamedblk4__DOT__x = VL_RAND_RESET_I(32);
+    vlSelf->top__DOT__unnamedblk5__DOT__x = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__imul__DOT__next_ostream_val = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__imul__DOT__next_ostream_msg = VL_RAND_RESET_I(32);
     VL_RAND_RESET_W(4096, vlSelf->top__DOT__imul__DOT__str);
