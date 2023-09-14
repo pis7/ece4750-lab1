@@ -330,6 +330,7 @@ module mul_alt_control (
         // Ready to receive input and not ready to output value
       end
       CALC: begin
+        // Calc shift value from b register output
         logic [4:0] temp_shamt;
         logic temp_done;
         logic temp_add_mux_sel;
@@ -368,10 +369,12 @@ module mul_alt_control (
 
         if (b_lsb[0] == 0) begin
           temp_add_mux_sel = 1;
+          // If b is all 0s then we are done
           if (b_lsb == 32'b0) temp_done = 1;
           else temp_done = 0;
         end
         else begin
+          // If 1 in b_lsb[0], add to result
           temp_add_mux_sel = 0;
           temp_done = 0;
         end
@@ -385,7 +388,7 @@ module mul_alt_control (
         // Do not shift a and b
         // Keep result register output previous value before calculation done (not 0)
         // keep result register updated with current result value
-        // Ready to receive new input and output value is ready
+        // Not ready to receive new input and output value is ready
       end
       default: begin
         $stop;

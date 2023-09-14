@@ -103,7 +103,11 @@ module top(  input logic clk, input logic linetrace );
   //--------------------------------------------------------------------
   // This is where Parker and George made our own Test Cases
 
+<<<<<<< HEAD
       // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+=======
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+>>>>>>> 3049cdeb11ff60b2495dc2706e270d4380017470
     // // P_Test #0
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // Keep ostream_rdy deasserted until a few clock cycles later
@@ -142,9 +146,14 @@ module top(  input logic clk, input logic linetrace );
               istream_msg_a, istream_msg_b, ostream_msg );
     end
 
+<<<<<<< HEAD
     delay( $urandom_range(0, 127) );
     @(negedge clk)
 
+=======
+    #10
+    @(negedge clk)
+>>>>>>> 3049cdeb11ff60b2495dc2706e270d4380017470
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #1
