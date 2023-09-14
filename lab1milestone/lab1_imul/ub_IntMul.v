@@ -97,6 +97,58 @@ module top(  input logic clk, input logic linetrace );
       test_task( $random, $random );
     end
 
+
+
+   // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #10
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Numbers with Low Order Bits Masked Off 
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #10 - Numbers with Low Order Bits Masked Off ");
+    
+      test_task(7648, 7648);
+      test_task(7592, 3832);
+      
+    #10;
+
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #11
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Numbers with Middle Bits Masked Off
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #11 - Numbers with Middle Bits Masked Off");
+    
+      test_task(1927, 3087);
+      test_task(14087, 15903);
+      
+    #10;
+
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #12
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Sparse Numbers with Many Zeros and Few Ones
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #12 - Sparse Numbers with Many Zeros and Few Ones");
+    
+      test_task(4096, 2048);
+      test_task(10248, 5376);
+      
+    #10;
+
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #13
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Dense Numbers with Many Ones and Few Zeros
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #13 - Dense Numbers with Many Ones and Few Zeros");
+    
+      test_task(16375, 6911);
+      test_task(1983, 2047);
+      
+    #10;
     // Finish the testbench
     
     @(negedge clk);
