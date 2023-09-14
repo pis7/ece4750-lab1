@@ -258,7 +258,8 @@ module top(  input logic clk, input logic linetrace );
   // Personal Test Bench!
   //--------------------------------------------------------------------
   // This is where Parker and George made our own Test Cases
-  
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #0
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // Keep ostream_rdy deasserted until a few clock cycles later
@@ -296,7 +297,6 @@ module top(  input logic clk, input logic linetrace );
       $error( "Failed: in0 = %d, in1 = %d, out = %d", 
               istream_msg_a, istream_msg_b, ostream_msg );
     end
-
     delay( $urandom_range(0, 127) );
     @(negedge clk)
 
@@ -306,14 +306,15 @@ module top(  input logic clk, input logic linetrace );
     // // Combonation Of Multiplying Zero, One, and Negitive One
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("Start Personal Tests");
-    $display("P_Test #1 - Combination Of Multiplying Zero, One, and Negitive One");
-      test_task(0,0);
-      test_task(1,0);
-      test_task(0,1);
-      test_task(-1,0);
-      test_task(0,-1);
-
-    #10;
+    $display("P_Test #1 - Combonation Of Multiplying Zero, One, and Negitive One");
+    test_task(0,0);
+    test_task(1,0);
+    test_task(0,1);
+    test_task(-1,0);
+    test_task(0,-1);
+    test_task(-1,1);
+    test_task(1,-1);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #2
@@ -325,8 +326,7 @@ module top(  input logic clk, input logic linetrace );
     for( integer x = 0; x < 32; x++ ) begin
       test_task(1,2**x);
     end
-
-    #10;
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #3
@@ -335,10 +335,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #3 - Small Negitive Numbers and Small Positive Numbers");
     
-      test_task(-10,10);
-      test_task(-2010,1581);
-
-    #10;
+    test_task(-10,10);
+    test_task(-2010,1581);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #4
@@ -347,10 +346,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #4 - Small Positive Numbers and Small Negitive Numbers");
     
-      test_task(2817, -1);
-      test_task(732, -92);
-
-    #10;
+    test_task(2817, -1);
+    test_task(732, -92);
+    delay( $urandom_range(0, 127) );
 
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -360,10 +358,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #5 - Small Negitive and Small Negitive Numbers");
     
-      test_task(-192,-10);
-      test_task(-639, -321);
-      
-    #10;
+    test_task(-192,-10);
+    test_task(-639, -321);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #6
@@ -372,11 +369,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #6 - Multiplying Large Positive and Large Positive Numbers");
     
-      test_task(128341, 513367);
-      test_task(1026735, 138605);
-    #10;
-
-
+    test_task(128341, 513367);
+    test_task(1026735, 138605);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #7
@@ -385,10 +380,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #7 - Large Positive Numbers and Large Negitive Numbers");
     
-      test_task(262143, -524287);
-      test_task(193855, -387711);
-      
-    #10;
+    test_task(262143, -524287);
+    test_task(193855, -387711);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #8
@@ -397,10 +391,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #8 - Large Negitive Numbers and Large Positive Numbers");
     
-      test_task(-388095, 409281);
-      test_task(-1428831, 1378595);
-      
-    #10;
+    test_task(-388095, 409281);
+    test_task(-1428831, 1378595);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #9
@@ -409,10 +402,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #9 - Large Negitive Numbers and Large Negitive Numbers");
     
-      test_task(-1527823, -86098);
-      test_task(-137951, -283812);
-      
-    #10;
+    test_task(-1527823, -86098);
+    test_task(-137951, -283812);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #10
@@ -421,10 +413,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #10 - Numbers with Low Order Bits Masked Off ");
     
-      test_task(7648, 7648);
-      test_task(7592, 3832);
-      
-    #10;
+    test_task(7648, 7648);
+    test_task(7592, 3832);
+    delay( $urandom_range(0, 127) );
 
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -434,10 +425,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #11 - Numbers with Middle Bits Masked Off");
     
-      test_task(1927, 3087);
-      test_task(14087, 15903);
-      
-    #10;
+    test_task(1927, 3087);
+    test_task(14087, 15903);
+    delay( $urandom_range(0, 127) );
 
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -447,10 +437,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #12 - Sparse Numbers with Many Zeros and Few Ones");
     
-      test_task(4096, 2048);
-      test_task(10248, 5376);
-      
-    #10;
+    test_task(4096, 2048);
+    test_task(10248, 5376);
+    delay( $urandom_range(0, 127) );
 
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -460,10 +449,9 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #13 - Dense Numbers with Many Ones and Few Zeros");
     
-      test_task(16375, 6911);
-      test_task(1983, 2047);
-      
-    #10;
+    test_task(16375, 6911);
+    test_task(1983, 2047);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #14
@@ -472,10 +460,12 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #14 - Corner Case Testing ");
     
-      test_task(2**18, -2**31);
-      test_task(-65536, -65536);
-      
-    #10;
+    test_task(65536, 65536);
+    test_task(-65536, -65536);
+    test_task(2**20, 4);
+    test_task(20,-2**18);
+    test_task(-2**20, 4);
+    delay( $urandom_range(0, 127) );
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #15
@@ -495,8 +485,7 @@ module top(  input logic clk, input logic linetrace );
     for( integer x = 0; x < 3; x++ ) begin
       test_task(-1 * $random, $random );
     end
-      
-    #10;
+    delay( $urandom_range(0, 127) );
 
 // Finish the testbench
     
@@ -507,19 +496,6 @@ module top(  input logic clk, input logic linetrace );
     #10;
     $finish;
   end
-
-  //--------------------------------------------------------------------
-  // Delay definition
-  //--------------------------------------------------------------------
-  // Asserts a random delay between functions instead of using #10
-  
-  task delay( int delay_val );
-      begin
-          for( int i = 0; i < delay_val; i = i + 1 ) begin
-              #1;
-          end
-      end
-  endtask
 
   //--------------------------------------------------------------------
   // test_task definition
