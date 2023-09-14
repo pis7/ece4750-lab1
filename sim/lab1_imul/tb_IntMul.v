@@ -509,6 +509,19 @@ module top(  input logic clk, input logic linetrace );
   end
 
   //--------------------------------------------------------------------
+  // Delay definition
+  //--------------------------------------------------------------------
+  // Asserts a random delay between functions instead of using #10
+  
+  task delay( int delay_val );
+      begin
+          for( int i = 0; i < delay_val; i = i + 1 ) begin
+              #1;
+          end
+      end
+  endtask
+
+  //--------------------------------------------------------------------
   // test_task definition
   //--------------------------------------------------------------------
   // Here is a tasks that test the DUT when given 2 numbers a and b 

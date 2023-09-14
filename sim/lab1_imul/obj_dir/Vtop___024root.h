@@ -67,9 +67,9 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         CData/*0:0*/ top__DOT__imul__DOT__control__DOT__unnamedblk1__DOT__temp_add_mux_sel;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT__level;
         CData/*3:0*/ top__DOT__imul__DOT__vc_trace__DOT____Vtogcov__level;
-        CData/*4:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__57__t_shamt;
-        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__57__t_add_mux_sel;
-        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__57__t_done;
+        CData/*4:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__139__t_shamt;
+        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__139__t_add_mux_sel;
+        CData/*0:0*/ __Vtask_top__DOT__imul__DOT__control__DOT__tab__139__t_done;
         CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
         CData/*0:0*/ __Vtrigprevexpr___TOP__top__DOT__ostream_val__0;
         CData/*0:0*/ __VactDidInit;
@@ -80,18 +80,22 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final : public VerilatedModule
         IData/*31:0*/ top__DOT____Vtogcov__istream_msg_a;
         IData/*31:0*/ top__DOT____Vtogcov__istream_msg_b;
         IData/*31:0*/ top__DOT__unnamedblk1__DOT__x;
+        IData/*31:0*/ top__DOT__unnamedblk2__DOT__x;
+        IData/*31:0*/ top__DOT__unnamedblk3__DOT__x;
+        IData/*31:0*/ top__DOT__unnamedblk4__DOT__x;
+        IData/*31:0*/ top__DOT__unnamedblk5__DOT__x;
         VlWide<128>/*4095:0*/ top__DOT__imul__DOT__str;
         IData/*31:0*/ top__DOT__imul__DOT__idx1;
         IData/*31:0*/ top__DOT__imul__DOT__idx0;
         IData/*31:0*/ top__DOT__imul__DOT____Vtogcov__b_lsb;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__b_reg_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__r_shift_out;
+    };
+    struct {
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__a_reg_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__l_shift_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__result_reg_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT__adder_out;
-    };
-    struct {
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT____Vtogcov__b_mux_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT____Vtogcov__r_shift_out;
         IData/*31:0*/ top__DOT__imul__DOT__datapath__DOT____Vtogcov__a_mux_out;
