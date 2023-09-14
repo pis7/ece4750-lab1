@@ -20,6 +20,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop_vc_Mux2__P20 final : public VerilatedMod
     VL_IN(in0,31,0);
     VL_IN(in1,31,0);
     VL_OUT(out,31,0);
+    IData/*31:0*/ __Vtogcov__in1;
 
     // INTERNAL VARIABLES
     Vtop__Syms* const vlSymsp;

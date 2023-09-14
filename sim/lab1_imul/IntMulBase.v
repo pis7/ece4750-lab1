@@ -370,7 +370,7 @@ module mul_base_control (
         // Keep result register output previous value before calculation done (not 0)
         // Keep result register updated with current result value
         // Clear counter and disable it
-        // Ready to receive new input and output value is ready
+        // Not ready to receive new input and output value is ready
       end
       default: begin
         // Same as IDLE state

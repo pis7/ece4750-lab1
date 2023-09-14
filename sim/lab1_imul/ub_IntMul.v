@@ -103,6 +103,47 @@ module top(  input logic clk, input logic linetrace );
   //--------------------------------------------------------------------
   // This is where Parker and George made our own Test Cases
 
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #0
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Keep ostream_rdy deasserted until a few clock cycles later
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #0 - Test ostream_rdy control");
+
+    // Reset multiplier
+    reset = 1'b1;
+    #10
+    reset = 1'b0;
+
+    //Set inputs
+    istream_msg_a = 32'd2;
+    istream_msg_b = 32'd3;
+    istream_val   =  1'b1;
+    ostream_rdy = 1'b0;
+    #200 // delay ostream_rdy for 200 ticks
+    ostream_rdy = 1'b1;
+
+    while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+    @(negedge clk); // Move to next cycle.
+    
+    istream_val = 1'b0; // Deassert ready input
+    if(!ostream_val) @(ostream_val);// Wait for response
+    @(negedge clk); // read at low clk
+
+    // Check the result
+    assert (6 == ostream_msg) begin
+      pass(); // Book keeping
+      $display( "OK: in0 = %d, in1 = %d, out = %d", 
+                istream_msg_a, istream_msg_b, ostream_msg );
+    end
+    else begin
+      fail(); // Book keeping
+      $error( "Failed: in0 = %d, in1 = %d, out = %d", 
+              istream_msg_a, istream_msg_b, ostream_msg );
+    end
+
+    #10
+    @(negedge clk)
 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #1
