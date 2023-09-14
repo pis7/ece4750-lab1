@@ -264,23 +264,27 @@ module top(  input logic clk, input logic linetrace );
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // Keep ostream_rdy deasserted until a few clock cycles later
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    $display("P_Test #0 - Test ostream_rdy control");
+    // $display("P_Test #0 - Test ostream_rdy control");
 
-    //Set inputs
-    istream_msg_a = 32'd2;
-    istream_msg_b = 32'd3;
-    istream_val   =  1'b1;
-    ostream_rdy   =  1'b0;
+    // //Set inputs
+    // istream_msg_a = 32'd2;
+    // istream_msg_b = 32'd3;
+    // istream_val   =  1'b1;
+    // #5
+    // ostream_rdy   =  1'b0;
 
-    while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
-    @(negedge clk); // Move to next cycle.
+
+    // while(!istream_rdy) @(negedge clk); // Wait until ready is asserted
+    // @(negedge clk); // Move to next cycle.
     
-    istream_val = 1'b0; // Deassert ready input
-    if(!ostream_val) @(ostream_val);// Wait for response
-    @(negedge clk); // read at low clk
+    // istream_val = 1'b0; // Deassert ready input
+    // $display("A");
+    // if(!ostream_val) @(ostream_val);// Wait for response
+    // @(negedge clk); // read at low clk
 
-    #10
-    ostream_rdy = 1'b1;
+    // reset = 1'b1;
+    // #10
+ 
   
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // // P_Test #1
