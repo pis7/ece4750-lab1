@@ -25,6 +25,7 @@ VM_TRACE_FST = 0
 VM_CLASSES_FAST += \
 	Vtop \
 	Vtop___024root__DepSet_h84412442__0 \
+	Vtop___024root__DepSet_h84412442__1 \
 	Vtop___024root__DepSet_heccd7ead__0 \
 	Vtop___024unit__DepSet_hab9af801__0 \
 	Vtop_vc_Mux2__P20__DepSet_h42d00b19__0 \
@@ -33,7 +34,6 @@ VM_CLASSES_FAST += \
 VM_CLASSES_SLOW += \
 	Vtop___024root__Slow \
 	Vtop___024root__DepSet_h84412442__0__Slow \
-	Vtop___024root__DepSet_h84412442__1__Slow \
 	Vtop___024root__DepSet_heccd7ead__0__Slow \
 	Vtop___024unit__Slow \
 	Vtop___024unit__DepSet_hff17caec__0__Slow \

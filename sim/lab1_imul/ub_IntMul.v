@@ -88,20 +88,80 @@ module top(  input logic clk, input logic linetrace );
     #10 
     reset = 0;
 
-    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // Random Micro-benchmark
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    
+
     $display("Random Test");
     for( integer x = 0; x < 100; x++ ) begin
       test_task( $random, $random );
     end
 
+
+  //--------------------------------------------------------------------
+  // Personal Test Bench
+  //--------------------------------------------------------------------
+  // This is where Parker and George made our own Test Cases
+
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #1
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Numbers with Low Order Bits Masked Off 
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #1 - Numbers with Low Order Bits Masked Off ");
+
+      test_task(7648, 7648);
+      test_task(7592, 3832);
+
+    #10;
+
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #2
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Numbers with Middle Bits Masked Off
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #2 - Numbers with Middle Bits Masked Off");
+
+      test_task(1927, 3087);
+      test_task(14087, 15903);
+
+    #10;
+
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #3
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Sparse Numbers with Many Zeros and Few Ones
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #3 - Sparse Numbers with Many Zeros and Few Ones");
+
+      test_task(4096, 2048);
+      test_task(10248, 5376);
+
+    #10;
+
+
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // P_Test #4
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // // Multiplying Dense Numbers with Many Ones and Few Zeros
+    // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $display("P_Test #4 - Dense Numbers with Many Ones and Few Zeros");
+
+      test_task(16375, 6911);
+      test_task(1983, 2047);
+
+    #10;
+
+
+
     // Finish the testbench
-    
+
     @(negedge clk);
     $display("Testbench finished at %d cycles", ($time()-10)/2 );
-    
+
     // Delay for a better waveform
     #10;
     $finish;

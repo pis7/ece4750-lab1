@@ -33,16 +33,17 @@ class alignas(VL_CACHE_LINE_BYTES)Vtop__Syms final : public VerilatedSyms {
     // MODULE INSTANCE STATE
     Vtop___024root                 TOP;
     Vtop___024unit                 TOP____024unit;
-    Vtop_vc_Mux2__P20              TOP__top__DOT__dut__DOT__datapath__DOT__a_mux;
-    Vtop_vc_Mux2__P20              TOP__top__DOT__dut__DOT__datapath__DOT__adder_mux;
-    Vtop_vc_Mux2__P20              TOP__top__DOT__dut__DOT__datapath__DOT__b_mux;
-    Vtop_vc_Mux2__P20              TOP__top__DOT__dut__DOT__datapath__DOT__result_mux;
+    Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__a_mux;
+    Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__adder_mux;
+    Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__b_mux;
+    Vtop_vc_Mux2__P20              TOP__top__DOT__imul__DOT__datapath__DOT__result_mux;
 
     // COVERAGE
-    std::atomic<uint32_t> __Vcoverage[1630];
+    std::atomic<uint32_t> __Vcoverage[530];
 
     // SCOPE NAMES
     VerilatedScope __Vscope_top;
+    VerilatedScope __Vscope_top__test_task;
 
     // CONSTRUCTORS
     Vtop__Syms(VerilatedContext* contextp, const char* namep, Vtop* modelp);

@@ -309,7 +309,6 @@ module mul_alt_control (
       DONE: begin
         // If output device ready to receive value then go back to IDLE state
         if (resp_rdy) nextState = IDLE;
-        // This case has been manually tested but is not shown in coverage
         else nextState = DONE;
       end
       default: begin

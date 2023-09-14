@@ -37,10 +37,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop VL_NOT_FINAL : public VerilatedModel {
     // Public to allow access to /* verilator public */ items.
     // Otherwise the application code can consider these internals.
     Vtop___024unit* const __PVT____024unit;
-    Vtop_vc_Mux2__P20* const __PVT__top__DOT__dut__DOT__datapath__DOT__b_mux;
-    Vtop_vc_Mux2__P20* const __PVT__top__DOT__dut__DOT__datapath__DOT__a_mux;
-    Vtop_vc_Mux2__P20* const __PVT__top__DOT__dut__DOT__datapath__DOT__result_mux;
-    Vtop_vc_Mux2__P20* const __PVT__top__DOT__dut__DOT__datapath__DOT__adder_mux;
+    Vtop_vc_Mux2__P20* const __PVT__top__DOT__imul__DOT__datapath__DOT__b_mux;
+    Vtop_vc_Mux2__P20* const __PVT__top__DOT__imul__DOT__datapath__DOT__a_mux;
+    Vtop_vc_Mux2__P20* const __PVT__top__DOT__imul__DOT__datapath__DOT__result_mux;
+    Vtop_vc_Mux2__P20* const __PVT__top__DOT__imul__DOT__datapath__DOT__adder_mux;
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
