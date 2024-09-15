@@ -459,7 +459,6 @@ module top(  input logic clk, input logic linetrace );
     // // Corner Case Testing 
     // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     $display("P_Test #14 - Corner Case Testing ");
-    
     test_task(65536, 65536);
     test_task(-65536, -65536);
     test_task(2**20, 4);
@@ -496,6 +495,19 @@ module top(  input logic clk, input logic linetrace );
     #10;
     $finish;
   end
+
+  //--------------------------------------------------------------------
+  // Delay definition
+  //--------------------------------------------------------------------
+  // Asserts a random delay between functions instead of using #10
+  
+  task delay( int delay_val );
+      begin
+          for( int i = 0; i < delay_val; i = i + 1 ) begin
+              #1;
+          end
+      end
+  endtask
 
   //--------------------------------------------------------------------
   // test_task definition

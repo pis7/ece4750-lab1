@@ -4,15 +4,15 @@
 // This is dual-ported test memory that handles a limited subset of
 // memory request messages and returns memory response messages.
 
-`ifndef VC_TEST_RAND_DELAY_MEM_2PORTS_V
-`define VC_TEST_RAND_DELAY_MEM_2PORTS_V
+`ifndef VC_TEST_RAND_DELAY_MEM_2PORTS4B_V
+`define VC_TEST_RAND_DELAY_MEM_2PORTS4B_V
 
 `include "vc/mem-msgs.v"
-`include "vc/TestMem_2ports.v"
+`include "vc/TestMem_2ports4B.v"
 `include "vc/TestRandDelay.v"
 `include "vc/trace.v"
 
-module vc_TestRandDelayMem_2ports
+module vc_TestRandDelayMem_2ports4B
 #(
   parameter p_mem_nbytes   = 1024, // size of physical memory in bytes
   parameter p_opaque_nbits = 8,    // mem message opaque field num bits
@@ -26,8 +26,8 @@ module vc_TestRandDelayMem_2ports
   parameter d = p_data_nbits,
 
   // Local constants not meant to be set from outside the module
-  parameter c_req_nbits  = `VC_MEM_REQ_MSG_NBITS(o,a,d),
-  parameter c_resp_nbits = `VC_MEM_RESP_MSG_NBITS(o,d)
+  parameter c_req_nbits  = $bits(mem_req_4B_t),
+  parameter c_resp_nbits = $bits(mem_resp_4B_t)
 )(
   input  logic                    clk,
   input  logic                    reset,
@@ -128,7 +128,7 @@ module vc_TestRandDelayMem_2ports
 
    );
 
-  vc_TestMem_2ports
+  vc_TestMem_2ports4B
   #(
     .p_mem_nbytes   (p_mem_nbytes),
     .p_opaque_nbits (p_opaque_nbits),
@@ -158,6 +158,16 @@ module vc_TestRandDelayMem_2ports
     .memresp1_msg (mem_memresp1_msg)
   );
 
+  task load (integer filein);
+  begin
+    mem.load(filein);
+  end
+  endtask
+  task dump (integer filein);
+  begin
+    mem.dump(filein);
+  end
+  endtask
   //------------------------------------------------------------------------
   // Test random delay
   //------------------------------------------------------------------------
@@ -202,7 +212,7 @@ module vc_TestRandDelayMem_2ports
   // Line tracing
   //----------------------------------------------------------------------
 
-  vc_MemReqMsgTrace#(o,a,d) memreq0_trace
+  vc_MemReqMsg4BTrace memreq0_trace
   (
     .clk   (clk),
     .reset (reset),
@@ -211,7 +221,7 @@ module vc_TestRandDelayMem_2ports
     .msg   (memreq0_msg)
   );
 
-  vc_MemReqMsgTrace#(o,a,d) memreq1_trace
+  vc_MemReqMsg4BTrace memreq1_trace
   (
     .clk   (clk),
     .reset (reset),
@@ -220,7 +230,7 @@ module vc_TestRandDelayMem_2ports
     .msg   (memreq1_msg)
   );
 
-  vc_MemRespMsgTrace#(o,d) memresp0_trace
+  vc_MemRespMsg4BTrace memresp0_trace
   (
     .clk   (clk),
     .reset (reset),
@@ -229,7 +239,7 @@ module vc_TestRandDelayMem_2ports
     .msg   (memresp0_msg)
   );
 
-  vc_MemRespMsgTrace#(o,d) memresp1_trace
+  vc_MemRespMsg4BTrace memresp1_trace
   (
     .clk   (clk),
     .reset (reset),
